@@ -1,4 +1,4 @@
-git test2
+;git delete
 ;１章-01 「回想」
 ;「angle:the third person」
 
