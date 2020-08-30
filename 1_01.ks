@@ -1,4 +1,4 @@
-;git B
+;git A
 ;１章-01 「回想」
 ;「angle:the third person」
 
