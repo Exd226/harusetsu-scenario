@@ -9,9 +9,10 @@
 [mask_off time="800" wait="true"]
 #翔和
 毎日の放課後の練習[pf]
-@fadeinbgm time="3000" storage="everyday.ogg"
 #翔和
-俺は毎日録音したり感想言ったりするだけだが、毎日練習に付き合った[pf]
+俺は録音したり感想言ったりするだけだが、毎日練習に付き合った
+@fadeinbgm time="3000" storage="everyday.ogg"
+[pf]
 #翔和
 もちろん、写真部には行ってない、まぁいいや[pf]
 #藍美
@@ -310,7 +311,7 @@
 「デレデレもしてないっ！」[pf]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_1"
-「だって、あんなに可愛いことされたら仕方ないですですよね～」[pf]
+「だって、あんなに可愛いことされたら仕方ないですよね～」[pf]
 #翔和
 「断じてない」[pf]
 #藍美
@@ -330,6 +331,7 @@
 @chara_mods name="miku" cross=false time="100" face="normal_1"
 「三人で居るのが楽しいんですっ」[pf]
 #美紅
+[chara_modm name="miku" face="normal_1"]
 「藍美ちゃんが安野くんをいじって、みんなでパプコ食べて･･････」[pf]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
@@ -353,6 +355,7 @@
 @chara_mods name="aimi" cross=false time="100" face="normal_2"
 「その怒り方可愛いです先輩！」[pf]
 #美紅
+[chara_modm name="miku" face="angry"]
 「んもぅ藍美ちゃんやめてってば～」[pf]
 @fadeoutbgm time="3000"
 
@@ -368,16 +371,17 @@
 [mask_off time="800" wait="true"]
 #美紅
 「あ、おはよ～安野くん～」[pf]
-@fadeinbgm time="3000" storage="everyday.ogg"
 #翔和
-いつもの朝の馴染んだ光景･･････だが今日はちょっと違う[pf]
+いつもの朝の馴染んだ光景･･････だが今日はちょっと違う
+@fadeinbgm time="3000" storage="everyday.ogg"
+[pf]
 #美紅
 [chara_modm name="miku" face="normal_p"]
 「晴れてよかったね～って、どしたの？」[pf]
 #翔和
 「あ、いや･･････俺もそう思ってたとこ」[pf]
 #翔和
-いかんいかん、ついつい初めてのjkの私服に見とれてしまっていた[pf]
+いかんいかん、ついついのjkの私服に見とれてしまっていた[pf]
 #翔和
 今どきの子のファッションってみんなこんなに可愛いのか？[pf]
 #美紅
@@ -429,7 +433,7 @@
 「はいっ、作詞をしてもらいます！」[pf]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_px_1"
-「わ～～わたし一度やってみたかったんだぁ」[pf]
+「わぁ～～わたし一度やってみたかったんだぁ」[pf]
 #翔和
 @chara_mod name="miku" cross=false time="100" face="normal_px"
 「たしかに、興味はあるが、一度もしたことないぞ？」[pf]
@@ -644,7 +648,7 @@
 「ん？」[pf]
 #藍美
 [chara_modm name="aimi" face="normal_p"]
-「たまには男らしいこと言うんですね！　」[pf]
+「たまには男らしいこと言うんですね！」[pf]
 #翔和
 「どんだけ藍美ちゃんの中の俺は男らしくないんだよ･･････」[pf]
 #藍美
@@ -709,7 +713,7 @@
 @angle name="aimi" bg="aimiroom.jpg"
 
 #
-@playse storage="room_door_O.oga" 
+@playse storage="room_door_O.ogg" 
 「ガチャ」[pf]
 #藍美
 [chara_modm name="aimi" face="normal_p"]
@@ -747,9 +751,10 @@
 		[mask_off time="800" wait="true" effect="fadeOutLeft"]
 
 ;BGM:回想
-@fadeinbgm storage="flashback.ogg" loop=true time=3000
 #美紅
-「パパもういっちゃうのー？」[pf]
+「パパもういっちゃうのー？」
+@fadeinbgm storage="flashback.ogg" loop=true time=3000
+[pf]
 #父
 「すまないな美紅、仕事で少し遠いところに行くから帰るのは遅くなる」[pf]
 #美紅
@@ -792,9 +797,10 @@
 良かったぁぁやっと見つけた[pf]
 #翔和
 「春奈さん、ずっとここに居たんだね･･････って」[pf]
-@fadeinbgm time="3000" storage="miku.ogg"
 #美紅
-「･･････すぅ･･････すぅ」[pf]
+「･･････すぅ･･････すぅ」
+@fadeinbgm time="3000" storage="miku.ogg"
+[pf]
 #翔和
 「寝てるし」[pf]
 #翔和
@@ -820,7 +826,7 @@
 #美紅
 「･･････まって･･････行かないで･･････パパ」[pf]
 #翔和
-だんだん握らる力が強くなってくる[pf]
+だんだん握る力が強くなってくる[pf]
 #美紅
 「･･････ん･･････パパ？　･･････このかんしょくは･･････」[pf]
 #美紅
@@ -858,7 +864,7 @@
 #翔和
 1つだけ気になるところがある[pf]
 #翔和
-「その、さ、さっきからずっとお俺のこと『翔和くん』って言ってるよね」[pf]
+「その、さ、さっきからずっと俺のこと『翔和くん』って言ってるよね」[pf]
 ;美紅　赤面
 #美紅
 @chara_mods name="miku" cross=false time="100" face="blush_p_1"
@@ -938,7 +944,7 @@
 @chara_modm name="miku" cross=false time="100" face="normal_p"
 「そう、私の夢の話はここでおしまい･･････そこで翔和くんはなんで私のところにわざわざ来たの？」[pf]
 #翔和
-「え～っと俺はだな･･････あっ、これを私に来たんだった」[pf]
+「え～っと俺はだな･･････あっ、これを渡しに来たんだった」[pf]
 #翔和
 いかんいかん、本来の意味を忘れるところだった[pf]
 #美紅
@@ -985,7 +991,7 @@
 
 
 
-;@jump storage="2_07.ks"
+@jump storage="2_07.ks"
 #
 つづく[pf]
 タイトルへ戻ります[pf]

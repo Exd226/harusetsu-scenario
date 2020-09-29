@@ -1,15 +1,14 @@
-;git AAA
 ;１章-01 「回想」
 ;「angle:the third person」
-
-
+*debug
+*testplay
 ;//背景:空 夕
 ;@start
 ;[angle name="third" bg="evening.jpg"]
 		[mask]
 		[mask graphic="angle_third.jpg" effect="fadeInRight" time="800"]
-		[position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame.png" opacity=200]
-		[ptext name="chara_name_area" layer="message0" size=24 x=100 y=520 color="0xffffff"]
+		[position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame.png" opacity=225]
+		;[ptext name="chara_name_area" layer="message0" size=24 x=100 y=520 color="0x000000"]
 		[start]
 		[bg storage="evening.jpg" time=0]
 		[filter layer="base" sepia=100 ]
@@ -18,7 +17,8 @@
 
 ;BGM:回想
 @fadeinbgm storage="flashback.ogg" loop=true time=3000
-
+[voconfig setbuf="1" name="onna" vostorage="aimi/aimi_{number}.ogg" number="1"]
+[vostart]
 
 #男の子
 「ねぇ、まだ～？」[p]
@@ -67,12 +67,12 @@
 「やったー！パパありがとー！ 早く一緒に花火やろ！」[p]
 #女の子　
 「･･･う、うん･･････」[p]
-@fadeinse storage="handy_firework.oga" time=3000
+;@fadeinse storage="handy_firework.ogg" time=3000
 #男の子　
 「きれいだねー」[p]
 #女の子　
 「･･････うん」[p]
-@fadeoutse time=1000
+;@fadeoutse time=1000
 #男の子　
 「あぁ～もう消えちゃった･･･新しいの持ってくる」[p]
 #女の子　
@@ -91,9 +91,9 @@
 #男の子　
 「へぇ～」[p]
 #女の子　
-「それでねあのお星さまたちの形は琴の形なの。昔ね琴が上手な男の人いたんだって」[p]
-「でもその人のお嫁さんは蛇にかまれて死んじゃうの」[p]
-「男の人は冥界っていう死んだ人の世界まで助けに行くんんだけどね」[p]
+「それであのお星さまたちの形は琴の形なの。昔、琴が上手な男の人いたんだって[r][wait time="2000"]
+ でもその人のお嫁さんは蛇にかまれて死んじゃうの」[r][wait time="1000"][cm]
+「その男の人は冥界っていう死んだ人の世界まで助けに行くんんだけどね」[p]
 #男の子
 「おぉ～かっこい～」[p]
 #女の子　
@@ -147,7 +147,7 @@
 「うれしくて、うれしすぎて･･････だから、ありがとう、ね」[p]
 #男の子　
 「････････････うん！」[p]
-@playse storage="camera.oga"
+@playse storage="camera.ogg"
 ;SEシャッター音
 #
 「カシャッ」[p]
@@ -157,7 +157,7 @@
 #パパ
 「だって、いい笑顔だったじゃないか、二人とも」[p]
 #
-
+[vostop]
 [mask color=0xffffff time=9000]
 [free_layermode]
 [free_filter]
