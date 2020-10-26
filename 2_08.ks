@@ -2,7 +2,7 @@
 ;７月１日
 ;背景：翔和の部屋　夜
 *debug
-
+[vostop]
 #
 [mask]
 [fadeoutbgm time="3000"]
@@ -24,12 +24,13 @@
 『良ければ今度の七夕の日、三人でお祭りに行きませんか？』[pf]
 #
 ;背景：星野村　夕
-		[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
-		[bg storage="mura.jpg" time="0"]
+[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
+[bg storage="mura.jpg" time="0"]
 @chara_show name="aimi" width=650 top=-170 time="0" face="normal_p"
 
-		[mask_off time="800" wait="true"]
-
+[mask_off time="800" wait="true"]
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="347"]
+[vostart]
 #翔和
 「遅いなぁ」[fadeinbgm storage="sunset.ogg" time="3000"][pf]
 #翔和
@@ -88,6 +89,7 @@
 「･･････」[pf]
 #翔和
 「･･････」[pf]
+[vostop]
 #藍美
 [chara_modm name="aimi" face="sad_p"]
 先輩はさっきから何もしゃべらない[pf]
@@ -97,6 +99,7 @@
 #藍美
 [chara_modm name="aimi" face="sad_p"]
 それでも、先輩はきっと一つのことしか考えてないだろう[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="sad_p_2"]
 「先輩･･････」[pf]
@@ -107,17 +110,21 @@
 「あとちょっとで花火ですよ～」[pf]
 #翔和
 「そうか･･････」[pf]
+[vostop]
 #藍美
 [chara_modm name="aimi" face="sad_p"]
 どこか魂の抜けたような返事[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="sad_p_3"]
 「だから、そんな真上の空を眺めても見えませんよ･･････花火はもっと低い空であるんですよ」[pf]
 #翔和
 「でも、まだ、天の川は出てない･･････」[pf]
+[vostop]
 #藍美
 [chara_modm name="aimi" face="sad_p"]
 先輩はなんで天の川にそう固執するのかな[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="sad_p_2"]
 「たぶん、天の川が見えるくらいの暗さになったら花火始まると思うんですけど」[pf]
@@ -128,20 +135,25 @@
 「別にいいじゃないですか、花火が終わったあとでも天の川は見れます」[pf]
 #翔和
 「まぁ、そうか･･････この態勢で花火見るのはきついんだけど」[pf]
+[vostop]
 #藍美
 [chara_modm name="aimi" face="angry_p"]
 いま、私と先輩は小高い丘の上で仰向けに空を見ている[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="sad_p"]
 「別に、座ってみればいいじゃないですか･･････」[pf]
 #翔和
 「まぁ･･････始まったらちゃんと見るよ、花火」[pf]
+[vostop]
 #藍美
 [chara_modm name="aimi" face="normal_p"]
 先輩がやっとこっちを向いた[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
 「･･････絶対ですよ･･････私、先輩と花火見たくて来たんですから」[pf]
+[vostop]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
 だから、すかさず、私はアタックするのだ[pf]
@@ -155,14 +167,15 @@
 ったく、そういうところに私は･･････[pf]
 #翔和
 「･･････あんまりからかうんじゃないぞ」[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="normal_p_3"]
 「はぁーい」[pf]
 
 ;「angle：美紅」
 ;背景：電車内　夕
-
-
+[vostop]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="499"]
 [angle name="miku" bg="train_1.jpg"]
 [fadeinse time="3000" storage="train.ogg"]
 #美紅
@@ -174,9 +187,11 @@
 夕闇の空･･････もうベガやアルタイルは見えているのかな？[pf]
 [chara_modm name="miku" face="sad_px_1"]
 電車の窓からでは低くて見えない[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 「･･････はぁ」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 溜息が漏れる･･････せっかくの浴衣も走ったせいでしわだらけだ･･････[pf]
@@ -204,6 +219,7 @@
 ･･････だから、今年こそは、と思ったもののどうやらその願いをお天道様は叶えてくれないみたいだ[pf]
 #
 @chara_show name="aimi" width=730 top=-170 face="normal_p"
+[vostart]
 #藍美
 「翔和せんぱーい」[pf]
 #翔和
@@ -245,6 +261,7 @@
 #美紅
 [chara_modm name="miku" face="sad_px_2"]
 「はぁ、はぁ」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 不慣れな下駄で足が痛い[pf]
@@ -254,15 +271,19 @@
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 あんなに楽しみにしていた昨日の自分がちょっぴり憎くなった[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 「あそこ、かな･････」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 待ち合わせはあの小高い丘、頭上を見ると満天の星がちりばめられていた[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 「はやく、行かなきゃ」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 普通ならこんなに必死にはならない[pf]
@@ -278,9 +299,11 @@
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 あの頃みたいなのは･･････もう･･････[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="normal_px_1"]
 「･･････あっ」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="normal_px"]
 花火の光で、二人の居場所が分かった[pf]
@@ -288,19 +311,23 @@
 [chara_modm name="miku" face="normal_px"]
 丘の頂上だ[pf]
 ;SE　花火
-[playse storage="fireworks.ogg" loop="true" volume="25"]
+;[playse storage="fireworks.ogg" loop="true" volume="25"]
+[vostart]
 #美紅
 [chara_modm name="miku" face="sad_px_2"]
 「翔和くっ･･････え･･････」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_px_2"]
 続々と花火が上がる･･････そのたびに二人の影がはっきり見える[pf]
 #美紅
 [chara_modm name="miku" face="sad_px_2"]
 あそこに二人はいる[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="sad_px_2"]
 「･･････藍美、ちゃん･･････？」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_px_1"]
 やっと、見つけた二人[pf]
@@ -329,7 +356,7 @@
 #翔和
 たった、ほんの少しの間だけ一緒にいた気がする[pf]
 #翔和
-ぼやけた記憶から、唯一印象に残っているのは･･････[pf]
+ぼやけた記憶から、唯一印象に残っているのは･･････[fadeoutbgm time="3000"][pf]
 ;背景：空　セピア
 #
 [mask time="600"]
@@ -337,30 +364,30 @@
 		[filter layer="base" sepia=100 ]
 		[layermode graphic="fog.jpg" mode="screen" ]
 [mask_off time="600"]
+[voconfig name="onna" vostorage="aimi/aimi_{number}.ogg" number="12" setbuf="3"]
+[vostart]
 #女の子
 「空を見て･･････さっきとおんなじとこ」[pf]
 #男の子　
 「さっきよりたくさん星があるー」[pf]
 ;背景:空 夜
-#
-[mask time="600"]
-		[bg storage="night.jpg" time=0]
-		[free_layermode time="0"]
-		[free_filter  ]
-[mask_off time="600"]
 #女の子　
 「あの星座はね、こと座っていうんだって」[pf]
 #
 ;星野村　夜
-[bg_mask storage="mura_1.jpg"]
+[mask time="600"]
+		[bg storage="mura_1.jpg" time=0]
+		[free_layermode time="0"]
+		[free_filter  ]
+[mask_off time="600"][playbgm storage="fireworks.ogg"]
 #翔和
 「ん･･････むぅ」[pf]
 #翔和
 花火の音が聞こえる[pf]
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="2" number="371"]
 #藍美
 [chara_modm name="aimi" face="scary_p_1"]
 「翔和･･････先輩」[pf]
-[fadeoutbgm time="3000"]
 #翔和
 「ん？」[pf]
 #翔和
@@ -375,6 +402,7 @@
 視界は藍美ちゃんでいっぱいだった[pf]
 #翔和
 「って！　うおっ！」[pf]
+
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
 「予想通りの反応ですね」[pf]
@@ -419,7 +447,7 @@
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
 「でもそれは先輩と美紅先輩に出会ってから変わりました。私を見てくれる、応援してくれる人のために歌いたい、って思うようになったんですよ？
-[wait time="800"][cm]
+[wait time="3000"][cm]
 すごく楽しかったんです。沢井藍美16年間の歴史の中で一番です。」[pf]
 #翔和
 藍美ちゃんの話の脈略がつかめない[pf]
@@ -465,7 +493,7 @@
 [stopse]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
-「･･････好き･･････なんですよ･･････先輩のことが」[fadeinbgm storage="serious_1.ogg" time="3000"][pf]
+「･･････好き･･････なんですよ･･････先輩のことが」[fadeinbgm storage="serious_2.ogg" time="3000"][pf]
 #藍美
 [chara_modm name="aimi" face="sad_p_3"]
 「私だって今まで通り楽しくやっていきたかった･･････でももう無理なんです」[pf]
@@ -506,6 +534,9 @@
 		[filter grayscale="50"]
 		[layermode graphic="fog.jpg" mode="screen" ]
 		[mask_off time="1000"]
+		[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="290" setbuf="1"]
+		[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="384" setbuf="2"]
+		[vostart]
 #美紅
 「そうだっ･･････それじゃあ私たちが手伝ってあげようよ！」[pf]
 #翔和
@@ -533,7 +564,8 @@
 @chara_mods name="miku" cross=false time="100" face="normal"
 [mask_off time="800" wait="true"]
 ;※　　※　　※
-
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="305" setbuf="1"]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="398" setbuf="2"]
 #美紅
 「ふふっ･･････なんかいーですね」[pf]
 #藍美
@@ -576,6 +608,8 @@
 @chara_mod name="aimi" cross=false time="0" face="hate_p_1"
 @chara_hide name="miku" time="0"
 [mask_off time="800" wait="true"]
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="333" setbuf="1"]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="398" setbuf="2"]
 #翔和
 「大丈夫、絶対それはさせない。だって、三人で頑張った証は台無しなんかできない」[pf]
 #翔和
@@ -603,6 +637,8 @@
 [chara_shows name="miku" width=600 top=-100 face="sad_p_1"]
 @chara_hide name="aimi" time="0"
 [mask_off time="800" wait="true"]
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="333" setbuf="1"]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="442" setbuf="398"]
 
 #美紅
 「だから、これからも『翔和くん』でいいかな？」[pf]
@@ -629,14 +665,21 @@
 ;ブラック
 [bg storage="black.jpg"]
 [layopt layer="message1" visible="true"]
-
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="506"]
+[vostart]
 ;文字
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="500" text="わたし、何やってんだろう"]
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="500" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"]
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="500" text="けっこーバカだな･･････わたし･･････"]
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="500" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"]
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="500" text="ずっと･･････ずっと･･････好きだったんだ･･････"]
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="500" text="なのに、なのに、どうして･･････？"]
+#miku_f
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="わたし、何やってんだろう"][l]
+#miku_f
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"][l]
+#miku_f
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="けっこーバカだな･･････わたし･･････"][l]
+#miku_f
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"][l]
+#miku_f
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと･･････ずっと･･････好きだったんだ･･････"][l]
+#miku_f
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なのに、なのに、どうして･･････？"][l]
 
 [mask time="800"]
 [position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame_pink.png" opacity=225]

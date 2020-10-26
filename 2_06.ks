@@ -1,12 +1,16 @@
 ;２章-06
 ;date　６/21　金
 ;背景：視聴覚室　昼
+
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 [bg storage="audioroom.jpg" time="0"]
 [chara_hide_all time="0"]
 			[chara_show name="aimi" width=600 top=-100 time=0]
 			[chara_show name="miku" width=600 top=-100 time=0]
 [mask_off time="800" wait="true"]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="373"]
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="2" number="273"]
+[vostart]
 #翔和
 毎日の放課後の練習[pf]
 #翔和
@@ -171,8 +175,8 @@
 @chara_mods name="aimi" cross=false time="100" face="hate_1"
 「感情より理の方が先走るモテない男の典型的なタイプね」[pf]
 #翔和
-「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[pf]
-@fadeoutbgm time="3000"
+「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[fadeoutbgm time="3000"][pf]
+
 #
 ;※　　※　　※
 ;背景：いつもの帰り道　夜
@@ -200,7 +204,8 @@
 「う、うん･･････分かった、買ってくるよ」[pf]
 #翔和・藍美
 @chara_mods name="aimi" cross=false time="100" face="doki_1"
-「うそですごめんなさい！」[pf]
+[playse storage="aimi/aimi_294.ogg"]
+「「うそですごめんなさい！」」[pf]
 #
 ;※　　※　　※
 ;背景：いつもの帰り道　夜
@@ -208,6 +213,7 @@
 [bg storage="road_2.jpg" time="0"]
 @chara_mod name="aimi" cross=false time="0" face="normal_3"
 @chara_mods name="miku" cross=false time="0" face="normal_2"
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="295"]
 [mask_off time="800" wait="true"]
 
 #美紅
@@ -387,7 +393,7 @@
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_p_2"
 「じゃ、藍美ちゃんの家は昨日聞いといたから、行こっか」[pf]
-
+#
 ;※　　※　　※
 ;藍美ちゃんの部屋　昼
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
@@ -419,7 +425,7 @@
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="angry_p"
 「今後一生根に持ち続けますからね！」[pf]
-
+#
 ;※　　※　　※
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 @chara_mod name="aimi" cross=false time="100" face="normal_p"
@@ -478,7 +484,7 @@
 「目指せ武道館！」[pf]
 #翔和
 「お、お～」[pf]
-
+#
 ;※　　※　　※
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 @chara_hide_all time="0"
@@ -536,12 +542,12 @@
 #翔和
 「ちょっ、ちょっと春奈さん！」[pf]
 #美紅
-[chara_shows name="miku" width=600 top=-100 face="doki_px"]
+[chara_shows name="miku" width=600 top=-100 face="normal_px"]
 「はい？　どうしましたか？」[pf]
 #翔和
 「こ、これ、さすがにだめだよっ」[pf]
 #美紅
-@chara_mods name="miku" cross=false time="100" face="normal_px"
+@chara_modm name="miku" cross=false time="100" face="normal_px"
 「そうでしょうか、わたし的にはぐっとくるんですが」[pf]
 #翔和
 どういうセンスしてるんだよ！[pf]
@@ -565,16 +571,22 @@
 #美紅
 @chara_modm name="miku" cross=false time="100" face="sad_px_2"
 @filter name="miku" brightness=50
-@chara_move name="miku" left="-=1000" anim=true time=3000
+@chara_move name="miku" left="-=1000" anim=true time=2000
 「少し、散歩してきま～す」[pf]
 
 ;※　　※　　※
 ;「angle：藍美」
+*debug
+;@angle name="towa" bg="cafe.jpg"
+[fadeinbgm time="3000" storage="everyday.ogg"]
 
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="321"]
+[vostart]
 @angle name="aimi" bg="aimiroom.jpg"
 #藍美
 [chara_modm name="aimi" face="hate_p"]
 「ん～～･･････」[pf]
+[vostop]
 #藍美
 [chara_modm name="aimi" face="hate_p"]
 メロディの乗せたい言葉、表したい気持ちは分かっているのに、どの言葉を選んでいいか分からない[pf]
@@ -584,13 +596,16 @@
 #藍美
 [chara_modm name="aimi" face="hate_p"]
 でも、美紅先輩を待たせてるのに、こんなペースじゃ夜まで終わらないよ[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="doki_p_1"]
 「ん～これじゃ曲から作りなお･･････ひゃっ」[pf]
+[vostop]
 #藍美
 急に首筋にひんやりした感触が[pf]
 #翔和
 「よっ、まだ書いてんの？　パプコ買ってきたぞ」[pf]
+[vostart]
 #藍美
 [chara_modm name="aimi" face="doki_p"]
 「なんだ、先輩ですか･･････びっくりしたじゃないですか」[pf]
@@ -660,10 +675,6 @@
 
 ;※　　※　　※
 ;「angle：翔和」
-*debug
-;@angle name="towa" bg="cafe.jpg"
-
-
 @angle name="towa" bg="aimiroom.jpg"
 #翔和
 あれから小一時間･･････[pf]
@@ -705,7 +716,7 @@
 #翔和
 「分かった、急いで届けてくるわ」[pf]
 #藍美
-@chara_mods name="aimi" cross=false time="100" face="normal_p_3"
+@chara_modm name="aimi" cross=false time="100" face="hate_p"
 「絶対に翔和先輩が先に見ちゃダメですからね！」[pf]
 
 ;※　　※　　※
@@ -720,6 +731,7 @@
 「ふぅ、これで一区切り終わったぁ」[pf]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
+[vostop]
 「･･････美紅先輩･･････ちゃんと私の想い受け止めてくださいよ」[pf]
 @fadeoutbgm time="3000"
 #
@@ -749,7 +761,8 @@
 		[filter layer="base" grayscale=100 ]
 		[layermode graphic="fog.jpg" mode="screen" ]
 		[mask_off time="800" wait="true" effect="fadeOutLeft"]
-
+	[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="2" number="422"]
+	[vostart]
 ;BGM:回想
 #美紅
 「パパもういっちゃうのー？」
@@ -775,7 +788,7 @@
 @free_filter
 @free_layermode time="0"
 @mask_off
-
+[vostop]
 #美紅
 ･･････[pf]
 #美紅
@@ -797,6 +810,7 @@
 良かったぁぁやっと見つけた[pf]
 #翔和
 「春奈さん、ずっとここに居たんだね･･････って」[pf]
+[vostart]
 #美紅
 「･･････すぅ･･････すぅ」
 @fadeinbgm time="3000" storage="miku.ogg"
@@ -988,8 +1002,10 @@
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_p_1"
 「ううん、翔和くんはまだ関係のないこと。この詞は私が書き終わるまで見せないからね!」[pf]
-
-
+#
+;votest
+#ジャンプします[p]
+[jump storage="2_08.ks"]
 
 @jump storage="2_07.ks"
 #
