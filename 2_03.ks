@@ -377,12 +377,6 @@
 この前の藍美ちゃんのオリジナル楽曲が良いのになぁ[pf]
 @fadeoutbgm time="3000"
 
-;votest
-#
-スキップします[p]
-[jump target="*skip" storage="2_04.ks"]
-
-
 ;背景：教室　夕
 @bg_mask storage="classroom.jpg"
 #翔和

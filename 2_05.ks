@@ -1,7 +1,4 @@
 ;２章-05
-*debug
-[angle name="towa" bg="audioroom.jpg"]
-;[fadeinbgm storage="everyday.ogg" time="3000"]
 
 ;6月7日　金
 
@@ -112,10 +109,6 @@
 今日こそは来るんだろうか？[pf]
 @fadeoutbgm time="3000"
 [vostop]
-;votest
-#
-ジャンプします[pf]
-[jump target="*votest_1"]
 
 @bg_eye storage="cafe.jpg" hide="true"
 ;背景：食堂　昼
@@ -228,8 +221,8 @@
 @chara_mods name="ryoji" time="100" cross="false" face="scary"
 「･･････え、今なんつった？」[pf]
 #由奈
-@chara_shows name="yuna" width=600 top=-100 face="normal_3"
 @chara_mods name="ryoji" time="100" cross="false" face="doki"
+@chara_shows name="yuna" width=600 top=-100 face="normal_3"
 「安野くん！　偶然だね」[pf]
 #翔和
 「お、おう、食堂で会うのは久しぶりだな」[pf]
@@ -249,15 +242,15 @@
 #良治
 @chara_mods name="ryoji" time="100" cross="false" face="sad"
 「･･････」[pf]
-@chara_mods name="yuna" cross=false time="100" face="sad_1"
 #由奈
+@chara_mods name="yuna" cross=false time="100" face="sad_1"
 「あ、あの、大丈夫ですか？」[pf]
 #翔和
 桐島さんが心配するのも無理はない、良治はさっきからうつむいてずっとプルプルしている[pf]
 #良治
 「･･････ぁぁ･･････」[pf]
 #良治
-@chara_mods name="yuna" cross=false time="100" face="doki"
+@chara_mod name="yuna" cross=false time="100" face="doki"
 @filter name="ryoji" brightness=50
 @chara_move name="ryoji" left="+=100" anim=true time=200
 @chara_move name="ryoji" left="-=1000" anim=true time=800
@@ -399,6 +392,7 @@
 #来未
 「じゃないと、隣の春奈さんにも当てられるだろうし」[pf]
 #美紅
+[chara_modm name="miku" face="normal"]
 「ん？　わたし？」[pf]
 #翔和
 「たしかに」[pf]
@@ -408,12 +402,12 @@
 #翔和
 「なっ、それはだなっ」[pf]
 #先生
-@chara_mods name="kurumi" cross=false time="200" face="doki"
+@chara_mod name="kurumi" cross=false time="200" face="doki"
 「え～っと、この問題を･･････安野に解いてもらおうか」[pf]
 #翔和
 「えっ、あっ、はい、これは･･････②です」[pf]
 #先生
-@chara_mods name="kurumi" cross=false time="200" face="normal"
+@chara_mod name="kurumi" cross=false time="200" face="normal"
 「違う」[pf]
 #翔和
 後ろで笑いをこらえてる声が聞こえる、なんで先生はこういう時に限って男子を当てるんだろうか[pf]
@@ -504,10 +498,7 @@
 今日も居ないだろうと思ってあきらめていた･･････[pf]
 #翔和
 それにしてもなぜ、藍美ちゃんは学校を休んでたんだろうか？[pf]
-;votest
-*votest_1
-[chara_hide_all]
-[fadeinbgm storage="everyday.ogg" time="3000"]
+
 
 ;背景：視聴覚室　昼
 		[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
@@ -615,7 +606,7 @@
 #翔和
 「そうだけど、そこまで驚く？」[pf]
 #美紅
-[chara_modm name="miku" face="normal"]
+[chara_mods name="miku" face="normal"]
 「うん、あの安野くんがねぇ･･････」[pf]
 #翔和
 「俺をなんだと思ってるの！？」[pf]
@@ -955,11 +946,6 @@
 #翔和
 「ああ、数学の次に好きだね」[pf]
 
-;votest
-#
-スキップします[pf]
-@jump target="*votest_2"
-
 @bg_eye storage="classroom.jpg" hide="true"
 ;背景：教室　昼
 
@@ -1012,10 +998,6 @@
 「･･････おい、あいつ完全に俺を無視して行きやがったよ、ちくしょう･･････」[pf]
 
 #
-一部スキップします[pf]
-@jump target="*skip_1"
-
-#
 		[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 		[bg storage="corridor.jpg" time="0"]
 			[chara_hide_all time="0"]
@@ -1062,9 +1044,9 @@
 #翔和
 朝比奈会長の冗談は分かり辛いからやめて欲しい･･････[pf]
 
-*skip_1
+
 ;２章-05,5
-*votest_2
+
 [vostop]
 [chara_hide_all]
 [fadeoutbgm time="3000"]
@@ -1321,7 +1303,7 @@
 #翔和
 「別に大したことじゃないだろっ」[pf]
 #美紅
-[chara_modm name="miku" face="normal_2"]
+[chara_mods name="miku" face="normal_2"]
 「･･････まぁ、話してもいいんだけど、笑わない？」[pf]
 #翔和
 「時と場合による」[pf]

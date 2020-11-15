@@ -129,7 +129,7 @@
 #翔和
 「それだけ、歌がうまかったら歌手とか目指してるのか？」[pf]
 #藍美
-@chara_mods name="aimi" cross="false" time="100" face="angry" 
+@chara_mods name="aimi" cross="false" time="100" face="normal_1" 
 「歌手は目指していません」[pf]
 #翔和
 歌手は、ってことは他の何かか[pf]
@@ -139,19 +139,19 @@
 #翔和
 「あ、ああ、ごめんな」[pf]
 #藍美
-@chara_mods name="aimi" cross="false" time="100" face="doki_1" 
+@chara_mods name="aimi" cross="false" time="100" face="angry" 
 「あっ、ちょっと待ってくださいっ」
 @fadeinbgm storage="comedy.ogg" time="3000"
 [pf]
 #翔和
 「ん？」[pf]
 #藍美
-@chara_mods name="aimi" cross="false" time="100" face="normal" 
+@chara_modm name="aimi" cross="false" time="100" face="angry" 
 「今日、私はカレーをぶっかけられました」[pf]
 #翔和
 「お、おう」[pf]
 #藍美
-@chara_mods name="aimi" cross="false" time="100" face="normal" 
+@chara_mods name="aimi" cross="false" time="100" face="hate" 
 「なにか、ないんですか？」[pf]
 #翔和
 「その節は本当にすみませんでした」[pf]
@@ -280,7 +280,9 @@
 
 #藍美
 [chara_modm name="aimi" face="angry"]
-「ったく、なんなんですか、あの人は」[pf]
+「ったく、なんなんですか、あの人は」
+@fadeinbgm storage="everyday.ogg" time="3000"
+[pf]
 [vostop]
 #藍美
 [chara_modm name="aimi" face="angry"]
@@ -305,9 +307,7 @@
 ;//背景：廊下　昼
 @angle name="towa" bg="corridor_3.jpg"
 #翔和
-「はぁ」
-@fadeinbgm storage="everyday.ogg" time="3000"
-[pf]
+「はぁ」[pf]
 #翔和
 半ば追い出されたような形で視聴覚室を後にした[pf]
 #翔和
@@ -322,12 +322,6 @@
 「どうした、そこの少年」[pf]
 #翔和
 誰だろう、高校生を少年と呼ぶ人は？　そう思い、俺は後方を振り返る[pf]
-
-;votest
-#
-スキップします[pf]
-@jump target="*skip"
-
 
 ;//すみれ：表示；通常
 #？？
@@ -345,7 +339,8 @@
 #？？
 「え、そうなのか？　･･････まぁ、それもそうか、私、生徒会長だからな」[pf]
 #翔和
-「え、え！？生徒会長だったんですか？[pf]　えーっとー、朝比奈･････」[pf]
+「え、え！？生徒会長だったんですか？[pf]　
+「えーっとー、朝比奈･････」[pf]
 #すみれ
 「すみれ、だ。漢字では書かずにひらがなで書く」[pf]
 #すみれ
@@ -405,8 +400,8 @@
 「よし、ではその入部届は私が預かろう」[pf]
 #翔和
 「え、でもこれは写真部の部長に預けないと･･････」[pf]
-#翔和
-すみれ「問題ないぞ？」[pf]
+#すみれ
+「問題ないぞ？」[pf]
 #翔和
 「え、？」[pf]
 #翔和
@@ -426,7 +421,8 @@
 「な、なんでそんなことまで知って･･････」[pf]
 ;//すみれ：笑顔
 #すみれ
-「あたりまえだ[pf]  私は、写真部部長、朝比奈すみれ、ようこそ、写真部へ、」[pf]
+「あたりまえだ」[pf] 
+「 私は、写真部部長、朝比奈すみれ、ようこそ、写真部へ」[pf]
 #すみれ
 「安野クンの入部を歓迎します───」[pf]
 
@@ -638,8 +634,7 @@
 #翔和
 そろそろ春とはいえ、夜は冷え込むな[pf]
 
-;votest
-*skip
+
 
 #
 ;※　　※　　※
@@ -740,8 +735,7 @@
 #男の子
 「じゃあ、会えるよ！」[pf]
 #女の子
-「会えっこないよ･･････わたしは･･････[r][wait time="1000"]
- 居なくなっちゃうかもしれないから」[pf]
+「会えっこないよ･･････わたしは･･････居なくなっちゃうかもしれないから」[pf]
  [vostop]
 
 @jump storage="2_02.ks"

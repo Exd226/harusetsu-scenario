@@ -576,9 +576,6 @@
 
 ;※　　※　　※
 ;「angle：藍美」
-*debug
-;@angle name="towa" bg="cafe.jpg"
-[fadeinbgm time="3000" storage="everyday.ogg"]
 
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="321"]
 [vostart]
@@ -1002,10 +999,6 @@
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_p_1"
 「ううん、翔和くんはまだ関係のないこと。この詞は私が書き終わるまで見せないからね!」[pf]
-#
-;votest
-#ジャンプします[p]
-[jump storage="2_08.ks"]
 
 @jump storage="2_07.ks"
 #

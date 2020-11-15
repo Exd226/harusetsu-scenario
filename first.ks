@@ -26,28 +26,28 @@
 
 
 	;ファイル読み込み
-	[iscript]
-	f.mes = "Now loading..."
-	[endscript]
-	[layopt layer="0" visible="true"]
-	[ptext layer="0" text="&f.mes" x="0" y="200" width="1280" align="center" size="30"]
-	[ptext layer="0" name="loading_text" text="0%" x="0" y="250" width="1280" align="center" size="30"]
-	[image layer="0" name="loading_bar" storage="base.png" left="490" top="300" width="0" height="10"]
-	[iscript]
-	$(".loading_bar").css({
-		"background-image": "linear-gradient(-45deg, #fbfdfd 25%, #a5d6e1 25%, #a5d6e1 50%, #fbfdfd 50%, #fbfdfd 75%, #a5d6e1 75%, #a5d6e1)",
-		"background-size": "20px 20px",
-	});
-	[endscript]
+		; [iscript]
+		; f.mes = "Now loading..."
+		; [endscript]
+		; [layopt layer="0" visible="true"]
+		; [ptext layer="0" text="&f.mes" x="0" y="200" width="1280" align="center" size="30"]
+		; [ptext layer="0" name="loading_text" text="0%" x="0" y="250" width="1280" align="center" size="30"]
+		; [image layer="0" name="loading_bar" storage="base.png" left="490" top="300" width="0" height="10"]
+		; [iscript]
+		; $(".loading_bar").css({
+		; 	"background-image": "linear-gradient(-45deg, #fbfdfd 25%, #a5d6e1 25%, #a5d6e1 50%, #fbfdfd 50%, #fbfdfd 75%, #a5d6e1 75%, #a5d6e1)",
+		; 	"background-size": "20px 20px",
+		; });
+		; [endscript]
 
-	[iscript]
-		f.preload_images = [ 
-			
-		];
-	[endscript]
-	;[preload  storage="&f.preload_images"]
-	[wait time="1000"]
-	[freeimage layer="0"]
+		; [iscript]
+		; 	f.preload_images = [ 
+				
+		; 	];
+		; [endscript]
+		; ;[preload  storage="&f.preload_images"]
+		; [wait time="1000"]
+		; [freeimage layer="0"]
 	
 	;プラグイン読み込み
 	[plugin name="chat_story"]
@@ -546,6 +546,8 @@
 	[chara_new name="haha" storage="chara/ryoji/normal.png" jname="母" color="0x000000"]
 	[chara_new name="jikkouiinchou" storage="chara/ryoji/normal.png" jname="実行委員長" color="0x000000"]
 	[chara_new name="shoujo" storage="chara/ryoji/normal.png" jname="少女" color="0x000000"]
+	[chara_new name="kinpatu" storage="chara/ryoji/normal.png" jname="金髪美少女" color="0xff8c00"]
+
 
 
 	
@@ -747,17 +749,18 @@
 		[chara_show *]
 		[eval exp="f.face=mp.name"]
 	[endmacro]
-	;[macro name="chara_mods"]
-	;		[eval exp="mp.name_f=mp.name+'_f'"]	
-	;		[if exp="f.face==mp.name"]
-	;			[chara_mod name=&mp.name_f layer="message0" cross="false" time="100" face="%face"]
-	;		[else]
-	;			[chara_hide_all layer="message0" time="10" layer="message0"]
-	;			[chara_show name=&mp.name_f layer="message0" left="20" top="550" width="130" zindex="101" time="10" face="%face"]
-	;		[eval exp="f.face=mp.name"]
-	;		[endif]
-	;	[chara_mod *]
-	;[endmacro]
+	
+		;[macro name="chara_mods"]
+		;		[eval exp="mp.name_f=mp.name+'_f'"]	
+		;		[if exp="f.face==mp.name"]
+		;			[chara_mod name=&mp.name_f layer="message0" cross="false" time="100" face="%face"]
+		;		[else]
+		;			[chara_hide_all layer="message0" time="10" layer="message0"]
+		;			[chara_show name=&mp.name_f layer="message0" left="20" top="550" width="130" zindex="101" time="10" face="%face"]
+		;		[eval exp="f.face=mp.name"]
+		;		[endif]
+		;	[chara_mod *]
+		;[endmacro]
 
 	[macro name="chara_mods"]
 		[eval exp="mp.name_f=mp.name+'_f'"]

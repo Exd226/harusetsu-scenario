@@ -30,7 +30,7 @@
 #翔和
 一応、空いてるけど、相席なんていやだしなぁ[pf]
 #翔和
-桐島さん居たりしないし、[pf]
+桐島さん居たりしないし[pf]
 #翔和
 仕方ないか～[pf]
 #翔和
@@ -50,7 +50,7 @@
 #
 モグモグ･･････[pf]
 #翔和
-会話がない、[pf]
+会話がない[pf]
 #翔和
 うぅ、気まずい雰囲気だ[pf]
 #翔和
@@ -100,14 +100,14 @@
 #翔和
 「食べるの早いんだね」[pf]
 ;;美紅：おこ
-@chara_mods name="miku" cross="false" face="hate" time="100"
 #美紅
+@chara_mods name="miku" cross="false" face="hate" time="100"
 「それって女の子には失礼なことなんですけど」[pf]
 #翔和
 「え、なんで！？　･･････けど、ごめん」[pf]
 ;;美紅：笑顔
-@chara_mods name="miku" cross="false" face="normal_2" time="100"
 #美紅
+@chara_mods name="miku" cross="false" face="normal_2" time="100"
 「まぁ、安野くんに悪気はないって分かってるからいいけどね」[pf]
 #翔和
 「なんだよぅ」[pf]
@@ -117,40 +117,40 @@
 [chara_mods name="miku" face="normal_1"]
 「私ってさ、母子家庭なんだよね」[pf]
 #翔和
-「え、」[pf]
+「え」[pf]
 #翔和
 唐突だった[pf]
 ;;美紅：普通
 #美紅
-[chara_mods name="miku" face="normal"]
+[chara_mods name="miku" face="sad_1"]
 「あ、ごめん、いきなりだったかな」[pf]
 #翔和
 「いやっ、全然、そんなことないです」[pf]
-@chara_mods name="miku" cross="false" face="sad_1" time="100"
 #美紅
+@chara_mods name="miku" cross="false" face="normal" time="100"
 「そう、それでね、お母さん家にいることが少なかったから、幼いころから一人でいることが多かったの」[pf]
 #翔和
 春奈さんも、なんだ[pf]
+#美紅
 @chara_mods name="miku" cross="false" face="normal" time="100"
-#美紅
 「それで、割と男勝り？みたいなところがあるの」[pf]
-@chara_mods name="miku" cross="false" time="100" face="doki_1"
 #美紅
+@chara_mods name="miku" cross="false" time="100" face="doki_1"
 「あれ？これあんまり理由になってないかも、へへっ」[pf]
 #翔和
 「･･････俺も、だよ」[pf]
-@chara_mods name="miku" cross="false" time="100" face="normal"
 #美紅
+@chara_mods name="miku" cross="false" time="100" face="normal"
 「なんのこと？」[pf]
 #翔和
 「俺も、父さんを小さいころ亡くしてるんだ」[pf]
-@chara_mods name="miku" cross="false" time="100" face="sad_1"
 #美紅
+@chara_mods name="miku" cross="false" time="100" face="sad_1"
 「そう、なの」[pf]
 #翔和
 「ごめん、やっぱり俺も唐突だったかな」[pf]
-@chara_mods name="miku" cross="false" time="100" face="normal"
 #美紅
+@chara_mods name="miku" cross="false" time="100" face="normal"
 「ううん、少しほっとした」[pf]
 #翔和
 「え？」[pf]
@@ -523,7 +523,7 @@
 @chara_mods name="aimi" cross=false time="100" face="normal_2"
 「だったら、やることは一つですよ」[pf]
 #藍美
-@chara_mods name="aimi" cross=false time="100" face="normal_3"
+@chara_modm name="aimi" cross=false time="100" face="normal_2"
 「先輩が実行委委員になるんです」[pf]
 
 ;※　　※　　※
@@ -580,12 +580,6 @@
 [chara_modm name="aimi" face="hate"]
 ･･････まさか、ね･･････[pf]
 #
-
-;votest
-#
-スキップします[p]
-[jump target="*votest_3"]
-
 
 ;※　　※　　※
 ;「angle:翔和」
@@ -824,19 +818,14 @@
 #翔和
 先輩のミスコン見てみたかったなぁ[pf]
 
-	[angle name="towa" bg="train.jpg"]
+	
 
 ;※　　※　　※
 ;;背景：駅のホーム　夕
 ;効果音「電車」
-;@bg_eye storage="train_1.jpg"
+@bg_eye storage="train_1.jpg"
 
 
-;votest
-*votest_3
-
-
-[angle name="towa" bg="train.jpg"]
 [fadeinbgm time="3000" storage="everyday.ogg"]
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="131"]

@@ -127,11 +127,6 @@
 #翔和
 そして放課後には出すか、入部届･･････[pf]
 
-;votest
-*votest_2
-[angle name="towa" bg="cafe.jpg"]
-[bg_eye storage="cafe.jpg"]
-
 @fadeoutbgm time="3000"
 @mask time="800" effect="rotateInDownRight" graphic="eye.jpg"
 @mask_off time="500" wait="true"
@@ -314,7 +309,7 @@
 #翔和
 「そうか、後輩」[pf]
 #藍美
-@chara_mods name="aimi" cross="false" time="100" face="doki"
+@chara_mods name="aimi" cross="false" time="100" face="hate"
 「･････････････････」[pf]
 #翔和
 「あの、ハンカチ返してくれない？」[pf]

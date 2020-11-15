@@ -4,7 +4,7 @@
 ;「angle:翔和」
 ;背景:翔和の部屋 朝
 
-*debug
+
 [angle name="towa" bg="myroom.jpg"]
 #翔和
 ･･････[pf]
@@ -542,7 +542,7 @@
 いかんいかん、またフラグ立ててどうするんだよ。会ったって気まずいだけだろ[pf]
 
 ;//以上小分岐01(b)「ここは、まだ、あなたの夢の中です」
-
+*debug
 *select1_0
 @stopse
 @fadeoutbgm time=3000 
@@ -552,6 +552,7 @@
 ;//背景：学校の靴箱　朝
 @angle name="miku" bg="shoerack.jpg"
 [voconfig setbuf="0" name="joshikousei" vostorage="miku/miku_{number}.ogg" number="49"]
+[vostart]
 #女子高生
 [chara_modm name="miku" face="sad_1"]
 「･･････はぁ」[pf]
@@ -560,7 +561,7 @@
 
 #女子高生
 [chara_modm name="miku" face="sad_1"]
-「すごい汗かいちゃった･･････」
+「すごい汗かいちゃった･･････」[pf]
 @fadeinbgm storage="everyday.ogg" time=3000 loop=true[pf]
 [vostop]
 #女子高生
@@ -621,12 +622,6 @@
 「ねぇ･･････ねぇ！！」[pf]
 #翔和
 ついさっきの始業式であんなことがあったんだし･････････････[pf]
-
-;votest
-#
-スキップします[p]
-[jump target="*votest_1"]
-
 #？？
 「ちょっといい加減に･･････」[pf]
 #
@@ -738,7 +733,7 @@
 
 #金髪美少女
 「よし、これでなんとかなりそうだわ」
-@fadeinbgm storage="everyday.ogg" loop=true time=3000[pf]
+[fadeinbgm storage="everyday.ogg" loop=true time=3000][pf]
 #翔和
 「あ、写し終わったら返さなくていいからそのまま提出しといてくれ」[pf]
 #金髪美少女
@@ -875,10 +870,6 @@
 @chara_hide_all
 ;「angle：女子高生」
 ;//背景：廊下　昼
-
-;votest
-*votest_1
-[fadeinbgm time="3000" storage="everyday.ogg"]
 
 @angle name="miku" bg="corridor.jpg"
 
@@ -1168,7 +1159,7 @@
 #翔和
 「ごめん、あの時は本当にびっくりして･･････」[pf]
 #美紅
-@chara_mods name="miku" cross="false" time="100" face="sad_1"
+@chara_modm name="miku" cross="false" time="100" face="sad_1"
 「変なうわさとか立てられたら困るんだけどなぁ」[pf]
 #翔和
 「ごめんなさい･･････」[pf]
@@ -1274,10 +1265,7 @@
 [chara_modm name="miku" face="sad_px_1"]
 この際、人気があまりない部活に入るしかないかなぁ[pf]
 
-;votest
-#
-スキップします[p]
-[jump storage="1_04.ks" target="*votest_2"]
+
 
 
 @jump storage="1_03.ks"

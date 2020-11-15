@@ -60,9 +60,6 @@
 #翔和
 中に人もいるみたいだ[pf]
 
-#
-一部スキップします[pf]
-@jump target="*skip"
 
 ;背景：生徒会室　昼
 @bg storage="seitokai.jpg"
@@ -184,11 +181,6 @@
 「今すぐとってきますっ！お疲れ様でしたっ！」[pf]
 #すみれ
 「おぅ、頑張ってな」[pf]
-
-
-;votest
-*skip
-[fadeinbgm storage="everyday.ogg" time="3000"]
 
 ;背景：部室　昼
 @bg_eye storage="clubroom.jpg"
@@ -469,11 +461,6 @@
 きっと、ミスコンの集計のことを言ってるんだろう[pf]
 #翔和
 「うん、楽しみにしてる」[pf]
-
-;votest
-#
-スキップします[p]
-[jump target="*votest_4"]
 
 ;　※　　※　　※
 ;背景：廊下　昼
@@ -970,13 +957,6 @@
 俺の袖をちょこんと握ったその手は離されないまま･････[pf]
 @fadeoutbgm time="3000"
 #
-
-
-*debug
-[angle name="towa" bg="black.jpg"]
-
-;votest
-*votest_4
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="223"]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="178"]
@@ -1625,9 +1605,7 @@
 「･･････っ･･････あ、あれだよねっ･･････白咲さんの票が圧倒的に多いよねっ！」[pf]
 #美紅
 [chara_modm name="miku" face="angry"]
-「･･････[l][r]
-  ･････････[l][r]
-　････････････で？」[pf]
+「･･････[l][r]･････････[l][r]････････････で？」[pf]
 #翔和
 「ひえっ！　･･････そ、それだけですが･･････」[pf]
 #美紅
