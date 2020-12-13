@@ -13,7 +13,7 @@
 
 ;デバッグ用
 ;@jump storage="test_ryoji.ks"
-@jump target="*debug" storage="2_01.ks"
+@jump target="*debug" storage="2_02.ks"
 [s]
 
 *gamestart

@@ -683,12 +683,13 @@
 *debug
 [angle name="towa" bg="clubroom.jpg"]
 [fadeinbgm time="3000" storage="everyday.ogg"]
-[chara_shows name="yuna" width=600 top=-100 face="normal_3"]
+[chara_show name="yuna" width=600 top=-100 face="normal_3"]
 
 
 #
 [playse storage="room_door_O.ogg"]
-[chara_show name="sumire" width=500 top=-70 face="normal"]
+[chara_move name="yuna" anim="true" left="40"]
+[chara_show name="sumire" width=500 top=-70 face="normal" left="670" zindex="-1"]
 「ガチャ」[pf]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="2" number="121"]
 [voconfig name="sumire_f" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="54"]
@@ -700,8 +701,10 @@
 [chara_mods name="yuna" cross=false time="100" face="normal"]
 「すみれ先輩こんにちは」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="normal"]
 「お、二人とも来てたのか」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="sad_4"]
 「すまんな、生徒会の業務があって」[pf]
 #由奈
 [chara_mods name="yuna" cross=false time="100" face="normal_2"]
@@ -714,11 +717,13 @@
 春奈さんもきっと悩んだりしてるんじゃないか[pf]
 #すみれ
 [chara_mod name="yuna" cross=false time="100" face="normal"]
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「ああ、それならよかった」[pf]
 #由奈
 [chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「今日の活動は何をするんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「文化祭のことについての打ち合わせだ」[pf]
 #由奈
 [chara_mods name="yuna" cross=false time="100" face="normal_1"]
@@ -729,20 +734,27 @@
 [pf]
 ;美紅：表示；普通
 ;由奈　左　すみれ　中　美紅　右
+[chara_move name="yuna" anim="true" left="15"]
+[chara_move name="sumire" anim="true" left="390"]
+[chara_mod name="sumire" cross=false time="100" face="normal"]
+[chara_shows name="miku" width=600 top=-100 face="normal" left="660"]
 #美紅
-[chara_show name="sumire" width=500 top=-70 face="normal"]
 「確かにまだ実感ないですね」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
 「私もです」[pf]
 #翔和
 「みんなそんなものか～････････････えぇ！？」[pf]
 ;すみれ、由奈：驚き
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="doki_1"]
 「えぇ！？」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="doki"]
 「えぇ！？」[pf]
 ;美紅：疑問
 #美紅
+[chara_mods name="miku" cross=false time="100" face="doki"]
 「え？」[pf]
 #翔和
 「いつの間にっ！？」
@@ -750,37 +762,52 @@
 [pf]
 ;美紅：動揺
 #美紅
+[chara_mod name="sumire" cross=false time="100" face="hate"]
+[chara_modm name="miku" cross=false time="100" face="doki"]
 「私ですか！？」[pf]
 ;由奈：普通
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="yan_3"]
 「まさか･･････私より先に来て･･････････････････」[pf]
 #翔和
 由奈さんがブツブツ言ってるがよく聞こえない[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="doki_1"]
 「いやいや！ほんのついさっき来たばかりですよ！」[pf]
 ;すみれ：普通
 #すみれ
+[chara_mod name="yuna" cross=false time="100" face="hate_1"]
+[chara_mods name="sumire" cross=false time="100" face="scary_1"]
 「そ、そうか」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="scary"]
 「すまない、少しばかり驚いてしまった」[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="sad_1"]
 「朝比奈先輩は謝ることないですよぅ」[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="sad_2"]
 「それに、私も入るときはノックとかじゃなくて、ちゃんとあいさつすればよかったわけだし」[pf]
 ;由奈：困る
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="hate"]
 「あいさつは、しましょうね･･････」[pf]
 #翔和
 たしかに、いつもの春奈さんなら挨拶はするのに[pf]
 ;美紅：落ち込み
 #美紅
+[chara_mods name="miku" cross=false time="100" face="sad_1"]
 「はい、すみません」[pf]
 #すみれ
 「よし、これで全員そろったわけだし･･････」
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 [fadeoutbgm time="3000"]
 [pf]
 ;すみれ：ほほ笑み
 #すみれ
+[chara_mod name="miku" cross=false time="100" face="normal"]
+[chara_mod name="yuna" cross=false time="100" face="normal"]
+[chara_mods name="sumire" cross=false time="100" face="normal_1"]
 「打ち合わせしよう！」[pf]
 
 [bg_eye storage="clubroom_1.jpg"]
@@ -791,66 +818,89 @@
 ;すみれ：表示；普通
 #すみれ
 「･･････そして、由奈はステージ裏、美紅はステージの有志、安野クンには模擬店、がそれぞれの担当だ」
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 [fadeinbgm time="3000" storage="everyday.ogg"]
 [pf]
 ;美紅：表示；すみれの右
 #美紅
+[chara_modm name="miku" cross=false time="100" face="normal"]
 「担当のところで写真を撮ればいいんですよね？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「そうだ、あと、注意するところがある」[pf]
 #翔和
 「なんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「この腕章をつけることだ」[pf]
 ;由奈：表示；すみれの左
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="doki"]
 「『写真同好会』」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「これをつけてないと単なる盗撮と疑われてしまうからな」[pf]
 #美紅
+[chara_mod name="yuna" cross=false time="100" face="normal"]
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
 「そうですね」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「これであらかたの説明は終わったが何か質問はないか？」[pf]
 #由奈
+[chara_mod name="miku" cross=false time="100" face="normal"]
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「あの、朝比奈先輩は写真、撮らないんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_1"]
 「私は生徒会の方の仕事が忙しくてな、悪いがみんなに頼むことになる」[pf]
 ;由奈：笑顔
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_1"]
 「任せて下さい！」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_3"]
 「おう、頼んだぞ」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_3"]
 「はいっ」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「よし、これで打ち合わせは終わりだ」[pf]
+#すみれ
+[chara_modm name="sumire" cross=false time="100" face="normal"]
 「各自、解散してくれ」[pf]
 #由奈
-
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「はーい」[pf]
+[chara_hide name="yuna"]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
 「さようなら～」[pf]
+[chara_hide name="miku"]
 #翔和
 「あの、朝比奈先輩」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="normal"]
 「なんだ？」[pf]
 #翔和
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「今年も文化祭はずっと生徒会の仕事があるんでしょうか？」[pf]
 #すみれ
 「ああ、さっき言ったとおりだ」[pf]
 #翔和
 「そう、ですか」[pf]
 #翔和
+[chara_mod name="sumire" cross=false time="100" face="doki"]
 朝比奈先輩は今年も無理か[pf]
 #翔和
 先輩のミスコン見てみたかったなぁ[pf]
 
-	
 
 ;※　　※　　※
 ;;背景：駅のホーム　夕
 ;効果音「電車」
-@bg_eye storage="train_1.jpg"
+@bg_eye storage="train_1.jpg" hide="true"
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="131"]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="2" number="141"]
