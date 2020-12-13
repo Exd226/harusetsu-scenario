@@ -679,19 +679,32 @@
 #翔和
 あれ？なんでクリーニング出そうと思ってたこと知ってるんだ？[pf]
 
-;%%%
+
+*debug
+[angle name="towa" bg="clubroom.jpg"]
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[chara_shows name="yuna" width=600 top=-100 face="normal_3"]
+
+
 #
+[playse storage="room_door_O.ogg"]
+[chara_show name="sumire" width=500 top=-70 face="normal"]
 「ガチャ」[pf]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="2" number="121"]
+[voconfig name="sumire_f" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="54"]
+[vostart]
 ;効果音：「ガチャ」
 ;すみれ：表示；普通
 ;由奈：左　すみれ：右
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
 「すみれ先輩こんにちは」[pf]
 #すみれ
 「お、二人とも来てたのか」[pf]
 #すみれ
 「すまんな、生徒会の業務があって」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「いや、でも私たちもさっき来たばかりですよ」[pf]
 #翔和
 春奈さんは、まだ来ないみたいだな[pf]
@@ -700,18 +713,24 @@
 #翔和
 春奈さんもきっと悩んだりしてるんじゃないか[pf]
 #すみれ
+[chara_mod name="yuna" cross=false time="100" face="normal"]
 「ああ、それならよかった」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「今日の活動は何をするんですか？」[pf]
 #すみれ
 「文化祭のことについての打ち合わせだ」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_1"]
 「もう、あと一週間ですしね」[pf]
 #翔和
-「はやいな」[pf]
+「はやいな」
+[fadeoutbgm time="3000"]
+[pf]
 ;美紅：表示；普通
 ;由奈　左　すみれ　中　美紅　右
 #美紅
+[chara_show name="sumire" width=500 top=-70 face="normal"]
 「確かにまだ実感ないですね」[pf]
 #由奈
 「私もです」[pf]
@@ -726,7 +745,9 @@
 #美紅
 「え？」[pf]
 #翔和
-「いつの間にっ！？」[pf]
+「いつの間にっ！？」
+[fadeinbgm time="3000" storage="comedy.ogg"]
+[pf]
 ;美紅：動揺
 #美紅
 「私ですか！？」[pf]
@@ -740,6 +761,7 @@
 ;すみれ：普通
 #すみれ
 「そ、そうか」[pf]
+#すみれ
 「すまない、少しばかり驚いてしまった」[pf]
 #美紅
 「朝比奈先輩は謝ることないですよぅ」[pf]
@@ -752,20 +774,25 @@
 たしかに、いつもの春奈さんなら挨拶はするのに[pf]
 ;美紅：落ち込み
 #美紅
-「はい、すみません。」[pf]
+「はい、すみません」[pf]
 #すみれ
-「よし、これで全員そろったわけだし･･････」[pf]
+「よし、これで全員そろったわけだし･･････」
+[fadeoutbgm time="3000"]
+[pf]
 ;すみれ：ほほ笑み
 #すみれ
 「打ち合わせしよう！」[pf]
 
-※　　※　　　※
+[bg_eye storage="clubroom_1.jpg"]
+;※　　※　　　※
 
 ;背景：部室　夕
 
 ;すみれ：表示；普通
 #すみれ
-「･･････そして、由奈はステージ裏、美紅はステージの有志、安野クンには模擬店、がそれぞれの担当だ」[pf]
+「･･････そして、由奈はステージ裏、美紅はステージの有志、安野クンには模擬店、がそれぞれの担当だ」
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 ;美紅：表示；すみれの右
 #美紅
 「担当のところで写真を撮ればいいんですよね？」[pf]
@@ -824,9 +851,6 @@
 ;;背景：駅のホーム　夕
 ;効果音「電車」
 @bg_eye storage="train_1.jpg"
-
-
-[fadeinbgm time="3000" storage="everyday.ogg"]
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="131"]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="2" number="141"]

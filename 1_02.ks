@@ -340,7 +340,7 @@
 @playse storage="puni.ogg"
 #
 「ふにふに」
-@fadeinbgm storage="comedy.ogg" time=3000 [pf]
+[fadeinbgm storage="comedy.ogg" time=3000] [pf]
 #翔和
 「って！　何やってるんですか！？」[pf]
 #翔和

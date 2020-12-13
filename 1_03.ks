@@ -3,7 +3,11 @@
 ;「angle：翔和」
 ;//背景：空
 
+*debug
+
 @angle name="towa" bg="sky.jpg"
+[voconfig setbuf="0" name="hatena_sumire" vostorage="sumire/sumire_{number}.ogg" number="1"]
+[vostart]
 #
 翌日[pf]
 #翔和
@@ -60,16 +64,19 @@
 くそ、やっちまった。最悪だよ。こんなにぶつかってたら、安っぽいラブコメみたいじゃないか[pf]
 ;//すみれ：表示「心配」
 #？？
+[chara_shows name="sumire" width=600 top=-100 face="scary_2"]
 「だ、大丈夫ですか！？」[pf]
 #翔和
 「は、はい、」[pf]
 #翔和
 やはり、人とぶつかってしまっていた[pf]
 #？？
+[chara_mods name="sumire" cross="false" time="100" face="sad"]
 「すまない、私の不注意だ」[pf]
 #翔和
 「こ、こちらこそすみません！」[pf]
 #？？
+[chara_mods name="sumire" cross="false" time="100" face="scary"]
 「ケガはしていませんか？」[pf]
 #翔和
 「全然大丈夫ですので心配しないでください」[pf]
@@ -78,6 +85,7 @@
 #翔和
 なんで、男の方の俺が倒れてんだよ[pf]
 #？？
+[chara_mods name="sumire" cross="false" time="100" face="sad"]
 「それはよかった･･････本当に申し訳ない」[pf]
 #翔和
 そ、そんなに心配されるとこっちが申し訳なくなってくる[pf]
@@ -90,9 +98,11 @@
 #翔和
 「あの、俺、もうお腹空いちゃったんで行きますね」[pf]
 #？？
+[chara_mods name="sumire" cross="false" time="100" face="sad_4"]
 「そうですか、ではお大事に」[pf]
 #翔和
 「はい、こちらこそご迷惑おかけしました失礼します」[pf]
+[chara_hide_all]
 @playse storage="room_door_O.ogg"
 #
 「ガチャ」[pf]
@@ -106,15 +116,22 @@
 ;//すみれ：通常
 @angle name="hatena" bg="town.jpg"
 #？？
+[chara_modm name="sumire" cross="false" time="100" face="sad"]
 「私としたことが･･････。周りが見えて無かったのかもしれない」[pf]
+[vostop]
 #？？
+[chara_modm name="sumire" cross="false" time="100" face="sad_4"]
 ･･････[pf]
 ;//すみれ：驚き
+[vostart]
 #？？
+[chara_modm name="sumire" cross="false" time="100" face="doki"]
 「ん？　これは･･････」[pf]
 #？？
+[chara_modm name="sumire" cross="false" time="100" face="doki"]
 ボタン？[pf]
 #？？
+[chara_modm name="sumire" cross="false" time="100" face="sad_1"]
 もしかしたら･･････[pf]
 #
 ;※　　※　　※

@@ -145,7 +145,7 @@
 @playse storage="chair.ogg"
 #翔和
 「ガラッ」[pf]
-#？？
+#？？？
 「きゃっ」[pf]
 #翔和
 誰かが椅子にぶつかったであろう感触[pf]
@@ -158,7 +158,7 @@
 ;//効果音：「ドンっ」
 #翔和
 「いてててて･･････」[pf]
-#？？
+#？？？
 「はうぅ･･････」[pf]
 #翔和
 頭を強く床に打ち付けたみたいだ[pf]
@@ -182,7 +182,7 @@
 カレーだ[pf]
 #翔和
 いや、違う、できたてホヤホヤのカレー、だ[pf]
-#？？
+#？？？
 「････････････ぅぅ･･･････あ、あつい･････････････」[pf]
 #翔和
 そうだった！ぶつかった人は！？[pf]
@@ -192,13 +192,13 @@
 「大丈夫、ですか？」[pf]
 ;//CG03：床にしりもちをつく藍美 
 @chara_shows name="aimi" width=650 top=-170 face="sad_2"
-#？？
+#？？？
 「大丈夫、･･････じゃないです」[pf]
 #翔和
 「そ、そうですよね！　ちょっと待ってくださいっ」[pf]
 #翔和
 ポケットからハンカチを取り出して、ふき取る[pf]
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="sad_3" 
 「おでこも、拭いてください」[pf]
 #翔和
@@ -208,49 +208,49 @@
 
 ;//CG03：ついてたカレーがなくなる
 
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="normal" 
 「ありがとうございます」[pf]
 #翔和
 「いや、ホント、ごめん･･････なさい」[pf]
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="normal_1" 
 「ありがとう、って言ってるのに謝るのはおかしいです」[pf]
 #翔和
 「え、でも、なんて言ったらいいか･･････」[pf]
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="hate" 
 「わかんないのですか？」[pf]
 #翔和
 「まぁ、はい･･････すみません･･････」[pf]
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="hate_2"
 「また謝った」[pf]
 #翔和
 「あっ･･････えっと･･････」[pf]
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="normal" 
 「どういたしまして」[pf]
 #翔和
 「ふぇ？」[pf]
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="normal_1" 
 「ありがとう、どういたしまして、あたりまえです」[pf]
 #翔和
 「ど、どういたしまして」[pf]
 
 ;//CG：藍美の顔を笑顔に
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="normal_3" 
 「そうですっ」[pf]
 
 ;//画面切り替え：CG→背景：食堂、藍美：表示　普通
-#？？
+#？？？
 @chara_mods name="aimi" cross="false" time="100" face="normal" 
 「あの」[pf]
 #翔和
 「はい？」[pf]
-#？？
+#？？？
 [chara_modm name="aimi" face="normal"]
 「私、一年生です」[pf]
 #翔和
@@ -357,18 +357,24 @@
 @bg storage="corridor.jpg" method="fadeInLeft" time="800"
 #翔和
 ん、写真部ってホントは存在しないんじゃね[pf]
+
+*debug
+[angle name="towa" bg="corridor.jpg"]
+
 #翔和
+[playse storage="test.ogg"]
 そんなことないか。[pf]
 *select2
-@glink target="*select2_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="「先生に尋ねる」"
+#翔和
+@glink target="*select2_1" color="ts13_a" clickse="decision.ogg" x="300" y="230" width="550" text="「先生に尋ねる」"
 @glink target="*select2_2" color="ts13" clickse="decision.ogg" x="300" y="330" width="550" text="「まだ、校内を探す」"
 @s
 
 ;//選択肢：１「先生に尋ねる」（サブルートへ）
 *select2_1
 #
-この先サブルート[pf]
-選択肢に戻ります[pf]
+; この先サブルート[pf]
+; 選択肢に戻ります[pf]
 @jump target="*select2"
 
 ;　　　　　２「まだ、校内を探す」（２章-01 メインルートへ）

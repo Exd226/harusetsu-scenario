@@ -61,8 +61,13 @@
 中に人もいるみたいだ[pf]
 
 
+*debug
+[angle name="towa" bg="classroom.jpg"]
+
 ;背景：生徒会室　昼
 @bg storage="seitokai.jpg"
+[voconfig name="sumire" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="54"]
+[vostart]
 #翔和
 「すみませーん」[pf]
 ;すみれ：表示
