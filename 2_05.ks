@@ -215,13 +215,15 @@
 「おお？　なんだお前、俺がうらやましいのか！？」[pf]
 #翔和
 すまん･･････[pf]
+[voconfig setbuf="0" name="yuna_f" vostorage="yuna/yuna_{number}.ogg" number="54"]
+[vostart]
 #由奈
 「･･････くーん」[pf]
 #良治
 @chara_mods name="ryoji" time="100" cross="false" face="scary"
 「･･････え、今なんつった？」[pf]
 #由奈
-@chara_mods name="ryoji" time="100" cross="false" face="doki"
+@chara_mod name="ryoji" time="100" cross="false" face="doki"
 @chara_shows name="yuna" width=600 top=-100 face="normal_3"
 「安野くん！　偶然だね」[pf]
 #翔和
@@ -423,6 +425,9 @@
 @chara_shows name="kurumi" width=500 top=-50 face="hate_1" time="0"
 @chara_shows name="miku" width=500 top=-50 face="sad_1" time="0"
 @chara_shows name="yuna" width=500 top=-50 face="sad" time="0"
+[voconfig setbuf="0" name="yuna_f" vostorage="yuna/yuna_{number}.ogg" number="74"]
+[voconfig setbuf="1" name="miku_f" vostorage="miku/miku_{number}.ogg" number="291"]
+[vostart]
 [mask_off time="800"]
 
 #翔和

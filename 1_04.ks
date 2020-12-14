@@ -44,13 +44,24 @@
 @filter name="ryoji" brightness=50
 @chara_move name="ryoji" left="-=1000" anim=true time=1200
 @chara_hide name="ryoji" time="100"
+
+*debug
+[angle name="towa" bg="cafe.jpg"]
+@fadeinbgm time="3000" storage="everyday.ogg"
+
+
+[voconfig setbuf="0" name="hatena_yuna" vostorage="yuna/yuna_{number}.ogg" number="1"]
+[voconfig setbuf="0" name="ginnpatunoshojo" vostorage="yuna/yuna_{number}.ogg" number="2"]
+[voconfig setbuf="0" name="yuna_f" vostorage="yuna/yuna_{number}.ogg" number="10"]
+
+[vostart]
 #翔和
 「ったく～面倒なやつだなぁ」[pf]
 #翔和
 だいたい、スイーツとか言って、いつもプリンしか食べてないよなあいつ[pf]
 #翔和
 コーヒーゼリーも食べきれないくせに･･････[pf]
-#？？
+#hatena_yuna
 「あ、あの～」[pf]
 #翔和
 「はい？」[pf]
@@ -106,7 +117,7 @@
 「それでは･･･････････あ、忘れてました、私の名前は桐島といいます。下は由奈です」[pf]
 #翔和
 「自分の名前は安野です、下は翔和って言います」[pf]
-#銀髪の少女
+#由奈
 @chara_mods name="yuna" cross=false time="100" face="normal_2"
 「あと、一つ言い忘れてたことがあって･･････」[pf]
 #翔和
@@ -145,7 +156,7 @@
 @playse storage="chair.ogg"
 #翔和
 「ガラッ」[pf]
-#？？？
+#hatena_aimi
 「きゃっ」[pf]
 #翔和
 誰かが椅子にぶつかったであろう感触[pf]
@@ -158,7 +169,7 @@
 ;//効果音：「ドンっ」
 #翔和
 「いてててて･･････」[pf]
-#？？？
+#hatena_aimi
 「はうぅ･･････」[pf]
 #翔和
 頭を強く床に打ち付けたみたいだ[pf]
@@ -182,7 +193,7 @@
 カレーだ[pf]
 #翔和
 いや、違う、できたてホヤホヤのカレー、だ[pf]
-#？？？
+#hatena_aimi
 「････････････ぅぅ･･･････あ、あつい･････････････」[pf]
 #翔和
 そうだった！ぶつかった人は！？[pf]
@@ -192,13 +203,13 @@
 「大丈夫、ですか？」[pf]
 ;//CG03：床にしりもちをつく藍美 
 @chara_shows name="aimi" width=650 top=-170 face="sad_2"
-#？？？
+#hatena_aimi
 「大丈夫、･･････じゃないです」[pf]
 #翔和
 「そ、そうですよね！　ちょっと待ってくださいっ」[pf]
 #翔和
 ポケットからハンカチを取り出して、ふき取る[pf]
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="sad_3" 
 「おでこも、拭いてください」[pf]
 #翔和
@@ -208,49 +219,49 @@
 
 ;//CG03：ついてたカレーがなくなる
 
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="normal" 
 「ありがとうございます」[pf]
 #翔和
 「いや、ホント、ごめん･･････なさい」[pf]
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="normal_1" 
 「ありがとう、って言ってるのに謝るのはおかしいです」[pf]
 #翔和
 「え、でも、なんて言ったらいいか･･････」[pf]
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="hate" 
 「わかんないのですか？」[pf]
 #翔和
 「まぁ、はい･･････すみません･･････」[pf]
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="hate_2"
 「また謝った」[pf]
 #翔和
 「あっ･･････えっと･･････」[pf]
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="normal" 
 「どういたしまして」[pf]
 #翔和
 「ふぇ？」[pf]
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="normal_1" 
 「ありがとう、どういたしまして、あたりまえです」[pf]
 #翔和
 「ど、どういたしまして」[pf]
 
 ;//CG：藍美の顔を笑顔に
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="normal_3" 
 「そうですっ」[pf]
 
 ;//画面切り替え：CG→背景：食堂、藍美：表示　普通
-#？？？
+#hatena_aimi
 @chara_mods name="aimi" cross="false" time="100" face="normal" 
 「あの」[pf]
 #翔和
 「はい？」[pf]
-#？？？
+#hatena_aimi
 [chara_modm name="aimi" face="normal"]
 「私、一年生です」[pf]
 #翔和
@@ -357,10 +368,6 @@
 @bg storage="corridor.jpg" method="fadeInLeft" time="800"
 #翔和
 ん、写真部ってホントは存在しないんじゃね[pf]
-
-*debug
-[angle name="towa" bg="corridor.jpg"]
-
 #翔和
 [playse storage="test.ogg"]
 そんなことないか。[pf]

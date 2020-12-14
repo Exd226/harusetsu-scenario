@@ -63,19 +63,19 @@
 #翔和
 くそ、やっちまった。最悪だよ。こんなにぶつかってたら、安っぽいラブコメみたいじゃないか[pf]
 ;//すみれ：表示「心配」
-#？？
+#hatena_sumire
 [chara_shows name="sumire" width=600 top=-100 face="scary_2"]
 「だ、大丈夫ですか！？」[pf]
 #翔和
 「は、はい、」[pf]
 #翔和
 やはり、人とぶつかってしまっていた[pf]
-#？？
+#hatena_sumire
 [chara_mods name="sumire" cross="false" time="100" face="sad"]
 「すまない、私の不注意だ」[pf]
 #翔和
 「こ、こちらこそすみません！」[pf]
-#？？
+#hatena_sumire
 [chara_mods name="sumire" cross="false" time="100" face="scary"]
 「ケガはしていませんか？」[pf]
 #翔和
@@ -84,7 +84,7 @@
 体が大丈夫であることをアピールするために立ち上がる[pf]
 #翔和
 なんで、男の方の俺が倒れてんだよ[pf]
-#？？
+#hatena_sumire
 [chara_mods name="sumire" cross="false" time="100" face="sad"]
 「それはよかった･･････本当に申し訳ない」[pf]
 #翔和
@@ -97,7 +97,7 @@
 このままこの場にいると気まずくなるだけだろうな[pf]
 #翔和
 「あの、俺、もうお腹空いちゃったんで行きますね」[pf]
-#？？
+#hatena_sumire
 [chara_mods name="sumire" cross="false" time="100" face="sad_4"]
 「そうですか、ではお大事に」[pf]
 #翔和
@@ -111,26 +111,26 @@
 #
 ;※　　※　　※
 
-;「angle：？？」
+;「angle：hatena_sumire」
 ;//背景：商店街 昼
 ;//すみれ：通常
 @angle name="hatena" bg="town.jpg"
-#？？
+#hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="sad"]
 「私としたことが･･････。周りが見えて無かったのかもしれない」[pf]
 [vostop]
-#？？
+#hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="sad_4"]
 ･･････[pf]
 ;//すみれ：驚き
 [vostart]
-#？？
+#hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="doki"]
 「ん？　これは･･････」[pf]
-#？？
+#hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="doki"]
 ボタン？[pf]
-#？？
+#hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="sad_1"]
 もしかしたら･･････[pf]
 #

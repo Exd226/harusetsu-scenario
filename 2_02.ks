@@ -581,10 +581,15 @@
 ･･････まさか、ね･･････[pf]
 #
 
+*debug
+
+
 ;※　　※　　※
 ;「angle:翔和」
 ;;背景：部室　夕
 [angle name="towa" bg="clubroom.jpg"]
+[voconfig setbuf="0" name="yuna_f" vostorage="yuna/yuna_{number}.ogg" number="26"]
+[vostart]
 #翔和
 「こんにちは～」[pf]
 ;由奈：表示　笑顔
@@ -674,17 +679,9 @@
 @chara_mods name="yuna" cross=false time="100" face="normal_3"
 「あと、そのシミ、クリーニング出さなくても中性洗剤でも落ちそうですよ」[pf]
 #翔和
-翔和
 「そう、ですか」[pf]
 #翔和
 あれ？なんでクリーニング出そうと思ってたこと知ってるんだ？[pf]
-
-
-*debug
-[angle name="towa" bg="clubroom.jpg"]
-[fadeinbgm time="3000" storage="everyday.ogg"]
-[chara_show name="yuna" width=600 top=-100 face="normal_3"]
-
 
 #
 [playse storage="room_door_O.ogg"]
@@ -732,6 +729,7 @@
 「はやいな」
 [fadeoutbgm time="3000"]
 [pf]
+#
 ;美紅：表示；普通
 ;由奈　左　すみれ　中　美紅　右
 [chara_move name="yuna" anim="true" left="15"]
