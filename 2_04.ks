@@ -52,6 +52,10 @@
 生徒会室だったかな[pf]
 #翔和
 行こう[pf]
+[fadeoutbgm time="3000"]
+
+*debug
+[angle name="towa" bg="corridor_3.jpg"]
 
 ;※　　※　　※
 @bg_eye storage="corridor_3.jpg"
@@ -60,22 +64,20 @@
 #翔和
 中に人もいるみたいだ[pf]
 
-
-*debug
-[angle name="towa" bg="classroom.jpg"]
-
 ;背景：生徒会室　昼
-@bg storage="seitokai.jpg"
-[voconfig name="sumire" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="54"]
+@bg_mask storage="seitokai.jpg"
+[voconfig name="sumire_f" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="74"]
 [vostart]
 #翔和
 「すみませーん」[pf]
 ;すみれ：表示
 #翔和
+[chara_modm name="sumire" cross=false time="100" face="sleep"]
 朝比奈先輩が居る[pf]
 #翔和
 「朝比奈先輩、お疲れ様です」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="sleep"]
 「･･････」[pf]
 #翔和
 集中してるのかな？[pf]
@@ -98,12 +100,14 @@
 #翔和
 「あの、朝比奈先輩」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="sleep"]
 「･･････」[pf]
 #翔和
 あれ、朝比奈先輩、さっきから同じところを見つめてるぞ[pf]
 #翔和
 「朝比奈先輩？」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="sleep"]
 「･･････」[pf]
 #翔和
 もしかして･･････[pf]
@@ -112,11 +116,13 @@
 #翔和
 肩を揺する[pf]
 #すみれ
+[chara_shows name="sumire" width=600 top=-100 face="sleep"]
 「･･････んなぁ･･････あぅ････････････ん？」[pf]
 #翔和
 「･･････朝比奈先輩、寝てましたよね？」[pf]
 ;すみれ：普通
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="doki_1"]
 「いやっ、私は寝てにゃどぉりゃんっ！」[pf]
 #翔和
 「････････････」[pf]
@@ -124,7 +130,10 @@
 ･････････････････････[pf]
 ;すみれ：困り
 #すみれ
-「す、すまん･･････こんなみっともないところを見せてしまって」[pf]
+[chara_mods name="sumire" cross=false time="100" face="sad_1"]
+「す、すまん･･････こんなみっともないところを見せてしまって」
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 #翔和
 「お、俺こそすいませんっ、あんなところで黙ってしまって！」[pf]
 #翔和
@@ -132,28 +141,34 @@
 #翔和
 いや、ホントにどう反応していいか分からなかった[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="hate"]
 「謝らないでくれ、私が悪い」[pf]
 #翔和
 「そうですか･･････」[pf]
 #翔和
 「つい気を抜いちゃうことってたまにありますよね」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="hate"]
 「あぁ、この文化祭の大事な時に気を抜いてしまった･･････」[pf]
 #翔和
 「いえいえっ！大事な時だからこそ忙しいんだと思います」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="scary"]
 「いや、昨日はちょっと違うことで寝るのが遅くなってな･･････」[pf]
 #翔和
 「･･････何か･･････大変なことがあるんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「うん、まぁ、それほど大変なことではない」[pf]
 #翔和
 「はぁ･･････」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="sad_1"]
 「最近、読書に勤しんでいてな･･････それだけだ」[pf]
 #翔和
 「そうだったんですか、どういうジャンルを読むんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「･･････うん、いろいろ読むかな」[pf]
 #翔和
 いろいろ、か･･････[pf]
@@ -162,33 +177,41 @@
 #翔和
 「いいことですね」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="doki"]
 「なんのことがだ？」[pf]
 #翔和
 「没頭できることがあるってことですよ」[pf]
 ;すみれ：困り
-#翔和
-すみれ「あ、ああ、そうだな･･････」[pf]
+#すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
+「あ、ああ、そうだな･･････」[pf]
 ;すみれ：普通
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「あぁ、そうだ安野クンはなんでここに来たんだ？」[pf]
 #翔和
 「あっ、えーっと、腕章を取りに来ました」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「そうだったのか」[pf]
+#すみれ
+[chara_mods name="sumire" cross=false time="100" face="scary_1"]
 「･･････というか、腕章はここにはないぞ？」[pf]
 #翔和
 「ふぇっ？」[pf]
-#翔和
-すみれ「腕章は、旧生徒会室･･････部室にあるぞ」[pf]
+#すみれ
+[chara_modm name="sumire" cross=false time="100" face="scary_1"]
+「腕章は、旧生徒会室･･････部室にあるぞ」[pf]
 #翔和
 マジ･･････か･･････[pf]
 #翔和
 「今すぐとってきますっ！お疲れ様でしたっ！」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「おぅ、頑張ってな」[pf]
 
 ;背景：部室　昼
-@bg_eye storage="clubroom.jpg"
+@bg_eye hide="true" storage="clubroom.jpg"
 #
 @playse storage="room_door_O.ogg"
 「ガチャ」[pf]

@@ -997,70 +997,91 @@
 @chara_mods name="ryoji" cross=false time="200" face="sad"
 「･･････おい、あいつ完全に俺を無視して行きやがったよ、ちくしょう･･････」[pf]
 
+*debug
+[angle name="towa" bg="classroom.jpg"]
+@fadeinbgm storage="everyday.ogg" time="3000"
+
+
 #
-		[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
-		[bg storage="corridor.jpg" time="0"]
-			[chara_hide_all time="0"]
-			[chara_shows name="miku" width=600 top=-100 time=0]
-			;[sumire]
-		[mask_off time="800" wait="true"]
+[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
+[bg storage="corridor.jpg" time="0"]
+[chara_hide_all time="0"]
+[chara_show name="miku" width=600 top=-100 time=0]
+[chara_shows name="sumire" width=500 top=-70 time=0]
+[voconfig name="sumire_f" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="93"]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="2" number="336"]
+[vostart]
+[mask_off time="800" wait="true"]
 
 ;背景：廊下　昼　
 
 #すみれ
 「すまんな、昼休みに」[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
 「いえいえ、暇してただけですし」[pf]
 #すみれ
+[chara_mod name="miku" cross=false time="100" face="normal"]
+[chara_mods name="sumire" cross=false time="100" face="sad"]
 「あまり、部活動の時間以外で呼び出しなどしたくなかったのだが」[pf]
 #翔和
 「それは考えすぎですよ」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「そう言ってくれるとありがたいんだが･･････っと、こんなこと言ってる間にも時間をとってしまう」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「二人とも、今日の放課後は大丈夫か？」[pf]
 #翔和
 うっ･･････聞かれたくないことを聞かれてしまった[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
 「どうしてもな用事はありません」[pf]
 #翔和
+[chara_mod name="miku" cross=false time="100" face="normal"]
 最近、部活に遅れていることを責められたりするのだろうか[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="normal"]
 「そうか、それは良かった」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「実は今日、大切な連絡があってな、放課後すぐ部室に来てくれないか？」[pf]
 #翔和
 「す、すみません、いつも来るの遅くなって」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_1"]
 「そんなにペコペコしないでくれ、私だって生徒会で来れないことが多い」[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
 「なにかあるんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「それについては黙秘しよう」[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="hate_2"]
 「あまりよくないことだったりするんですか･･････？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_3"]
 「いやいや、秘密にしておきたい、とっておきのこと、ということだ」[pf]
 #翔和
+[chara_mod name="miku" cross=false time="100" face="sad_1"]
 朝比奈会長の冗談は分かり辛いからやめて欲しい･･････[pf]
 
 
 ;２章-05,5
 
-[vostop]
-[chara_hide_all]
-[fadeoutbgm time="3000"]
 
 ;背景：視聴覚室　夕
 #
-		[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
-		[bg storage="audioroom_1.jpg" time="0"]
-			[chara_hide_all time=0]
-			[chara_shows name="aimi" width=600 top=-100 time=0 face="normal_3"]
-			[chara_shows name="miku" width=600 top=-100 time=0]
-		[mask_off time="800" wait="true"]
-		[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="340"]
-		[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="2" number="240"]
+[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
+[bg storage="audioroom_1.jpg" time="0"]
+[chara_hide_all time=0]
+[chara_shows name="aimi" width=600 top=-100 time=0 face="normal_3"]
+[chara_shows name="miku" width=600 top=-100 time=0]
+[mask_off time="800" wait="true"]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="340"]
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="2" number="240"]
+[vostop]
 #藍美
 「～♪　～♪」[pf]
 #翔和
