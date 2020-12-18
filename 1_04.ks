@@ -45,11 +45,6 @@
 @chara_move name="ryoji" left="-=1000" anim=true time=1200
 @chara_hide name="ryoji" time="100"
 
-*debug
-[angle name="towa" bg="cafe.jpg"]
-@fadeinbgm time="3000" storage="everyday.ogg"
-
-
 [voconfig setbuf="0" name="hatena_yuna" vostorage="yuna/yuna_{number}.ogg" number="1"]
 [voconfig setbuf="0" name="ginnpatunoshojo" vostorage="yuna/yuna_{number}.ogg" number="2"]
 [voconfig setbuf="0" name="yuna_f" vostorage="yuna/yuna_{number}.ogg" number="10"]

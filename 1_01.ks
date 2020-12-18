@@ -1,6 +1,5 @@
 ;１章-01 「回想」
 ;「angle:the third person」
-*debug
 *testplay
 ;//背景:空 夕
 ;@start

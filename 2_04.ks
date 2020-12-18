@@ -54,9 +54,6 @@
 行こう[pf]
 [fadeoutbgm time="3000"]
 
-*debug
-[angle name="towa" bg="corridor_3.jpg"]
-
 ;※　　※　　※
 @bg_eye storage="corridor_3.jpg"
 #翔和
@@ -693,6 +690,11 @@
 @bg_eye storage="storehouse.jpg"
 ;背景：体育館裏　昼
 
+
+*debug
+[angle name="towa" bg="storehouse.jpg"]
+
+
 #翔和
 学校にもこんな人影のいないところあったんだ･･････[pf]
 #他校生C
@@ -702,16 +704,20 @@
 #他校生C
 「まぁ、いい、お前らも手伝ってくれ　この女一筋縄ではいかなくてよぉ」[pf]
 ;来未：表示；いらだち
-@chara_shows name="kurumi" width=420 top=-30 face="angry"
+[voconfig setbuf="0" name="kurumi_f" vostorage="kurumi/kurumi_{number}.ogg" number="18"]
+[vostart]
+@chara_show name="kurumi" width=420 top=-30 face="angry"
 #翔和
 やっぱり白咲さんか[pf]
 #来未
+[chara_modm name="kurumi" face="angry"]
 「ふんっ、その辺の女と一緒にされたら困るわ」[pf]
 #他校生C
 「すまんすまん、俺が悪かった、だからよ、一緒に遊ぼうぜ」[pf]
 #他校生B
 「そうそう、こんな学園祭なんかやるよりきっと楽しいからさあ」[pf]
 #来未
+[chara_modm name="kurumi" face="angry"]
 「嫌」[pf]
 #他校生C
 「っ！」[pf]
@@ -736,9 +742,10 @@
 #他校生C
 「･･････待てよ」[pf]
 #来未
+[chara_modm name="kurumi" face="hate_2"]
 「･･････」[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="hate"
+@chara_mod name="kurumi" cross=false time="100" face="hate"
 白咲さんは無視して去っていく[pf]
 #他校生C
 「知ってんだぜ、お前がかの米国大使の娘さんだってことをよ」[pf]
@@ -785,7 +792,7 @@
 #他校生B
 「お、財布見っけ～」[pf]
 #他校生A
-@chara_mods name="kurumi" cross=false time="100" face="hate"
+@chara_mod name="kurumi" cross=false time="100" face="hate"
 「お、なんだペンダントなんかつけてんじゃん」[pf]
 #翔和
 くそっ、考えろ俺、このままじゃっ[pf]
@@ -797,21 +804,22 @@
 #他校生A
 「なんだ、大切なものかなんかか？」[pf]
 ;BGM：「」開始
-@playbgm storage="crisis.ogg"
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="doki"
-「やめるんだ」[pf]
+@chara_mod name="kurumi" cross=false time="100" face="doki"
+「やめるんだ」
+[playbgm storage="crisis.ogg"]
+[pf]
 #他校生C
 「ああん？なんだお前」[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_3"
+@chara_mod name="kurumi" cross=false time="100" face="sad_3"
 「その子から手を放せ」[pf]
 #他校生C
 「くっ、見られてたか、黙らせるしかないな」[pf]
 #翔和
 や、やべっ、でも！[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_2"
+@chara_mod name="kurumi" cross=false time="100" face="sad_2"
 「君たちにはこれが見えないのか！」[pf]
 #翔和
 俺は左腕の腕章を見せつける[pf]
@@ -820,14 +828,14 @@
 #翔和
 実行委委員の腕章は裏返すことで生徒会の腕章になる･･････[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_3"
+@chara_mod name="kurumi" cross=false time="100" face="sad_3"
 「それに、今の君たちの行動はこのカメラに全部収めた！」[pf]
 #翔和
 これで完璧だ[pf]
 #他校生A
 「その、カメラ、ぶっ壊すしかないな」[pf]
 #他校生B
-@chara_mods name="kurumi" cross=false time="100" face="scary"
+@chara_mod name="kurumi" cross=false time="100" face="scary"
 「ついでに、このこともしゃべれないようにするか」[pf]
 #翔和
 え？やばい、全然効いてない･･････[pf]
@@ -838,12 +846,12 @@
 #他校生C
 「待て」[pf]
 #他校生A
-@chara_mods name="kurumi" cross=false time="100" face="doki"
+@chara_mod name="kurumi" cross=false time="100" face="doki"
 「え？」[pf]
 #他校生B
 「なんでですか！？」[pf]
 #他校生C
-@chara_mods name="kurumi" cross=false time="100" face="sad"
+@chara_mod name="kurumi" cross=false time="100" face="sad"
 「生徒会に見つかった以上もう、やめだ」[pf]
 #他校生A
 「なにビビってるんすか」[pf]
@@ -866,7 +874,7 @@
 俺は財布を拾って渡す[pf]
 #翔和
 @chara_move name="kurumi" width=650 top=-170 left=350 time=400
-@chara_mods name="kurumi" cross=false time="100" face="sad"
+@chara_mod name="kurumi" cross=false time="100" face="sad"
 白咲さんは黙って受け取った[pf]
 #翔和
 「ケガとか大丈夫？」
@@ -877,7 +885,7 @@
 #翔和
 「じゃあ、もどろうか」[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_3"
+@chara_mod name="kurumi" cross=false time="100" face="sad_3"
 白咲さんがうなずく[pf]
 
 ;CG：来未と並んで歩く
@@ -977,7 +985,7 @@
 #翔和
 ･･･[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="normal_1"
+@chara_mod name="kurumi" cross=false time="100" face="normal_1"
 ･･････[pf]
 #翔和
 そんなたわいない話をしながら白咲さんをミスコン会場まで送った[pf]
@@ -995,8 +1003,10 @@
 #司会
 「いや～、やっぱバンドマンはかっこいいよね～」[pf]
 #美紅
+[chara_modm name="miku" face="normal"]
 カメラにさっきのバンドの人たちの画像データがあることを確認する[pf]
 #美紅
+[chara_modm name="miku" face="normal"]
 体育館は薄暗かったけどなかなか上出来だ
 @fadeinbgm storage="everyday.ogg" time="3000"
 [pf]

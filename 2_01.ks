@@ -459,10 +459,6 @@
 [chara_mods name="sumire" cross="false" time="100" face="normal_3"]
 「安野クンの入部を歓迎します───」[pf]
 
-*debug
-[angle name="towa" bg="corridor.jpg"]
-[fadeinbgm time="3000" storage="everyday.ogg"]
-
 ;※　　　※　　　※
 [mask time=1000]
 [chara_hide_all time=0]

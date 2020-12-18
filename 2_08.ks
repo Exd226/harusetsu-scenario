@@ -1,7 +1,6 @@
 ;2章-08
 ;７月１日
 ;背景：翔和の部屋　夜
-*debug
 [vostop]
 #
 [mask]
@@ -342,8 +341,9 @@
 ;「angle：翔和」
 ;星野村　夜
 ;SE　花火
-
-[angle name="towa" bg="mura_1.jpg"]
+; *debug
+; [angle name="towa" bg="mura_1.jpg"]
+; [fadeinbgm storage="sunset.ogg" time="3000"]
 
 #翔和
 ずっと目を閉じていた[pf]
@@ -396,16 +396,19 @@
 目を開けるが、そこに花火はない･･････その代わり[pf]
 
 ;CG05：翔和に覆いかぶさる藍美（主観）
-[bg_mask storage="black.jpg"]
+[bg_mask storage="cg_2/sad.jpg"]
 
 #翔和
 視界は藍美ちゃんでいっぱいだった[pf]
 #翔和
 「って！　うおっ！」[pf]
-
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
-「予想通りの反応ですね」[pf]
+「予想通りの反応ですね」
+[bg time="2000" cross="false" storage="cg_2/smile_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/smile.jpg"]
+[pf]
 #翔和
 「いやいや、藍美ちゃん何してるの？」[pf]
 #藍美
@@ -416,32 +419,44 @@
 #翔和
 事実、藍美ちゃんは息がかかるようなゼロ距離で顔を近づけていた[pf]
 #藍美
-[chara_modm name="aimi" face="scary_p_1"]
+[bg time="500" cross="false" storage="cg_2/hate.jpg"]
+[chara_modm name="aimi" face="hate_p_1"]
 「はぁ･･････理解できないとは･･････さすが先輩」[pf]
 #翔和
 「だからもっとせつめ･･････」[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
-「分からないんですか？」[pf]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
+「分からないんですか？」
+[bg time="2000" cross="false" storage="cg_2/sad_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/sad.jpg"]
+[pf]
 #翔和
 「あぁ、まったく」[pf]
 #藍美
-[chara_modm name="aimi" face="scary_p"]
+[bg time="500" cross="false" storage="cg_2/hate.jpg"]
+[chara_modm name="aimi" face="hate_p_1"]
 「意気地なし」[pf]
 #藍美
-[chara_modm name="aimi" face="scary_p_1"]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
 「まぁ、何回もシュミレーションしてきたから問題ないんですけど」[pf]
 #翔和
 「何のことだ？」[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p"]
+[chara_modm name="aimi" face="sad_p"]
 「翔和先輩、わたし、なんで歌ってると思いますか？」[pf]
 #翔和
 「･･････好きだから？」[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
-「違うんです、そんなきれいな動機じゃないんですよ私は」[pf]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
+「違うんです、そんなきれいな動機じゃないんですよ私は」
+[bg time="2000" cross="false" storage="cg_2/sad_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/sad.jpg"]
+[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「最初は私のアイデンティティを探して歌い始めました。ずっとそれが否定されてきた環境で育ってしまったから、なんですけどね」[pf]
 #藍美
@@ -452,12 +467,14 @@
 #翔和
 なにを言おうとしてるんだ？　何を伝えたいんだ？　そんなの分かるわけ･･････[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
 「でも、すごい残念です。そんな楽しい時間も今日で終わっちゃうんです。全部私のワガママのせいで」[pf]
 #藍美
-[chara_modm name="aimi" face="sad_p_3"]
+[chara_modm name="aimi" face="sad_p"]
 「先輩が悪いんですよ？　私を見つけてくれた先輩が悪いんです」[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「おかげで気づいたんです。本当は歌うことで見つけてもらおうとしてたんだ、って」[pf]
 #翔和
@@ -465,38 +482,72 @@
 #翔和
 「どうしたんだよ、藍美ちゃんおかしいよ。何を言ってるか全然分かんない」[pf]
 #翔和
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
 俺は藍美ちゃんを振りほどいて立ち上がろうとする[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/serious.jpg"]
 [chara_modm name="aimi" face="sad_p_2"]
-「先輩！　逃げないでっ！」[pf]
+「先輩！　逃げないでっ！」
+[bg time="2000" cross="false" storage="cg_2/serious_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/serious.jpg"]
+[pf]
 #翔和
 唐突な藍美ちゃんの叫びに俺は再び地面と背中を合わせた[pf]
 #翔和
 なにかを訴えようとする藍美ちゃんの目[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
 [chara_modm name="aimi" face="sad_p"]
 「･･････ねぇ･･････きづいてよ、なにもかも････････････せんぱぁい」[pf]
 #翔和
 「･･････」[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「ふふっ、なにに？　ってととぼけた顔してますね」[pf]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
-「仕方ないから教えてあげます」[pf]
+「仕方ないから教えてあげます」
+[fadeoutbgm time="3000"]
+[pf]
+
+*debug
+[angle name="towa" bg="cg_2/smile.jpg"]
+[fadeinbgm time="3000" storage="fireworks.ogg" loop="true"]
+[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="389"]
+[vostart]
+
 #藍美
-[chara_modm name="aimi" face="blush_p"]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_1"]
 「私が男を見る目がないってことですよ･･････だって･･････」[pf]
+[autoconfig clickstop="false"]
+[autostart]
+[preventClick]
+
+; [iscript]
+; $(".layer_event_click").css("pointer-events","none");
+; $(".layer_free").css("pointer-events","none");
+; [endscript]
+
 ;BGM
 [stopse]
 #藍美
+[bg time="500" cross="false" storage="cg_2/love.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
-「･･････好き･･････なんですよ･･････先輩のことが」[fadeinbgm storage="serious_2.ogg" time="3000"][pf]
+「･･････好き･･････なんですよ･･････先輩のことが」
+; [fadeinbgm storage="serious_2.ogg" time="3000"]
+[playbgm storage="koinohousoku.ogg" loop="false"]
+[bg time="2000" cross="false" storage="cg_2/love_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/love.jpg"]
+[pf]
 #藍美
-[chara_modm name="aimi" face="sad_p_3"]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
 「私だって今まで通り楽しくやっていきたかった･･････でももう無理なんです」[pf]
 #藍美
-[chara_modm name="aimi" face="sad_p_3"]
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
+[chara_modm name="aimi" face="normal_p_1"]
 「悔しいほどに･･････好きです」[pf]
 #翔和
 泣いているのか笑っているのか、いろんな感情が混ざったその告白に俺は何も出来ないでいた[pf]
@@ -505,16 +556,24 @@
 「･･････キス･･････しませんか？」[pf]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
-「もうなにもかも、終わらせちゃいましょう」[pf]
+「もうなにもかも、終わらせちゃいましょう」
+[bg time="2000" cross="false" storage="cg_2/smile_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/smile.jpg"]
+[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
 「･･････責任･･････とってください」[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/kiss.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
-「だから･･････よけないで」[pf]
+「だから･･････よけないで」
+[bg time="2000" cross="false" storage="cg_2/kiss_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
+[pf]
 
 ;背景：星空（天の川）
-[bg_mask storage="milkyway.jpg"]
+; [bg_mask storage="milkyway.jpg"]
 #翔和
 ･･････藍美ちゃんのバックには満天の星と、天の川･･････[pf]
 #翔和
@@ -647,21 +706,22 @@
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_p_2"
 「･･････うんっ」[pf]
-[fadeoutbgm time="3000"]
 ;※　　※　　※
 ;CG05　キスしようとする
 ;※　　※　　※
 [mask time="800"]
 [free_layermode time="0"]
 [free_filter  ]
-[bg storage="black.jpg" time="0"]
+[bg storage="cg_2/kiss.jpg" time="0"]
 [chara_hide_all time="0"]
 [layopt layer="message0" visible="false"]
 [mask_off time="800" wait="true"]
-
+[bg time="2000" cross="false" storage="cg_2/kiss_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
 [wait time="3000"]
 ;ブラック
 [bg storage="black.jpg"]
+[playbgm storage="serious.ogg"]
 [layopt layer="message1" visible="true"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="506"]
 [vostart]
@@ -687,12 +747,10 @@
 [mask_off time="800"]
 
 #美紅
-[chara_modm name="miku" face="sad_px"]
+; [chara_modm name="miku" face="sad_px"]
 「もぅ･･････嫌ぁっ･･････」[pf]
 #
-挿入歌　開始[pf]
-#
-挿入歌　終了[pf]
+
 [mask time="800"]
 [position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame_blue.png" opacity=225]
 [position layer=message0 page=fore margint="140" marginr="100" marginl="150"]

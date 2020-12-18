@@ -52,6 +52,7 @@
 	;プラグイン読み込み
 	[plugin name="chat_story"]
 	[plugin name="theme_kopanda_13"]
+	[plugin name="preventClick"]
 	
 	;全レイヤーの解放
 	[clearfix]

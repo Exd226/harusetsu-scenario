@@ -2,9 +2,6 @@
 ;// 4/8 mon
 ;「angle：翔和」
 ;//背景：空
-
-*debug
-
 @angle name="towa" bg="sky.jpg"
 [voconfig setbuf="0" name="hatena_sumire" vostorage="sumire/sumire_{number}.ogg" number="1"]
 [vostart]

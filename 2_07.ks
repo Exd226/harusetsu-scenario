@@ -2,16 +2,21 @@
 ;　angle : 美紅
 ;背景　教室　昼
 
-
+*debug
 
 [mask time="3000"]
 [fadeoutbgm time="3000"]
 [angle name="miku" bg="classroom.jpg"]
 
+
+[voconfig setbuf="0" name="kurumi_f" vostorage="kurumi/kurumi_{number}.ogg" number="61"]
+[voconfig setbuf="1" name="miku_f" vostorage="miku/miku_{number}.ogg" number="458"]
+[vostop]
 #先生
 「それでは、ほーむるーむは以上じゃ」[pf]
 #生徒
-「起立　礼」[fadeinbgm storage="everyday.ogg" time="3000"][pf]
+「起立　礼」
+[fadeinbgm storage="everyday.ogg" time="3000"][pf]
 #美紅
 [chara_modm name="miku" face="sad_1"]
 ･･････[pf]
@@ -24,13 +29,14 @@
 水着、か･･････前の学校の専用のデザインだと恥ずかしいなぁ･･････[pf]
 [chara_modm name="miku" face="sad_1"]
 新しいのを買いたいけど、どんなの買っていいか分からない[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="sad_1"]
 「はぁ･･････」[pf]
 [chara_modm name="miku" face="sad_1"]
 今週末買わないとなぁ、どこに売ってあるんだろ？[pf]
-@chara_shows name="kurumi" width=650 top=-170
 #来未
+@chara_shows name="kurumi" width=650 top=-170
 「なによ、辛気臭い顔して、やっと部活に来ない罪悪感を持つようになったかしら？」[pf]
 #美紅
 [chara_modm name="miku" face="doki_1"]
@@ -38,9 +44,11 @@
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="normal_1"
 「ふふっ、別に今のはからかっただけですわ。あまり気になさらないで」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_1"]
 でも、少し罪悪感あるのは本当なんだよね[pf]
+[vostart]
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="hate"
 「まぁ、私がなんのために入ったか、分からなくなってしまいましたけど」[pf]
@@ -59,13 +67,17 @@
 #美紅
 [chara_modm name="miku" face="doki_1"]
 「ま、待ってください」[pf]
+[vostop]
 #美紅
 同じ部活で、同じクラス･･････[pf]
+[vostart]
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="doki"
 「･･････？」[pf]
+[vostop]
 #美紅
 私が頼める人は白咲さんしかいない[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="sad_2"]
 「明日の土曜日空いてますか？」[pf]
@@ -74,7 +86,7 @@
 ;※	　※　　※
 ;　7/6 Sat
 ;背景：商店街
-
+[vostop]
 [bg_eye storage="town.jpg" hide="true"]
 #美紅
 [chara_modm name="miku" face="normal_p"]
@@ -83,7 +95,9 @@
 私は、待ち合わせをしていた･･････[pf]
 [chara_modm name="miku" face="normal_p"]
 こういうのはいつぶりだろう？[pf]
+[vostart]
 #美紅
+@chara_show name="kurumi" width=650 top=-170 face="normal_p"
 [chara_modm name="miku" face="normal_p_1"]
 「あ、いたいた」[pf]
 [chara_modm name="miku" face="normal_p_1"]
@@ -91,8 +105,8 @@
 #美紅
 [chara_modm name="miku" face="normal_p"]
 「ごめんね～こんな暑い中待たせてしまって」[pf]
-@chara_shows name="kurumi" width=650 top=-170 face="normal_p"
 #来未
+[chara_modm name="kurumi" face="normal_p"]
 「いえ、それほどでもありませんわ」[pf]
 #来未
 [chara_modm name="kurumi" face="normal_p"]
@@ -105,14 +119,18 @@
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="normal_p_1"
 「気にすることはありませんわ、外に出たのはついさっきでしたので」[pf]
+[vostop]
 #美紅
 白咲さんはふいにスマホを取り出す[pf]
+[vostart]
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="normal_p_2"
 「あ、爺、もういいかしら･･････うん、ありがとう」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="normal_p"]
 使用人なのかな･･････？　さすがお嬢様[pf]
+[vostart]
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="normal_p_3"
 「では、さっそく行くかしら」[pf]
@@ -179,6 +197,7 @@
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="normal_p_1"
 「･･････ふ～ん」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="sad_p_1"]
 なんだろ、白咲さんはなにか言いたげな様子だ[pf]
@@ -188,6 +207,7 @@
 #美紅
 [chara_modm name="miku" face="sad_p_1"]
 誰と行くかとか聞かれたら困っちゃうな･･････翔和くんが居るって言ったらからかわれそうだ[pf]
+[vostart]
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="normal_p_3"
 「そう、では明日は楽しんで」[pf]
@@ -328,16 +348,20 @@
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="sad_p_3"
 「それともあなたは“あっち”なんですの･･････？」[pf]
+[vostop]
 #美紅
 [chara_modm name="miku" face="blush_p_1"]
 白咲さんが、友達･･････[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="normal_p"]
 「･･････ふふっ」[pf]
+[vostop]
 [chara_modm name="miku" face="normal_p"]
 そうだ、白咲さんはずっと私を気にかけてくれてたんだ[pf]
 [chara_modm name="miku" face="normal_p"]
 やだな、自分のことでいっぱいで全然気づかなかった[pf]
+[vostart]
 #来未
 @chara_mods name="kurumi" cross=false time="100" face="sad_p"
 「そこで笑われてしまうと、さすがにひいてしまいますわ･･････」[pf]

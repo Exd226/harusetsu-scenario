@@ -351,15 +351,18 @@
 #翔和
 いや･･････どういうことだよ･･････[pf]
 
-*skip
-@fadeinbgm storage="everyday.ogg" time="3000"
-;ここのbgmin要らない
 
 @bg_eye storage="classroom.jpg" hide="true"
 ;※　　※　　※
-
 ;背景：教室　昼
 
+*debug
+[angle name="towa" bg="classroom.jpg"]
+[fadeinbgm time="3000" storage="everyday.ogg"]
+
+[voconfig setbuf="0" name="kurumi_f" vostorage="kurumi/kurumi_{number}.ogg" number="50"]
+[voconfig setbuf="1" name="miku_f" vostorage="miku/miku_{number}.ogg" number="290"]
+[vostart]
 #翔和
 はぁ･･････午後の英語の授業は特別きつい[pf]
 #先生
@@ -367,31 +370,32 @@
 #翔和
 あ～こっそり内職して数学の問題でも解くかなぁ[pf]
 #来未
-@chara_shows name="kurumi" width=650 top=-170 face="hate"
+@chara_modm name="kurumi" cross=false time="200" face="hate"
 「ね、安野」[pf]
 #翔和
 「ん、なに？」[pf]
 #翔和
 うしろからペンかなにかでつつかれた[pf]
 #来未
-@chara_mods name="kurumi" cross=false time="200" face="hate_2"
+@chara_modm name="kurumi" cross=false time="200" face="hate_2"
 「もっと、授業集中しなさいよ」[pf]
 #翔和
 「どっかの委員会みたいな注意をするんだね、白咲さんも」[pf]
 #来未
-@chara_mods name="kurumi" cross=false time="200" face="angry"
+@chara_modm name="kurumi" cross=false time="200" face="angry"
 「違うわよ、あんたが当てられたらその次当てられるのはわたしなの」[pf]
 #翔和
 「え、白咲さんハーフだけど英語出来ないの？」[pf]
 #来未
-@chara_mods name="kurumi" cross=false time="200" face="hate_1"
+@chara_modm name="kurumi" cross=false time="200" face="hate_1"
 「文法は分からないの、あんなの意識してしゃべらないわよ、普通」[pf]
 #翔和
 「そうやって英語喋れる人に否定されると余計にやる気なくなるよな」[pf]
 #来未
-@chara_mods name="kurumi" cross=false time="200" face="hate"
+@chara_modm name="kurumi" cross=false time="200" face="hate"
 「そう言わないで、せめてそういう素振りくらいはしてほしいものよね」[pf]
 #来未
+@chara_modm name="kurumi" cross=false time="200" face="hate"
 「じゃないと、隣の春奈さんにも当てられるだろうし」[pf]
 #美紅
 [chara_modm name="miku" face="normal"]
@@ -399,17 +403,15 @@
 #翔和
 「たしかに」[pf]
 #来未
-@chara_mods name="kurumi" cross=false time="200" face="normal_2"
+@chara_modm name="kurumi" cross=false time="200" face="normal_2"
 「そうやって、春奈さんには気をつかうのね～」[pf]
 #翔和
 「なっ、それはだなっ」[pf]
 #先生
-@chara_mod name="kurumi" cross=false time="200" face="doki"
 「え～っと、この問題を･･････安野に解いてもらおうか」[pf]
 #翔和
 「えっ、あっ、はい、これは･･････②です」[pf]
 #先生
-@chara_mod name="kurumi" cross=false time="200" face="normal"
 「違う」[pf]
 #翔和
 後ろで笑いをこらえてる声が聞こえる、なんで先生はこういう時に限って男子を当てるんだろうか[pf]
@@ -1001,11 +1003,6 @@
 @chara_hide name="miku"
 @chara_mods name="ryoji" cross=false time="200" face="sad"
 「･･････おい、あいつ完全に俺を無視して行きやがったよ、ちくしょう･･････」[pf]
-
-*debug
-[angle name="towa" bg="classroom.jpg"]
-@fadeinbgm storage="everyday.ogg" time="3000"
-
 
 #
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]

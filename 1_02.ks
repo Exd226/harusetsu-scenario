@@ -60,7 +60,7 @@
 ;アニメーション:cg02を下からスクロール
 [mask time=1000]
 [clearfix]
-@bg storage="cg_2.jpg" time=0
+@bg storage="cg_1/sleep.jpg" time=0
 @layopt layer=message visible=false
 [camera x=320 y=-180 zoom=2 time=0]
 [mask_off time=1000]
@@ -542,7 +542,6 @@
 いかんいかん、またフラグ立ててどうするんだよ。会ったって気まずいだけだろ[pf]
 
 ;//以上小分岐01(b)「ここは、まだ、あなたの夢の中です」
-*debug
 *select1_0
 @stopse
 @fadeoutbgm time=3000 
@@ -561,8 +560,9 @@
 
 #女子高生
 [chara_modm name="miku" face="sad_1"]
-「すごい汗かいちゃった･･････」[pf]
-@fadeinbgm storage="everyday.ogg" time=3000 loop=true[pf]
+「すごい汗かいちゃった･･････」
+[fadeinbgm storage="everyday.ogg" time=3000 loop=true]
+[pf]
 [vostop]
 #女子高生
 [chara_modm name="miku" face="sad_1"]
@@ -603,7 +603,15 @@
 ;「angle：翔和」
 ;//背景：教室　朝
 
+*debug
+[fadeinbgm storage="everyday.ogg" time=3000 loop=true]
+
+
 @angle name="towa" bg="classroom.jpg"
+[voconfig setbuf="0" name="hatena_kurumi" vostorage="kurumi/kurumi_{number}.ogg" number="1"]
+[voconfig setbuf="0" name="kinpatu" vostorage="kurumi/kurumi_{number}.ogg" number="4"]
+
+[vostart]
 #
 ガヤガヤ････[pf]
 #翔和
@@ -738,7 +746,7 @@
 「あ、写し終わったら返さなくていいからそのまま提出しといてくれ」[pf]
 #金髪美少女
 @chara_mods name="kurumi" cross="false" time="100" face="hate"
-「なんで私がそんなこと･･････って思ったけどまぁいいわ。席も前と後ろの関係だからこれからもお世話になるしね」[pf]
+「なんで私がそんなこと･･････って思ったけどまぁいいわ。席も前と後ろの関係だからこれからもお世話になるから」[pf]
 #翔和
 う、なんかめんどくさそうだな･･････[pf]
 #
