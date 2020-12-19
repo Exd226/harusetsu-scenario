@@ -865,6 +865,12 @@
 		[chara_hide_all layer="message0" time="0" layer="message0"]
 	[endmacro]
 
+	[macro name="wsef"]
+		[wse]
+		[cm]
+		[chara_hide_all layer="message0" time="0" layer="message0"]
+	[endmacro]
+
 	[macro name="chara_modm"]
 		[eval exp="mp.name_f=mp.name+'_f'"]
 		[chara_hide_all layer="message0" time="10" layer="message0"]

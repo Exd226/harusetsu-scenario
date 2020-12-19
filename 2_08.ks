@@ -520,66 +520,54 @@
 #藍美
 [bg time="500" cross="false" storage="cg_2/sad.jpg"]
 [chara_modm name="aimi" face="sad_1"]
-「私が男を見る目がないってことですよ･･････だって･･････」[pf]
-[autoconfig clickstop="false"]
-[autostart]
-[preventClick]
-
-; [iscript]
-; $(".layer_event_click").css("pointer-events","none");
-; $(".layer_free").css("pointer-events","none");
-; [endscript]
-
-;BGM
-[stopse]
+「私が男を見る目がないってことですよ･･････だって･･････」[fadeoutbgm time="2000"][pf]
 #藍美
 [bg time="500" cross="false" storage="cg_2/love.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「･･････好き･･････なんですよ･･････先輩のことが」
-; [fadeinbgm storage="serious_2.ogg" time="3000"]
 [playbgm storage="koinohousoku.ogg" loop="false"]
 [bg time="2000" cross="false" storage="cg_2/love_1.jpg"]
 [bg time="3000" cross="false" storage="cg_2/love.jpg"]
-[pf]
+[wsef]
 #藍美
 [bg time="500" cross="false" storage="cg_2/sad.jpg"]
 [chara_modm name="aimi" face="sad_p"]
-「私だって今まで通り楽しくやっていきたかった･･････でももう無理なんです」[pf]
+「私だって今まで通り楽しくやっていきたかった･･････でももう無理なんです」[wsef]
 #藍美
 [bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
-「悔しいほどに･･････好きです」[pf]
+「悔しいほどに･･････好きです」[wsef]
 #翔和
-泣いているのか笑っているのか、いろんな感情が混ざったその告白に俺は何も出来ないでいた[pf]
+泣いているのか笑っているのか、いろんな感情が混ざったその告白に俺は何も出来ないでいた[wait time="3000"][cm]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
-「･･････キス･･････しませんか？」[pf]
+「･･････キス･･････しませんか？」[wsef]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
 「もうなにもかも、終わらせちゃいましょう」
 [bg time="2000" cross="false" storage="cg_2/smile_1.jpg"]
 [bg time="3000" cross="false" storage="cg_2/smile.jpg"]
-[pf]
+[wsef]
 #藍美
 [bg time="500" cross="false" storage="cg_2/sad.jpg"]
 [chara_modm name="aimi" face="sad_p"]
-「･･････責任･･････とってください」[pf]
+「･･････責任･･････とってください」[wsef]
 #藍美
 [bg time="500" cross="false" storage="cg_2/kiss.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「だから･･････よけないで」
 [bg time="2000" cross="false" storage="cg_2/kiss_1.jpg"]
 [bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
-[pf]
+[wsef]
 
 ;背景：星空（天の川）
 ; [bg_mask storage="milkyway.jpg"]
 #翔和
-･･････藍美ちゃんのバックには満天の星と、天の川･･････[pf]
+･･････藍美ちゃんのバックには満天の星と、天の川･･････[wait time="3000"][cm]
 #翔和
-織姫と彦星は、どうしているんだろう？[pf]
+織姫と彦星は、どうしているんだろう？[wait time="3000"][cm]
 #翔和
-俺は･･････どうしたらいいんですか･･････？[pf]
+俺は･･････どうしたらいいんですか･･････？[wait time="3000"][cm]
 
 
 ;モノクロ（回想）
@@ -595,69 +583,69 @@
 		[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="384" setbuf="2"]
 		[vostart]
 #美紅
-「そうだっ･･････それじゃあ私たちが手伝ってあげようよ！」[pf]
+「そうだっ･･････それじゃあ私たちが手伝ってあげようよ！」[wsef]
 #翔和
-「え、俺もっ！？　俺らトーシロだぞ、まして作曲なんて･･････」[pf]
+「え、俺もっ！？　俺らトーシロだぞ、まして作曲なんて･･････」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_2"
-「でも･･････作りたいよ！　“わたしたちだけ”の曲！　だって素敵じゃない！？　私たちがこうやって毎日頑張った三人の証が残せるんだよっ！」[pf]
+「でも･･････作りたいよ！　“わたしたちだけ”の曲！　だって素敵じゃない！？　私たちがこうやって毎日頑張った三人の証が残せるんだよっ！」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_3"
-「とてもいいと思いますっ！　私もそんな歌がうたいたいです！」[pf]
+「とてもいいと思いますっ！　私もそんな歌がうたいたいです！」[wsef]
 #翔和
-「そんなこと言ったって具体的にどうするんだよ」[pf]
+「そんなこと言ったって具体的にどうするんだよ」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="sad_1"
-「もぅ･･････安野くんは情緒が足りない」[pf]
+「もぅ･･････安野くんは情緒が足りない」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="hate_1"
-「感情より理の方が先走るモテない男の典型的なタイプね」[pf]
+「感情より理の方が先走るモテない男の典型的なタイプね」[wsef]
 #翔和
-「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[pf]
+「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[wait time="3000"][cm]
 #
 [mask time="800"]
 [bg storage="road_2.jpg" time="0"]
 @chara_mod name="aimi" cross=false time="0" face="normal_2"
-@chara_mods name="miku" cross=false time="100" face="normal"
+@chara_mods name="miku" cross=false time="0" face="normal"
 [mask_off time="800" wait="true"]
 ;※　　※　　※
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="305" setbuf="1"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="398" setbuf="2"]
 #美紅
-「ふふっ･･････なんかいーですね」[pf]
+「ふふっ･･････なんかいーですね」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal"
-「･･････？」[pf]
+「･･････？」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_1"
-「三人で居るのが楽しいんですっ」[pf]
+「三人で居るのが楽しいんですっ」[wsef]
 #美紅
 [chara_modm name="miku" face="normal_1"]
-「藍美ちゃんが安野くんをいじって、みんなでパプコ食べて･･････」[pf]
+「藍美ちゃんが安野くんをいじって、みんなでパプコ食べて･･････」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
 @chara_mod name="aimi" cross=false time="100" face="normal_1"
-「私、転校か続いてたから、あんまり友達出来なくて、作るつもりもあまりなくてさ」[pf]
+「私、転校か続いてたから、あんまり友達出来なくて、作るつもりもあまりなくて」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_2"
-「でもいつの間にか三人で居るようになって、この三人がいいな、って思うようになって･･････」[pf]
+「でもいつの間にか三人で居るようになって、この三人がいいな、って思うようになって･･････」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
-「わたし、友達少ないからこの三人の中はけっこー大事にするよ？　時には重たくなるよ？」[pf]
+「わたし、友達少ないからこの三人の仲はけっこー大事にするよ？　時には重たくなるよ？」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal"
-「春奈さんが重たくなるのはなかなか想像つきません」[pf]
+「春奈さんが重たくなるのはなかなか想像つきません」[wsef]
 #翔和
-「なんでもすぐ許してくれそうだよな」[pf]
+「なんでもすぐ許してくれそうだよな」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="angry"
-「ん～わたしだって怒るときはこわいんですからね～っ！」[pf]
+「ん～わたしだって怒るときはこわいんですからね～っ！」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_2"
-「その怒り方可愛いです先輩！」[pf]
+「その怒り方可愛いです先輩！」[wsef]
 #美紅
 [chara_modm name="miku" face="angry"]
-「んもぅ藍美ちゃんやめてってば～」[pf]
+「んもぅ藍美ちゃんやめてってば～」[wsef]
 #
 ;※　　※　　※
 [mask time="800"]
@@ -668,25 +656,25 @@
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="333" setbuf="1"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="398" setbuf="2"]
 #翔和
-「大丈夫、絶対それはさせない。だって、三人で頑張った証は台無しなんかできない」[pf]
+「大丈夫、絶対それはさせない。だって、三人で頑張った証は台無しなんかできない」[wait time="3000"][cm]
 #翔和
-「藍美ちゃんに頼りっぱなしになるけど、この曲は絶対に完成させたいと思ってる」[pf]
+「藍美ちゃんに頼りっぱなしになるけど、この曲は絶対に完成させたいと思ってる」[wait time="3000"][cm]
 #藍美
 [chara_mods name="aimi" face="normal_p_1" cross="false" time="100"]
-「･･････先輩」[pf]
+「･･････先輩」[wsef]
 #翔和
-「ん？」[pf]
+「ん？」[wait time="3000"][cm]
 #藍美
 [chara_mods name="aimi" face="normal_p" cross="false" time="100"]
-「たまには男らしいこと言うんですね！」[pf]
+「たまには男らしいこと言うんですね！」[wsef]
 #翔和
-「どんだけ藍美ちゃんの中の俺は男らしくないんだよ･･････」[pf]
+「どんだけ藍美ちゃんの中の俺は男らしくないんだよ･･････」[wait time="3000"][cm]
 #藍美
 [chara_mods name="aimi" face="normal_p" cross="false" time="100"]
-「ま、仕方ないですから先輩のその男らしさのプライドのために、楽曲制作頑張ります！」[pf]
+「ま、仕方ないですから先輩のその男らしさのプライドのために、楽曲制作頑張ります！」[wsef]
 #藍美
 [chara_mods name="aimi" face="normal_p_3" cross="false" time="100" cross="false" time="100"]
-「私も三人の想いを歌にのせたいです！　そして、この曲を多くの人の前で歌いたいです！」[pf]
+「私も三人の想いを歌にのせたいです！　そして、この曲を多くの人の前で歌いたいです！」[wsef]
 #
 ;※　　※　　※
 [mask time="800"]
@@ -698,14 +686,14 @@
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="442" setbuf="398"]
 
 #美紅
-「だから、これからも『翔和くん』でいいかな？」[pf]
+「だから、これからも『翔和くん』でいいかな？」[wsef]
 #翔和
-自信がなさそうな春奈さん･･････たしか、今まで転校を繰り返してたんだっけ[pf]
+自信がなさそうな春奈さん･･････たしか、今まで転校を繰り返してたんだっけ[wait time="3000"][cm]
 #翔和
-「うん、それでよろしく頼むよ･･････美紅」[pf]
+「うん、それでよろしく頼むよ･･････美紅」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_p_2"
-「･･････うんっ」[pf]
+「･･････うんっ」[wsef]
 ;※　　※　　※
 ;CG05　キスしようとする
 ;※　　※　　※
@@ -715,40 +703,38 @@
 [bg storage="cg_2/kiss.jpg" time="0"]
 [chara_hide_all time="0"]
 [layopt layer="message0" visible="false"]
-[mask_off time="800" wait="true"]
+[mask_off time="1600" wait="true"]
 [bg time="2000" cross="false" storage="cg_2/kiss_1.jpg"]
 [bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
 [wait time="3000"]
 ;ブラック
-[bg storage="black.jpg"]
+[bg time ="6000" storage="black.jpg"]
 [playbgm storage="serious.ogg"]
 [layopt layer="message1" visible="true"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="506"]
 [vostart]
 ;文字
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="わたし、何やってんだろう"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="わたし、何やってんだろう"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="けっこーバカだな･･････わたし･･････"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="けっこーバカだな･･････わたし･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと･･････ずっと･･････好きだったんだ･･････"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと･･････ずっと･･････好きだったんだ･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なのに、なのに、どうして･･････？"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なのに、なのに、どうして･･････？"][wse]
 
-[mask time="800"]
 [position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame_pink.png" opacity=225]
 [position layer=message0 page=fore margint="140" marginr="100" marginl="150"]
-[bg storage="mura_1.jpg" time=0]
 [layopt layer="message1" visible="false"]
-[mask_off time="800"]
-
+[wait time="5000"]
 #美紅
-; [chara_modm name="miku" face="sad_px"]
-「もぅ･･････嫌ぁっ･･････」[pf]
+「もぅ･･････嫌ぁっ･･････」
+[wse]
+[fadeoutbgm time="3000"]
 #
 
 [mask time="800"]
@@ -756,8 +742,8 @@
 [position layer=message0 page=fore margint="140" marginr="100" marginl="150"]
 [bg storage="black.jpg" time="0"]
 [chat_start name="miku"]
+[wait time="5000"]
 [playse storage="line.ogg"]
-[wait time="3000"]
 [mask_off time="800"]
 ;CG06  スマホ
 ;以下スマホ文面（LINE）
@@ -769,10 +755,7 @@
 [chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][p]
 [chat_end]
 
-
-
-
-
+[mask time="800"]
 
 つづく[pf]
 タイトルへ戻ります[pf]
