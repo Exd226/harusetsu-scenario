@@ -2,8 +2,6 @@
 ;　angle : 美紅
 ;背景　教室　昼
 
-*debug
-
 [mask time="3000"]
 [fadeoutbgm time="3000"]
 [angle name="miku" bg="classroom.jpg"]

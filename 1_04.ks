@@ -364,7 +364,6 @@
 #翔和
 ん、写真部ってホントは存在しないんじゃね[pf]
 #翔和
-[playse storage="test.ogg"]
 そんなことないか。[pf]
 *select2
 #翔和

@@ -24,7 +24,7 @@
 #
 ;背景：星野村　夕
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
-[bg storage="mura.jpg" time="0"]
+[bg storage="mura_1.jpg" time="0"]
 @chara_show name="aimi" width=650 top=-170 time="0" face="normal_p"
 
 [mask_off time="800" wait="true"]
@@ -81,7 +81,7 @@
 ;背景：星野村　夕
 
 
-[angle name="aimi" bg="mura.jpg"]
+[angle name="aimi" bg="mura_1.jpg"]
 
 #藍美
 [chara_modm name="aimi" face="sad_p_3"]
@@ -203,7 +203,7 @@
 ;「angle：翔和」
 ;背景：星野村　夜
 
-[angle name="towa" bg="mura_1.jpg"]
+[angle name="towa" bg="mura_2.jpg"]
 #翔和
 思い出せない･･････[pf]
 #翔和
@@ -256,7 +256,7 @@
 ;「angle：美紅」
 ;河川敷　夜
 
-@angle name="miku" bg="mura_1.jpg"
+@angle name="miku" bg="mura_2.jpg"
 #美紅
 [chara_modm name="miku" face="sad_px_2"]
 「はぁ、はぁ」[pf]
@@ -341,9 +341,6 @@
 ;「angle：翔和」
 ;星野村　夜
 ;SE　花火
-; *debug
-; [angle name="towa" bg="mura_1.jpg"]
-; [fadeinbgm storage="sunset.ogg" time="3000"]
 
 #翔和
 ずっと目を閉じていた[pf]
@@ -376,7 +373,7 @@
 #
 ;星野村　夜
 [mask time="600"]
-		[bg storage="mura_1.jpg" time=0]
+		[bg storage="mura_2.jpg" time=0]
 		[free_layermode time="0"]
 		[free_filter  ]
 [mask_off time="600"][playbgm storage="fireworks.ogg"]
@@ -510,12 +507,6 @@
 「仕方ないから教えてあげます」
 [fadeoutbgm time="3000"]
 [pf]
-
-*debug
-[angle name="towa" bg="cg_2/smile.jpg"]
-[fadeinbgm time="3000" storage="fireworks.ogg" loop="true"]
-[voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="389"]
-[vostart]
 
 #藍美
 [bg time="500" cross="false" storage="cg_2/sad.jpg"]
@@ -707,6 +698,8 @@
 [bg time="2000" cross="false" storage="cg_2/kiss_1.jpg"]
 [bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
 [wait time="3000"]
+
+
 ;ブラック
 [bg time ="6000" storage="black.jpg"]
 [playbgm storage="serious.ogg"]
@@ -753,12 +746,9 @@
 [chat_talk pos="l" text="ごめんなさい、だから今日は行けなくなっちゃった"][p]
 [chat_talk pos="l" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][p]
 [chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][p]
+[mask time="800"]
 [chat_end]
 
-[mask time="800"]
-
-つづく[pf]
-タイトルへ戻ります[pf]
 [iscript]
 	location.href="./index.html";
 [endscript]

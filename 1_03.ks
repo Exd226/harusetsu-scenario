@@ -124,6 +124,7 @@
 #hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="doki"]
 「ん？　これは･･････」[pf]
+[vostop]
 #hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="doki"]
 ボタン？[pf]

@@ -1,6 +1,10 @@
 
 [cm]
 @clearstack
+
+; web版のみ必要な記述
+;[bg storage="click.jpg" time="100"][l]
+
 @bg storage ="title.jpg" time=100
 @wait time = 200
 
@@ -13,10 +17,10 @@
 
 ;デバッグ用
 ;@jump storage="test_ryoji.ks"
-@jump target="*debug" storage="2_08.ks"
+; @jump target="*debug" storage="2_01.ks"
 [s]
 
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
-; @jump storage="1_01.ks"
+@jump storage="1_01.ks"
 ;@jump target="*testplay" storage="1_01.ks"

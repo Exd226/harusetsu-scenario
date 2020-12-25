@@ -372,22 +372,12 @@
 
 
 @angle name="towa" bg="audioroom_1.jpg"
-@chara_shows name="aimi" width=650 top=-170 face="normal_3"
-#藍美
-「交わるあなたとわたしの髪の香り～♪」[pf]
-#翔和
-「･･････」
-@fadeinbgm time="3000" storage="everyday.ogg"
-[pf]
-#藍美
-「肩越しのわたしにあなたは言う「おはよう」って～♪」[pf]
-#翔和
-「･･････はぁ」[pf]
+@chara_shows name="aimi" width=650 top=-170 face="normal_1"
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="113"]
 [vostart]
 #藍美
-@chara_mods name="aimi" cross=false time="100" face="normal_1"
-「ん～「おはよう」ってなんで言ってるんだろ。ここは状況が分かりづらいから･･････」[pf]
+「ん～「おはよう」ってなんで言ってるんだろ。ここは状況が分かりづらいから･･････」
+[fadeinbgm time="3000" storage="everyday.ogg"][pf]
 #翔和
 「･･････あぁ～」[pf]
 #藍美

@@ -45,33 +45,34 @@
 #翔和
 あんな部屋であんなに熱唱するとは、きっと変な子なんだろうな[pf]
 #hatena_aimi
-「初めてなのこんなREALな恋～♪」[pf]
+「～～♪」[pf]
 #翔和
 ラブソングか、というかこの曲聴いたことないな[pf]
+
 #hatena_aimi
-「紅く火照ったこのこころ～♪」[pf]
+「～～～～♪」[pf]
 #翔和
 ゆっくりと歌のある場所へ歩いていたが、とうとうその場所についてしまった[pf]
 #翔和
 いったい誰が歌ってるんだろうか[pf]
 #翔和
 こんなに熱唱してるんだから少しくらいドア開けて覗いても気づかれないだろう[pf]
-;@fadeoutbgm time="3000"
+@fadeoutbgm time="3000"
 #翔和
 そっと、ばれないようにドアを開け･･････[pf]
 ;//CG：視聴覚室で歌う藍美
 @mask time=800
 @bg storage="audioroom.jpg" time=0
 @mask_off time=800
-@chara_shows name="aimi" width=650 top=-170 face="normal_3"
-#藍美
-「冷まさずにやさしく包んでいこ～♪」[pf]
+@chara_show name="aimi" width=650 top=-170 face="normal_3"
 #翔和
 「･･････へ？」[pf]
 #翔和
 そこで歌ってたのは予想外の人物で[pf]
 #藍美
-「眩しくて恋しくて見つめられない～♪」[pf]
+[chara_modm name="aimi" face="normal_3"]
+「～～♪」
+[fadeinbgm storage="koinohousoku.ogg" sprite_time="223302-233500" time="600" loop="false"][pf]
 #翔和
 ごく最近、面識のある人だった[pf]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="58"]

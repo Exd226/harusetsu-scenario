@@ -18,6 +18,8 @@
 @fadeinbgm storage="flashback.ogg" loop=true time=3000
 [voconfig setbuf="1" name="onna" vostorage="aimi/aimi_{number}.ogg" number="1"]
 [vostart]
+#
+Ver1.1
 
 #男の子
 「ねぇ、まだ～？」[p]

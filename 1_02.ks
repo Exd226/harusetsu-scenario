@@ -258,7 +258,7 @@
 「ということは、『夢の支配人』なんて、子供っぽいセンスなのは私のほう！？」[pf]
 #女子高生
 @chara_mods name="miku" cross="false" time="100" face="sad_1"
-「やだなぁ～、こんなセンスみんなに知られちゃったらバカにされちゃうよぅ～～」[pf]
+「やだなぁ～、こんなのみんなに知られちゃったらバカにされちゃうよぅ～～」[pf]
 #翔和
 うなだれてる･･････[pf]
 #翔和
@@ -457,7 +457,7 @@
 これはこの女の子との我慢比べ[pf]
 #翔和
 どちらが恥を捨て、我慢し続けるかの勝負だ[pf]
-@playse storage="puni.ogg" loop="true"
+@playse storage="puni.ogg"
 @chara_mod name="miku" cross="false" time="100" face="blush_1"
 #
 「ふにふにふにふに」[pf]
@@ -602,10 +602,6 @@
 ;※　　※　　※
 ;「angle：翔和」
 ;//背景：教室　朝
-
-*debug
-[fadeinbgm storage="everyday.ogg" time=3000 loop=true]
-
 
 @angle name="towa" bg="classroom.jpg"
 [voconfig setbuf="0" name="hatena_kurumi" vostorage="kurumi/kurumi_{number}.ogg" number="1"]
@@ -1231,7 +1227,7 @@
 #翔和
 今日はいろんなことありすぎだった[pf]
 #翔和
-それででだろう、今日はもう眠い[pf]
+それでだろう、今日はもう眠い[pf]
 
 ;//背景:ブラック
 @bg storage="black.jpg"

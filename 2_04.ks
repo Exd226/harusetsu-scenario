@@ -690,11 +690,6 @@
 @bg_eye storage="storehouse.jpg"
 ;背景：体育館裏　昼
 
-
-*debug
-[angle name="towa" bg="storehouse.jpg"]
-
-
 #翔和
 学校にもこんな人影のいないところあったんだ･･････[pf]
 #他校生C

@@ -52,7 +52,6 @@
 	;プラグイン読み込み
 	[plugin name="chat_story"]
 	[plugin name="theme_kopanda_13"]
-	[plugin name="preventClick"]
 	
 	;全レイヤーの解放
 	[clearfix]
@@ -638,9 +637,6 @@
 	[chara_new name="shoujo" storage="chara/ryoji/normal.png" jname="少女" color="0x000000"]
 	[chara_new name="kinpatu" storage="chara/ryoji/normal.png" jname="金髪美少女" color="0xff8c00"]
 
-
-
-	
 	;キャラクターの名前が表示される文字領域
 	[ptext name="chara_name_area" layer="message0" size=24 x=150 y=540]
 

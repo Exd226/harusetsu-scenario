@@ -356,10 +356,6 @@
 ;※　　※　　※
 ;背景：教室　昼
 
-*debug
-[angle name="towa" bg="classroom.jpg"]
-[fadeinbgm time="3000" storage="everyday.ogg"]
-
 [voconfig setbuf="0" name="kurumi_f" vostorage="kurumi/kurumi_{number}.ogg" number="50"]
 [voconfig setbuf="1" name="miku_f" vostorage="miku/miku_{number}.ogg" number="290"]
 [vostart]
@@ -424,9 +420,9 @@
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 [bg storage="clubroom_1.jpg" time="0"]
 [chara_hide_all time="0"]
-@chara_shows name="kurumi" width=500 top=-50 face="hate_1" time="0"
-@chara_shows name="miku" width=500 top=-50 face="sad_1" time="0"
-@chara_shows name="yuna" width=500 top=-50 face="sad" time="0"
+@chara_show name="kurumi" width=500 top=-50 face="hate_1" time="0"
+@chara_show name="miku" width=500 top=-50 face="sad_1" time="0"
+@chara_show name="yuna" width=500 top=-50 face="sad" time="0"
 [voconfig setbuf="0" name="yuna_f" vostorage="yuna/yuna_{number}.ogg" number="74"]
 [voconfig setbuf="1" name="miku_f" vostorage="miku/miku_{number}.ogg" number="291"]
 [vostart]
@@ -435,6 +431,7 @@
 #翔和
 授業も終わり、放課後のまったりした部活の時間が始まった[pf]
 #来未
+[chara_modm name="kurumi" face="hate_1"]
 「ほんっと暑いわね」[pf]
 #翔和
 6月の湿気と暑さで、まったりというより、ぐったりしてる[pf]
@@ -444,6 +441,7 @@
 @chara_mods name="kurumi" cross=false time="100" face="hate"
 「それは無理、ここのエアコン掃除されてないし」[pf]
 #美紅
+[chara_modm name="miku" face="sad_1"]
 「朝比奈先輩が今度業者に頼んである、と言ってたけどいつなんでしょうね」[pf]
 #由奈
 @chara_mods name="yuna" cross=false time="100" face="sad_3"
@@ -464,7 +462,7 @@
 #翔和
 暑さになれていない[pf]
 #翔和
-@chara_mods name="miku" cross=false time="100" face="sad_2"
+@chara_mod name="miku" cross=false time="100" face="sad_2"
 「じゃあ、俺、飲み物買ってきます、暑いし」[pf]
 #翔和
 俺も、気分転換になにか飲み物を買おうと思う[pf]
@@ -475,7 +473,7 @@
 @chara_mods name="kurumi" cross=false time="100" face="normal_2"
 「私のも買ってきてくれると助かるな～」[pf]
 #翔和
-@chara_mods name="miku" cross=false time="100" face="sad_1"
+@chara_mod name="miku" cross=false time="100" face="sad_1"
 「ああ、分かった」[pf]
 ;背景：廊下　夕
 @bg_eye storage="corridor_8.jpg" hide="true"
