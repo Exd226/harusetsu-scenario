@@ -62,6 +62,9 @@
 #翔和
 そっと、ばれないようにドアを開け･･････[pf]
 ;//CG：視聴覚室で歌う藍美
+
+
+
 @mask time=800
 @bg storage="audioroom.jpg" time=0
 @mask_off time=800
@@ -73,7 +76,9 @@
 #藍美
 [chara_modm name="aimi" face="normal_3"]
 「～～♪」
-[fadeinbgm storage="koinohousoku.ogg" sprite_time="224000-232500" time="3000" loop="false"][pf]
+[fadeinbgm storage="koinohousoku.ogg" sprite_time="224000-232500" time="3000" loop="false"]
+[stopbgm time="200"]
+[pf]
 #翔和
 ごく最近、面識のある人だった[pf]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="58"]
@@ -461,6 +466,7 @@
 「安野クンの入部を歓迎します───」[pf]
 
 ;※　　　※　　　※
+
 [mask time=1000]
 [chara_hide_all time=0]
 [clearfix]
@@ -475,6 +481,7 @@
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="2" number="81"]
 [voconfig name="sumire_f" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="31"]
+[voconfig name="yuna_f" vostorage="yuna/yuna_{number}.ogg" setbuf="1" number="12"]
 [vostart]
 ;//背景：部室
 ;//アニメーション：部室のところどころをアップで映す

@@ -225,11 +225,15 @@
 @stopse
 @cm
 #翔和
-「ここは、まだ、あなたの夢の中です」[pf]
+「ここは、まだ、あなたの夢の中です」
+[fadeoutbgm time="3000"]
+[pf]
 [voconfig setbuf="0" name="joshikousei" vostorage="miku/miku_{number}.ogg" number="14"]
 #女子高生
 @chara_mods name="miku" cross="false" time="100" face="doki_1"
-「夢のなか･･････？」[pf]
+「夢のなか･･････？」
+[fadeinbgm time="3000" storage="comedy.ogg"]
+[pf]
 #翔和
 よし、乗ってくれたみたいだ[pf]
 #翔和
@@ -298,7 +302,7 @@
 「そ、そうなんですか！？　不幸中の幸いです･･････」[pf]
 #女子高生
 @chara_mods name="miku" cross="false" time="100" face="sad_1"
-「･･････それで、私はどうしたらいいんですか？　支配人さん」[pf]
+「･･････それで、私はどうしたらいいんですか？　夢の支配人さん」[pf]
 #翔和
 「そ、そですね、まずは夢から覚めましょう」[pf]
 #女子高生
@@ -487,7 +491,9 @@
 #車掌
 「虹櫻～虹櫻～降り口は左側です～」[pf]
 #翔和
-「だああぁぁっっ！　やってられるかぁぁぁああ！」[pf]
+「だああぁぁっっ！　やってられるかぁぁぁああ！」
+[fadeinout time="3000"]
+[pf]
 
 ;※	　※　　※
 
@@ -496,6 +502,7 @@
 @bg storage="road.jpg" time="0"
 @chara_mod name="miku" cross="false" time="0" face="doki_1"
 @wait time="500"
+[fadeinbgm time="3000" storage="everyday.ogg"]
 @mask_off time=" 500"
 
 
@@ -1146,7 +1153,7 @@
 #翔和
 春奈さんに無駄に迷惑かけたくないし、ここは黙っておこう[pf]
 #翔和
-「でも、春奈さんが転校してきたのはびっくりっした」[pf]
+「でも、春奈さんが転校してきたのはびっくりした」[pf]
 #美紅
 @chara_mods name="miku" cross="false" time="100" face="normal_1"
 「それは、私もだよ。それに、あんなあからさまなリアクションとられたしなぁ」[pf]

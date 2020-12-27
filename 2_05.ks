@@ -1370,11 +1370,15 @@
 @chara_mods name="miku" cross=false time="100" face="normal"
 「･･････ふぅ」[pf]
 #翔和
-さっきとはまるで雰囲気が変わった春奈さんに、俺も藍美ちゃんも呆気に取られていた[pf]
+さっきとはまるで雰囲気が変わった春奈さんに、俺も藍美ちゃんも呆気に取られていた
+[fadeoutbgm time="3000"]
+[pf]
 ;CG：夕焼けに神秘的に映る美紅
 #美紅
 [chara_modm name="miku" face="normal"]
-「･･････翔和くんと藍美ちゃんは『奇跡』を信じますか？」[pf]
+「･･････翔和くんと藍美ちゃんは『奇跡』を信じますか？」
+[fadeinbgm time="3000" storage="miku.ogg"]
+[pf]
 #美紅
 @chara_mod name="aimi" cross=false time="100" face="doki"
 @chara_mods name="miku" cross=false time="100" face="normal_1"
@@ -1409,10 +1413,14 @@
 春奈さんと藍美ちゃんが同じようなところを目指しているってことならわかる[pf]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
-「私はそんな藍美ちゃんの『願い』を少しでもお手伝いできてるかな？」[pf]
+「私はそんな藍美ちゃんの『願い』を少しでもお手伝いできてるかな？」
+[fadeoutbgm time="3000"]
+[pf]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_3"
-「はい！　もちろんです！　ですよね？　先輩」[pf]
+「はい！　もちろんです！　ですよね？　先輩」
+[fadeinbgm time="3000" storage="wayhome.ogg"]
+[pf]
 #翔和
 「あ、ああ、おう」[pf]
 #藍美

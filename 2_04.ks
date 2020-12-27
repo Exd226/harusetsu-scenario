@@ -688,7 +688,6 @@
 #翔和
 二人のあとを付ける････････････[pf]
 ;　※　　※
-
 @bg_eye storage="storehouse.jpg"
 ;背景：体育館裏　昼
 
@@ -739,7 +738,7 @@
 「じゃ、私、ミスコンあるから」[pf]
 #他校生C
 「･･････待てよ」
-[fadeoutbgm time=3000]
+[playbgm storage="crisis.ogg"]
 [pf]
 #来未
 [chara_modm name="kurumi" face="hate_2"]
@@ -807,7 +806,6 @@
 #翔和
 @chara_mod name="kurumi" cross=false time="100" face="doki"
 「やめるんだ」
-[playbgm storage="crisis.ogg"]
 [pf]
 #他校生C
 「ああん？なんだお前」[pf]
@@ -1458,7 +1456,7 @@
 #翔和
 「は、春奈さっ･･････って･･････[pf]
 「藍美ちゃん？」
-@fadeinbgm storage="everyday.ogg" time="3000"
+@fadeinbgm storage="serious_2.ogg" time="3000"
 [pf]
 #翔和
 じゃあさっきの寝言も藍美ちゃんなのか[pf]
@@ -1555,7 +1553,9 @@
 むだに意地を張ったり強がったりする癖のせいで今まで何度も後悔してきた[pf]
 #藍美
 [chara_modm name="aimi" face="sad_p_3"]
-そんな不器用な自分に嫌気すらも感じていた[pf]
+そんな不器用な自分に嫌気すらも感じていた
+[fadeoutbgm time="3000"]
+[pf]
 
 ;※　　※　　※
 
@@ -1563,7 +1563,9 @@
 ;背景：廊下　夕
 @angle name="towa" bg="corridor_4.jpg"
 #翔和
-走りながら時計を確認する[pf]
+走りながら時計を確認する
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 #翔和
 うわ、これ1時間弱遅れてるわ･･････[pf]
 #翔和
@@ -1589,12 +1591,12 @@
 「･･････」[pf]
 #翔和
 「春奈、さん･･････？」[pf]
-;#翔和
-;こちらには気にも留めずに黙々と紙きれを数えている[pf]
-;#美紅
-;[chara_modm name="miku" face="normal"]
-;「･･････どうしたの？」[pf]
-;#翔和
+#翔和
+こちらには気にも留めずに黙々と紙きれを数えている[pf]
+#美紅
+[chara_modm name="miku" face="normal"]
+「･･････どうしたの？」[pf]
+#翔和
 顔色ひとつ変えない春奈さん･･････気にしてないのかな･･････[pf]
 #美紅
 @chara_mods name="miku" cross=false time=200  face="hate_2"
