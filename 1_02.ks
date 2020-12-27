@@ -469,7 +469,7 @@
 「……ひゃっ//」[pf]
 #翔和
 さっきより反応がいい、よし畳み掛けるぞ[pf]
-@playse storage="puni.ogg" loop="true"
+@playse storage="puni.ogg"
 @chara_mod name="miku" cross="false" time="100" face="doki_1"
 #
 「ふにふにふにふに」[pf]
@@ -479,7 +479,7 @@
 「……っ……あっ//」[pf]
 #翔和
 もっと、もっとだ！[pf]
-@playse storage="puni.ogg" loop="true"
+@playse storage="puni.ogg"
 @chara_mod name="miku" cross="false" time="100" face="blush"
 #
 「ふにふにふにふにふにふに」[pf]
@@ -1023,8 +1023,7 @@
 
 ;美紅：表示
 ;//美紅：基本
-@chara_shows name="miku" width=450 top=-50 
-
+[chara_modm name="miku" face="normal"] 
 #美紅
 「････････････」[pf]
 #翔和
@@ -1033,10 +1032,6 @@
 や、やべっ[pf]
 #翔和
 すぐ、分かった、フラグが回収されやすいのは分かっていたから[pf]
-
-;美紅:フェードアウト
-@chara_hide_all
-
 #翔和
 すぐ目をそらしたけど、[pf]
 #翔和
@@ -1044,8 +1039,7 @@
 
 ;//美紅:表示
 ;//美紅：基本
-@chara_shows name="miku" width=450 top=-50
-
+[chara_modm name="miku" face="normal"]
 #美紅
 「･･････」[pf]
 #翔和
@@ -1056,11 +1050,8 @@
 あっちもすごい気にしてるみたい、かな？[pf]
 #翔和
 それに･･････春奈さんが見てる紙って俺と同じ部活の･･････[pf]
-
-;美紅：困り
-
 #美紅
-@chara_mods name="miku" cross="false" time="100" face="hate_2"
+@chara_modm name="miku" cross="false" time="100" face="hate_2"
 「････････････」[pf]
 #美紅 
 [chara_modm name="miku" face="hate_2"]
@@ -1077,7 +1068,6 @@
 「チラッ」[pf]
 #翔和
 っ！　やべ、また目があっちゃたよ[pf]
-@chara_hide_all
 #翔和
 ･･････俺のせいで機嫌を損ねちゃったかな･･････[pf]
 
@@ -1099,7 +1089,7 @@
 ;アニメーション：美紅が横切る
 @chara_show name="miku" width=450 top=-50 time=0 left=1300
 @filter name="miku" brightness=50
-@chara_move name="miku" left="-=2000" anim="true" time=1700
+@chara_move name="miku" left="-=2000" anim="true" time=1500
 @chara_hide name="miku" time="100"
 
 #翔和
@@ -1163,7 +1153,7 @@
 #翔和
 「ごめん、あの時は本当にびっくりして･･････」[pf]
 #美紅
-@chara_modm name="miku" cross="false" time="100" face="sad_1"
+@chara_mods name="miku" cross="false" time="100" face="sad_1"
 「変なうわさとか立てられたら困るんだけどなぁ」[pf]
 #翔和
 「ごめんなさい･･････」[pf]
@@ -1189,7 +1179,7 @@
 #翔和
 「そうなんだけど･････って、え？」[pf]
 #美紅
-[chara_modm name="miku" face="normal_1"]
+[chara_mods name="miku" face="normal_1"]
 「私も、もうすぐなんだ」[pf]
 #翔和
 「なんで･･････知ってるの？」[pf]
@@ -1269,7 +1259,6 @@
 [chara_modm name="miku" face="sad_px_1"]
 この際、人気があまりない部活に入るしかないかなぁ[pf]
 
-
-
+[debug_return]
 
 @jump storage="1_03.ks"

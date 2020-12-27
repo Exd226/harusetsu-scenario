@@ -2,7 +2,7 @@
 ;; 5/7 tue
 ;;背景：食堂 昼
 
-@mask time="700"
+@mask time="2000"
 @fadeoutbgm time="3000"
 @free_filter
 @free_layermode time="0"
@@ -35,6 +35,7 @@
 仕方ないか～[pf]
 #翔和
 「あの～隣いいですか････････････って春奈さんじゃないですか」[pf]
+#
 @chara_shows name="miku" width=650 top=-170
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="91" setbuf="0"]
 [vostart]
@@ -186,6 +187,7 @@
 #美紅
 [chara_mods name="miku" face="normal_2"]
 「ううん、気づいてないだけだよ、安野くんは天然っぽいところあるから」[pf]
+#
 @chara_hide_all
 #翔和
 そう言って春奈さんはすたすたその場を去っていった[pf]
@@ -195,7 +197,6 @@
 いや、電車で見知らぬ人の肩で寝てしまうほど天然な人には言われたくないわ[pf]
 #翔和
 よし、行こう[pf]
-@fadeoutbgm time="3000"
 [vostop]
 ;※　　※　　※
 ;「angle：美紅」
@@ -221,7 +222,6 @@
 @angle name="towa" bg="classroom.jpg"
 #クラス委員
 「この時間のHRについてなんだけど、もうすぐ開催される文化祭について決め事がありま～す」
-@fadeinbgm storage="everyday.ogg" time="3000"
 [pf]
 #翔和
 クラス委員にしては気だるげというか、軽めの口調でHRが始まった[pf]
@@ -244,7 +244,9 @@
 「白咲さん、出場できる？」[pf]
 #来未
 @chara_modm name="kurumi"
-「異存はないかしら」[pf]
+「･･････」[pf]
+#翔和
+答えるまでもない、といったような態度の白咲さん[pf]
 #クラス委員
 「では、そういうことで、次に実行委委員を決めま～す」[pf]
 #クラス
@@ -377,7 +379,7 @@
 [vostart]
 #藍美
 「ん～「おはよう」ってなんで言ってるんだろ。ここは状況が分かりづらいから･･････」
-[fadeinbgm time="3000" storage="everyday.ogg"][pf]
+[fadeinbgm time="3000" storage="everyday_2.ogg"][pf]
 #翔和
 「･･････あぁ～」[pf]
 #藍美
@@ -534,9 +536,9 @@
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_1"
 「じゃ、頑張ってくださいね。先輩」[pf]
+#
 @chara_hide_all
 @playse storage="room_door_O.ogg"
-#
 「ガチャン！」[pf]
 #翔和
 「なんで、そんなに急に追い出すんだよ」[pf]
@@ -795,7 +797,16 @@
 [chara_mods name="sumire" cross=false time="100" face="normal_1"]
 「打ち合わせしよう！」[pf]
 
-[bg_eye storage="clubroom_1.jpg"]
+[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
+[chara_hide_all time=0]
+[bg storage="clubroom_1.jpg" time=0]
+[chara_show name="sumire" width=500 top=-70 face="normal" left="390" time=0]
+[chara_show name="miku" width=600 top=-100 face="normal" left="665" time=0]
+[chara_show name="yuna" width=600 top=-100 face="normal" left="15" time=0]
+[mask_off time="800"]
+
+
+
 ;※　　※　　　※
 
 ;背景：部室　夕
@@ -858,10 +869,12 @@
 #由奈
 [chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「はーい」[pf]
+#
 [chara_hide name="yuna"]
 #美紅
 [chara_mods name="miku" cross=false time="100" face="normal_1"]
 「さようなら～」[pf]
+#
 [chara_hide name="miku"]
 #翔和
 「あの、朝比奈先輩」[pf]
@@ -1036,19 +1049,19 @@
 #翔和
 めっちゃ恥ずかしいじゃねぇか！[pf]
 #美紅
-@chara_mods name="miku" cross=false time="100" face="normal"
+@chara_mods name="miku" cross=false time="100" face="normal_2"
 「･･････クスッ･･････ふふっ」[pf]
 #翔和
 「なに笑ってるんだよ、割と勇気出して言ったんだぞ」[pf]
 #美紅
-[chara_modm name="miku" face="normal"]
+[chara_modm name="miku" face="normal_2"]
 「ふっ･･････ごめんね、だって、ちょっと･･････っ」[pf]
 #翔和
 「そんなにおかしいっ？？」[pf]
 #翔和
 すげー恥ずかしくなってきたんだけど[pf]
 #美紅
-[chara_modm name="miku" face="normal"]
+[chara_mods name="miku" face="normal"]
 「ふぅ～」[pf]
 #翔和
 どうせ、春奈さんは実はそんなに気にしてなかったんだ[pf]
@@ -1140,12 +1153,14 @@
 「ま、隣の家の安野くんだから、大丈夫だよ」[pf]
 #母
 「･･････っ」[pf]
-#
+[vostop]
+#美紅
 お母さんが一瞬ひきつったような顔を見せた[pf]
 #母
 「そ、そうなのね、なら･･････分かったわ」[pf]
 #母
 「じゃ、洗い物残ってるから･･････」[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="normal_px_1"]
 「あ、ちょっと待って」[pf]
@@ -1176,7 +1191,6 @@
 #美紅
 [chara_modm name="miku" face="normal_px"]
 そういえば、安野くんに明日のこと連絡しなくちゃ[pf]
-[fadeoutbgm time="3000"]
 ;※　　※　　※
 ;「angle：翔和」
 ;;背景：スマホ画面
@@ -1185,40 +1199,30 @@
 @angle name="towa" bg="myroom_2.jpg"
 [l]
 @playse storage="line.ogg"
+
 @chat_start name="miku"
 
 [chat_talk pos="l" text="こんばんは"][pf]
-
 [chat_talk pos="l" text="連絡があるんだけど、少し遅くなっちゃてすみません"][pf]
-
 [chat_talk pos="l" text="実はもう明日の放課後から実行委員会があります"][pf]
-
 [chat_talk pos="l" text="急だけどごめんね"][pf]
-
 [chat_talk pos="r" text="連絡ありがとう"][pf]
-
 [chat_talk pos="r" text="別に、春奈さんが委員会の日程決めたわけじゃないし、謝らなくていいよ"][pf]
-
 [chat_talk pos="l" text="安野くんはまじめすぎだよ～　私、明日が憂鬱なんだけどなぁ"][pf]
-
-
 [chat_talk pos="r" text="いや、俺もぶっちゃけめんどくさいし"][pf]
-
 [chat_talk pos="l" text="やっぱ･･････そうだよね･･････大変だよね"][pf]
-
 [chat_talk pos="r" text="い、いやでも俺、頑張るから"][pf]
-
 [chat_talk pos="r" text="あんま、大変だとか思ってないから"][pf]
-
 [chat_talk pos="l" text="フォローありがと笑"][pf]
-
 [chat_talk pos="r" text="さっそく、もう春奈さんの役に立てるかどうか不安になって来たよ･･････"][pf]
-
 [chat_talk pos="l" text="ううん、私は安野くんに感謝してるから"][pf]
-
 [chat_talk pos="l" text="だからこそ、これから先、わがまま言っちゃうときもあるよ？"][pf]
 
-@chat_end
+[resetfont]
+[chat_clear]
+[freeimage layer=2 time="500"]
+
+[debug_return]
 
 @jump storage="2_03.ks"
 つづく[pf]

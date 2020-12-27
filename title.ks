@@ -17,10 +17,10 @@
 
 ;デバッグ用
 ;@jump storage="test_ryoji.ks"
-; @jump target="*debug" storage="2_01.ks"
+; @jump storage="debug.ks"
 [s]
 
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
 @jump storage="1_01.ks"
-;@jump target="*testplay" storage="1_01.ks"
+; @jump target="*testplay" storage="1_01.ks"

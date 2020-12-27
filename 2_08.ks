@@ -342,6 +342,7 @@
 ;星野村　夜
 ;SE　花火
 
+[angle name="towa" bg="mura_2.jpg"]
 #翔和
 ずっと目を閉じていた[pf]
 #翔和
@@ -579,7 +580,7 @@
 「え、俺もっ！？　俺らトーシロだぞ、まして作曲なんて･･････」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_2"
-「でも･･････作りたいよ！　“わたしたちだけ”の曲！　だって素敵じゃない！？　私たちがこうやって毎日頑張った三人の証が残せるんだよっ！」[wsef]
+「でも･･････作りたいよ！　“わたしたちだけ"の曲！　だって素敵じゃない！？　私たちがこうやって毎日頑張った三人の証が残せるんだよっ！」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_3"
 「とてもいいと思いますっ！　私もそんな歌がうたいたいです！」[wsef]
@@ -688,6 +689,7 @@
 ;※　　※　　※
 ;CG05　キスしようとする
 ;※　　※　　※
+
 [mask time="800"]
 [free_layermode time="0"]
 [free_filter  ]
@@ -699,42 +701,35 @@
 [bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
 [wait time="3000"]
 
-
 ;ブラック
-[bg time ="6000" storage="black.jpg"]
+[bg time="6000" storage="black.jpg"]
 [playbgm storage="serious.ogg"]
 [layopt layer="message1" visible="true"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="506"]
 [vostart]
 ;文字
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="わたし、何やってんだろう"][wse]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="わたし、何やってんだろう"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"][wse]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="けっこーバカだな･･････わたし･･････"][wse]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="けっこーバカだな･･････わたし･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"][wse]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと･･････ずっと･･････好きだったんだ･･････"][wse]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="ずっと･･････ずっと･･････好きだったんだ･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なのに、なのに、どうして･･････？"][wse]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="なのに、なのに、どうして･･････？"][wse]
 
-[position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame_pink.png" opacity=225]
-[position layer=message0 page=fore margint="140" marginr="100" marginl="150"]
 [layopt layer="message1" visible="false"]
+[layopt layer="message0" visible="false"]
 [wait time="5000"]
 #美紅
 「もぅ･･････嫌ぁっ･･････」
 [wse]
 [fadeoutbgm time="3000"]
 #
-
 [mask time="800"]
-[position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame_blue.png" opacity=225]
-[position layer=message0 page=fore margint="140" marginr="100" marginl="150"]
-[bg storage="black.jpg" time="0"]
-[chat_start name="miku"]
 [wait time="5000"]
 [playse storage="line.ogg"]
 [mask_off time="800"]
@@ -742,12 +737,76 @@
 ;以下スマホ文面（LINE）
 ;BGMなし　無音でお願いします
 ;スマホの着信音
-[chat_talk pos="l" text="急にお母さんが体調崩して熱出しちゃったみたい"][p]
-[chat_talk pos="l" text="ごめんなさい、だから今日は行けなくなっちゃった"][p]
-[chat_talk pos="l" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][p]
-[chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][p]
+
+
+@chat_start name="miku"
+
+[chat_talk pos="l" text="急にお母さんが体調崩して熱出しちゃったみたい"][pf]
+[chat_talk pos="l" text="ごめんなさい、だから今日は行けなくなっちゃった"][pf]
+[chat_talk pos="l" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][pf]
+[chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][pf]
+
 [mask time="800"]
-[chat_end]
+[resetfont]
+[freeimage layer=2 time="500"]
+[clearfix]
+[layopt layer=0 visible=true]
+[mask_off time="800"]
+
+[fadeinbgm time="3000" storage="koinohousoku_short.ogg" loop="false"]
+[ptext layer=0 y=800 text="原案" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=850 text="racamyy" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1050 text="シナリオ" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1100 text="racamyy" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1300 text="イラスト" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1350 text="竹中たけし" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1400 text="柳　うらば" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1600 text="スクリプト" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1650 text="儀助" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1700 text="WK" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1900 text="キャラクターボイス" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1950 text="春奈美紅　寺島。" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2000 text="沢井藍美　小日向らむね / 歌-陽向舞桜" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2050 text="白咲来未　葉月ゆう" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2100 text="桐島由奈　城之内　悠香" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2150 text="朝日奈すみれ　蜜月杏" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2350 text="挿入歌" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2400 text="「恋の法則」" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2450 text="詞：沢井藍美　春奈美紅　安野翔和" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2500 text="作編曲：沢井藍美（陽向舞桜）" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2550 text="歌：沢井藍美（陽向舞桜）" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2750 text="イラスト協力（ティザービジュアル）" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2800 text="輝石" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2850 text="かい" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3050 text="背景協力" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3100 text="輝石" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3300 text="素材提供元" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3350 text="KNT graphics：矢神ニーソ" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3400 text="きまぐれアフター" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3450 text="Creative Freaks" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3500 text="消失点　(c)安野譲" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3550 text="神楽" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3650 text="とくだや" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3750 text="Otologic" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3800 text="効果音ラボ" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3850 text="ノタの森" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3950 text="魔王魂" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=4050 text="空想曲線" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]racamyy
+[ptext layer=0 y=4500 text="制作" bold="bold" size=20 x=0 color=snow name="text" align="center" width="1280"]racamyy
+[ptext layer=0 y=4550 text="GALEX SOFT" bold="" size=20 x=0 color=snow name="text" align="center" width="1280"]racamyy
+
+
+
+
+[wait time=1]
+
+[keyframe name="animation1"]
+[frame p=100% y="-4170"]
+[endkeyframe]
+
+[kanim name="text" keyframe="animation1" time="110000" ]
+[wa]
+[mask time="1000"]
 
 [iscript]
 	location.href="./index.html";

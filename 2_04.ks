@@ -69,7 +69,6 @@
 「すみませーん」[pf]
 ;すみれ：表示
 #翔和
-[chara_modm name="sumire" cross=false time="100" face="sleep"]
 朝比奈先輩が居る[pf]
 #翔和
 「朝比奈先輩、お疲れ様です」[pf]
@@ -566,11 +565,14 @@
 #翔和
 「よう」[pf]
 #良治
+[chara_modm name="ryoji" face="normal"]
 「なんだカメラなんか持って」[pf]
 #翔和
 「写真部だからさ」[pf]
 #良治
+[chara_modm name="ryoji" face="normal"]
 「おう、そういうことか」[pf]
+[chara_modm name="ryoji" face="normal"]
 「かっこよく撮ってくれよな」[pf]
 ;良治：笑顔
 #翔和
@@ -601,6 +603,7 @@
 #翔和
 「え～～」[pf]
 #良治
+[chara_modm name="ryoji" face="normal_2"]
 「ほら、早くカメラ構えろよっ」[pf]
 #翔和
 マジかよ･･････[pf]
@@ -684,7 +687,6 @@
 ････････････けど心配だ、とりあえず付いていって様子だけは見とこう[pf]
 #翔和
 二人のあとを付ける････････････[pf]
-@fadeoutbgm time="3000"
 ;　※　　※
 
 @bg_eye storage="storehouse.jpg"
@@ -701,6 +703,7 @@
 ;来未：表示；いらだち
 [voconfig setbuf="0" name="kurumi_f" vostorage="kurumi/kurumi_{number}.ogg" number="18"]
 [vostart]
+#
 @chara_show name="kurumi" width=420 top=-30 face="angry"
 #翔和
 やっぱり白咲さんか[pf]
@@ -735,7 +738,9 @@
 @chara_mods name="kurumi" cross=false time="100" face="hate_2"
 「じゃ、私、ミスコンあるから」[pf]
 #他校生C
-「･･････待てよ」[pf]
+「･･････待てよ」
+[fadeoutbgm time=3000]
+[pf]
 #来未
 [chara_modm name="kurumi" face="hate_2"]
 「･･････」[pf]
@@ -986,7 +991,6 @@
 そんなたわいない話をしながら白咲さんをミスコン会場まで送った[pf]
 #翔和
 俺の袖をちょこんと握ったその手は離されないまま･････[pf]
-@fadeoutbgm time="3000"
 #
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="223"]
@@ -1002,9 +1006,7 @@
 カメラにさっきのバンドの人たちの画像データがあることを確認する[pf]
 #美紅
 [chara_modm name="miku" face="normal"]
-体育館は薄暗かったけどなかなか上出来だ
-@fadeinbgm storage="everyday.ogg" time="3000"
-[pf]
+体育館は薄暗かったけどなかなか上出来だ[pf]
 #美紅
 [chara_modm name="miku" face="sad_1"]
 次の発表は誰なのかな？　バンドとか定番のものがありふれていてもう飽きてきた[pf]
@@ -1638,7 +1640,7 @@
 「･･････っ･･････あ、あれだよねっ･･････白咲さんの票が圧倒的に多いよねっ！」[pf]
 #美紅
 [chara_modm name="miku" face="angry"]
-「･･････[l][r]･････････[l][r]････････････で？」[pf]
+「･･････[l]･････････[l]････････････で？」[pf]
 #翔和
 「ひえっ！　･･････そ、それだけですが･･････」[pf]
 #美紅
@@ -1737,7 +1739,7 @@
 「いや、だってさ文字だけだったら勘違いされる雰囲気だったじゃん[r]
 　主に外の世界の人達にさ！」[pf]
 #美紅
-@chara_mods name="miku" cross=false time=200  face="normal"
+@chara_mods name="miku" cross=false time=200  face="angry"
 「安野くん、それはタブーだよ」[pf]
 #翔和
 「あ、はい」[pf]
@@ -1939,6 +1941,9 @@
 「私は彼女の大ファンなんだよっ」[pf]
 [mask]
 @fadeoutbgm time="3000"
+
+[debug_return]
+
 @jump storage="2_05.ks"
 つづく[pf]
 タイトルへ戻ります[pf]

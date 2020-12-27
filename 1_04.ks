@@ -4,7 +4,7 @@
 
 
 
-@bg_eye storage="cafe.jpg"
+@bg_mask storage="cafe.jpg"
 
 #翔和
 かつ丼･･････カレー･･････うどん[pf]
@@ -380,6 +380,9 @@
 
 ;　　　　　２「まだ、校内を探す」（２章-01 メインルートへ）
 *select2_2
+
+[debug_return]
+
 @jump storage="2_01.ks"
 
 

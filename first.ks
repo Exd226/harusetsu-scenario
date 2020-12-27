@@ -5,12 +5,16 @@
 
 
 ;セーブデータ消去
-;[iscript]
-;localStorage.clear();
-;[endscript]
+; [iscript]
+; localStorage.clear();
+; [endscript]
 
-;[clearsysvar]
-;[clearvar]
+; [clearsysvar]
+; [clearvar]
+
+[iscript]
+	var debug_flag = 0;
+[endscript]
 
 ;キーコンフィグの停止
 [stop_keyconfig]
@@ -872,6 +876,12 @@
 		[chara_hide_all layer="message0" time="10" layer="message0"]
 		[chara_show name=&mp.name_f layer="message0" left="20" top="550" width="130" zindex="101" time="10" face="%face"]
 		[eval exp="f.face=mp.face"]
+	[endmacro]
+
+	[macro name="debug_return"]
+		[if exp="debug_flag==1"]
+			[return]
+		[endif]
 	[endmacro]
 
 ;タイトル画面へ移動

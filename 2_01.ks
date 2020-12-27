@@ -56,8 +56,9 @@
 #翔和
 いったい誰が歌ってるんだろうか[pf]
 #翔和
-こんなに熱唱してるんだから少しくらいドア開けて覗いても気づかれないだろう[pf]
-@fadeoutbgm time="3000"
+こんなに熱唱してるんだから少しくらいドア開けて覗いても気づかれないだろう 
+[fadeoutbgm time="3000"]
+[pf]
 #翔和
 そっと、ばれないようにドアを開け･･････[pf]
 ;//CG：視聴覚室で歌う藍美
@@ -72,7 +73,7 @@
 #藍美
 [chara_modm name="aimi" face="normal_3"]
 「～～♪」
-[fadeinbgm storage="koinohousoku.ogg" sprite_time="223302-233500" time="600" loop="false"][pf]
+[fadeinbgm storage="koinohousoku.ogg" sprite_time="224000-232500" time="3000" loop="false"][pf]
 #翔和
 ごく最近、面識のある人だった[pf]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="58"]
@@ -91,7 +92,9 @@
 「こ、こんにちは」[pf]
 #藍美
 @chara_mods name="aimi" cross="false" time="100" face="doki" 
-「なんだ、翔和先輩でしたか」[pf]
+「なんだ、翔和先輩でしたか」
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 #翔和
 「ごめん、つい聴き入ってしまって」[pf]
 #藍美
@@ -273,7 +276,6 @@
 「ご、ご、ごめん！」[pf]
 ;※　　※　　※
 @fadeoutbgm time="3000"
-@mask time="800" effect="rotateInDownRight" graphic="eye.jpg"
 @angle name="aimi" bg="audioroom.jpg"
 ;「angle：藍美」
 
@@ -307,7 +309,6 @@
 ;//背景：廊下　昼
 
 @angle name="towa" bg="corridor_3.jpg"
-[fadeinbgm time="3000" storage="everyday.ogg"]
 [voconfig setbuf="0" name="hatena_sumire" vostorage="sumire/sumire_{number}.ogg" number="8"]
 [voconfig setbuf="0" name="sumire_f" vostorage="sumire/sumire_{number}.ogg" number="12"]
 [vostart]
@@ -453,9 +454,8 @@
 ;//すみれ：笑顔
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal_2"]
-「あたりまえだ」[pf] 
-[chara_modm name="sumire" cross="false" time="100" face=""]
-「私は、写真部部長、朝比奈すみれ、ようこそ、写真部へ」[pf]
+「あたりまえだ[r] 
+私は、写真部部長、朝比奈すみれ、ようこそ、写真部へ」[pf]
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal_3"]
 「安野クンの入部を歓迎します───」[pf]
@@ -518,11 +518,14 @@
 [chara_mod name="sumire" cross="false" time="100" face="normal"]
 [chara_mods name="yuna" cross="false" time="100" face="normal_1"]
 「ありがとうございます部長！」[pf]
+#由奈
 [chara_mods name="yuna" cross="false" time="100" face="normal_2"]
 「じゃあ、早速私からさせてもらいます」[pf]
+#由奈
 [chara_mods name="yuna" cross="false" time="100" face="normal"]
 「私の名前は桐島由奈と申します。特技は、裁縫です[r]
-　この部に入った理由は、えっと～、なんとなく、ですかね。なんとなく写真に憧れてたんですよね」[pf]
+　この部に入った理由は、えっと～、なんとなく、ですかね。[r]
+　なんとなく写真に憧れてたんですよね」[pf]
 #由奈
 [chara_mods name="yuna" cross="false" time="100" face="normal_3"]
 「今後ともよろしくお願いします！」[pf]
@@ -696,12 +699,11 @@
 ;※　　※　　※
 ;//背景：ブラック
 
-
+#
 @mask time=1000
 [chara_hide_all time="0"]
 @bg storage="night.jpg" time="0"
 @mask_off time=1000
-#
 その日の学校帰り･･････[pf]
 
 ;//背景：空　夜
@@ -846,6 +848,8 @@
 #女の子
 「会えっこないよ･･････わたしは･･････居なくなっちゃうかもしれないから」[pf]
  [vostop]
+
+[debug_return]
 
 @jump storage="2_02.ks"
 つづく[pf]

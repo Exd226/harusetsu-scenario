@@ -2,7 +2,7 @@
 ;date　６/21　金
 ;背景：視聴覚室　昼
 
-[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
+[mask time="800"]
 [bg storage="audioroom.jpg" time="0"]
 [chara_hide_all time="0"]
 			[chara_show name="aimi" width=600 top=-100 time=0]
@@ -119,7 +119,9 @@
 「･･････っい言うか、一次通る自信あるんだ」[pf]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="sad"
-「あーファンにそんなこと言われたら私立ち直れません～」[pf]
+「あーファンにそんなこと言われたら私立ち直れません～」
+[fadeoutbgm time=3000]
+[pf]
 
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 [bg storage="audioroom_1.jpg" time="0"]
@@ -133,7 +135,9 @@
 「それで、新曲が歌いたいと」[pf]
 #美紅
 @chara_modm name="miku" cross=false time="100" face="normal"
-「そのオーディションって普通は一次と最終で同じ歌を歌うの？」[pf]
+「そのオーディションって普通は一次と最終で同じ歌を歌うの？」
+[fadeinbgm time=3000 storage="everyday_2.ogg"]
+[pf]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="sad"
 「分かりません、そもそもオリジナルの歌なのか、カバーソングなのかもわからなくて」[pf]
@@ -173,9 +177,11 @@
 「もぅ･･････安野くんは情緒が足りない」[pf]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="hate_1"
-「感情より理の方が先走るモテない男の典型的なタイプね」[pf]
+「感情より理の方が先走るモテない男の典型的なタイプね」
+[fadeoutbgm time="3000"]
+[pf]
 #翔和
-「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[fadeoutbgm time="3000"][pf]
+「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[pf]
 
 #
 ;※　　※　　※
@@ -362,15 +368,15 @@
 「その怒り方可愛いです先輩！」[pf]
 #美紅
 [chara_modm name="miku" face="angry"]
-「んもぅ藍美ちゃんやめてってば～」[pf]
-@fadeoutbgm time="3000"
+「んもぅ藍美ちゃんやめてってば～」
+[fadeoutbgm time="3000"]
+[pf]
 
 ;※　　※　　※
 ;6月22日　土
 ;いつもの帰り道　昼
 
 @mask time="3000"
-[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 @chara_hide_all time="0"
 [chara_shows name="miku" width=600 top=-100 time=0 face="normal_p"]
 [bg storage="house.jpg" time="0"]
@@ -999,6 +1005,8 @@
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_p_1"
 「ううん、翔和くんはまだ関係のないこと。この詞は私が書き終わるまで見せないからね!」[pf]
+
+[debug_return]
 
 @jump storage="2_07.ks"
 #

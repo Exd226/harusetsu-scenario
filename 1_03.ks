@@ -165,7 +165,7 @@
 
 ;　　※　　※　　※
 ;//背景：翔和の部屋　夜
-@bg_eye storage="myroom_2.jpg"
+@bg_mask storage="myroom_2.jpg"
 #翔和
 「くぅ～～」[pf]
 #翔和
@@ -210,18 +210,9 @@
 入部届けに理由とか書く場所はないし[pf]
 @fadeoutbgm time="3000"
 
+[debug_return]
+
 @jump storage="1_04.ks"
-
-
-
-
-
-
-
-
-
-
-
 
 つづく[pf]
 タイトルへ戻ります[pf]
