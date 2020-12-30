@@ -746,8 +746,6 @@
 [chat_talk pos="l" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][pf]
 [chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][pf]
 
-*debug
-
 [mask time="800"]
 [resetfont]
 [freeimage layer=2 time="500"]

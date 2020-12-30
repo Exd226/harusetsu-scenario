@@ -77,8 +77,8 @@
 [chara_modm name="aimi" face="normal_3"]
 「～～♪」
 [fadeinbgm storage="koinohousoku.ogg" sprite_time="224000-232500" time="3000" loop="false"]
-[stopbgm time="200"]
 [pf]
+[stopbgm time="200"]
 #翔和
 ごく最近、面識のある人だった[pf]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="58"]

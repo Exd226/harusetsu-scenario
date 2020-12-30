@@ -738,7 +738,7 @@
 「じゃ、私、ミスコンあるから」[pf]
 #他校生C
 「･･････待てよ」
-[playbgm storage="crisis.ogg"]
+[fadeinbgm time="3000" storage="crisis_1.ogg"]
 [pf]
 #来未
 [chara_modm name="kurumi" face="hate_2"]
