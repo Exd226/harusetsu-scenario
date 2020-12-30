@@ -2,8 +2,9 @@
 ;// 4/8 mon
 ;「angle：翔和」
 ;//背景：空
-
 @angle name="towa" bg="sky.jpg"
+[voconfig setbuf="0" name="hatena_sumire" vostorage="sumire/sumire_{number}.ogg" number="1"]
+[vostart]
 #
 翌日[pf]
 #翔和
@@ -59,17 +60,20 @@
 #翔和
 くそ、やっちまった。最悪だよ。こんなにぶつかってたら、安っぽいラブコメみたいじゃないか[pf]
 ;//すみれ：表示「心配」
-#？？
+#hatena_sumire
+[chara_shows name="sumire" width=600 top=-100 face="scary_2"]
 「だ、大丈夫ですか！？」[pf]
 #翔和
 「は、はい、」[pf]
 #翔和
 やはり、人とぶつかってしまっていた[pf]
-#？？
+#hatena_sumire
+[chara_mods name="sumire" cross="false" time="100" face="sad"]
 「すまない、私の不注意だ」[pf]
 #翔和
 「こ、こちらこそすみません！」[pf]
-#？？
+#hatena_sumire
+[chara_mods name="sumire" cross="false" time="100" face="scary"]
 「ケガはしていませんか？」[pf]
 #翔和
 「全然大丈夫ですので心配しないでください」[pf]
@@ -77,7 +81,8 @@
 体が大丈夫であることをアピールするために立ち上がる[pf]
 #翔和
 なんで、男の方の俺が倒れてんだよ[pf]
-#？？
+#hatena_sumire
+[chara_mods name="sumire" cross="false" time="100" face="sad"]
 「それはよかった･･････本当に申し訳ない」[pf]
 #翔和
 そ、そんなに心配されるとこっちが申し訳なくなってくる[pf]
@@ -89,10 +94,12 @@
 このままこの場にいると気まずくなるだけだろうな[pf]
 #翔和
 「あの、俺、もうお腹空いちゃったんで行きますね」[pf]
-#？？
+#hatena_sumire
+[chara_mods name="sumire" cross="false" time="100" face="sad_4"]
 「そうですか、ではお大事に」[pf]
 #翔和
 「はい、こちらこそご迷惑おかけしました失礼します」[pf]
+[chara_hide_all]
 @playse storage="room_door_O.ogg"
 #
 「ガチャ」[pf]
@@ -101,20 +108,28 @@
 #
 ;※　　※　　※
 
-;「angle：？？」
+;「angle：hatena_sumire」
 ;//背景：商店街 昼
 ;//すみれ：通常
 @angle name="hatena" bg="town.jpg"
-#？？
+#hatena_sumire
+[chara_modm name="sumire" cross="false" time="100" face="sad"]
 「私としたことが･･････。周りが見えて無かったのかもしれない」[pf]
-#？？
+[vostop]
+#hatena_sumire
+[chara_modm name="sumire" cross="false" time="100" face="sad_4"]
 ･･････[pf]
 ;//すみれ：驚き
-#？？
+[vostart]
+#hatena_sumire
+[chara_modm name="sumire" cross="false" time="100" face="doki"]
 「ん？　これは･･････」[pf]
-#？？
+[vostop]
+#hatena_sumire
+[chara_modm name="sumire" cross="false" time="100" face="doki"]
 ボタン？[pf]
-#？？
+#hatena_sumire
+[chara_modm name="sumire" cross="false" time="100" face="sad_1"]
 もしかしたら･･････[pf]
 #
 ;※　　※　　※
@@ -142,7 +157,7 @@
 #翔和
 いや、制服を着てたから当たり前か･････[pf]
 #翔和
-待て待て、今日は学校休みだぞ、確かに虹櫻高のだったし他校ではない[pf]
+待て待て、今日は学校休みだぞ、確かに虹櫻のだったし他校ではない[pf]
 #翔和
 ん～～～？[pf]
 #翔和
@@ -150,7 +165,7 @@
 
 ;　　※　　※　　※
 ;//背景：翔和の部屋　夜
-@bg_eye storage="myroom_2.jpg"
+@bg_mask storage="myroom_2.jpg"
 #翔和
 「くぅ～～」[pf]
 #翔和
@@ -195,18 +210,9 @@
 入部届けに理由とか書く場所はないし[pf]
 @fadeoutbgm time="3000"
 
+[debug_return]
+
 @jump storage="1_04.ks"
-
-
-
-
-
-
-
-
-
-
-
 
 つづく[pf]
 タイトルへ戻ります[pf]

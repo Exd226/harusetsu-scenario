@@ -5,9 +5,10 @@
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="156"]
 [vostart]
-@mask
-@fadeinbgm storage="everyday.ogg" time="3000"
-@bg_eye storage="classroom.jpg"
+@mask time=2000
+[layopt layer=message0 visible=true]
+@bg storage="classroom.jpg" time=0
+[mask_off time="800"]
 #
 翌日、放課後･･････[pf]
 #実行委員長
@@ -63,7 +64,7 @@
 #翔和
 なんか、すこし落ち込んでる春奈さん･･････[pf]
 #美紅
-@chara_mods name="miku" cross=false time="100" face="hate_2"
+@chara_mods name="miku" cross=false time="100" face="normal"
 「ってか、そんな安野くんも同じ部活に･･････それも男の子一人でいるんだよね」[pf]
 #翔和
 「たまたまだからねっ！」[pf]
@@ -206,14 +207,15 @@
 「･･････で、なんですか、これ？」[pf]
 #翔和
 俺は最近はまってるアイスを渡す
-@fadeinbgm time="3000" storage="everyday.ogg"
+@fadeinbgm time="3000" storage="everyday_2.ogg"
 [pf]
 #翔和
 「もしかして、嫌いだった？　それ」[pf]
 #藍美
 @chara_mods name="aimi" cross="false" time="100" face="hate_1" 
-「いや、むしろパプコは好きですけど･･････でもなんで急に？」[wait time="3000"][cm]
-「なにか見返りでも私に求めてるんですか？　そうやって男の人は女の子の体に一生消えない傷をつけるんですよね？」[pf]
+「いや、むしろパプコは好きですけど･･････でもなんで急に？[r]
+なにか見返りでも私に求めてるんですか？[r]
+そうやって男の人は女の子の体に一生消えない傷をつけるんですよね？」[pf]
 #翔和
 「ただ、良心でおごっただけなのにその言い方は傷つくんだけど･･････」[pf]
 #藍美
@@ -483,6 +485,9 @@
 @chara_mods name="ryoji" time="100" cross="false" face="scary"
 「ほんとに、お前友達いないんだな･･････」[pf]
 @fadeoutbgm time="3000"
+
+[debug_return]
+
 @jump storage="2_04.ks"
 
 つづく[pf]

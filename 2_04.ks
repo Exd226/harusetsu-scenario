@@ -52,6 +52,7 @@
 生徒会室だったかな[pf]
 #翔和
 行こう[pf]
+[fadeoutbgm time="3000"]
 
 ;※　　※　　※
 @bg_eye storage="corridor_3.jpg"
@@ -60,9 +61,10 @@
 #翔和
 中に人もいるみたいだ[pf]
 
-
 ;背景：生徒会室　昼
-@bg storage="seitokai.jpg"
+@bg_mask storage="seitokai.jpg"
+[voconfig name="sumire_f" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="74"]
+[vostart]
 #翔和
 「すみませーん」[pf]
 ;すみれ：表示
@@ -71,6 +73,7 @@
 #翔和
 「朝比奈先輩、お疲れ様です」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="sleep"]
 「･･････」[pf]
 #翔和
 集中してるのかな？[pf]
@@ -93,12 +96,14 @@
 #翔和
 「あの、朝比奈先輩」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="sleep"]
 「･･････」[pf]
 #翔和
 あれ、朝比奈先輩、さっきから同じところを見つめてるぞ[pf]
 #翔和
 「朝比奈先輩？」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="sleep"]
 「･･････」[pf]
 #翔和
 もしかして･･････[pf]
@@ -107,11 +112,13 @@
 #翔和
 肩を揺する[pf]
 #すみれ
+[chara_shows name="sumire" width=600 top=-100 face="sleep"]
 「･･････んなぁ･･････あぅ････････････ん？」[pf]
 #翔和
 「･･････朝比奈先輩、寝てましたよね？」[pf]
 ;すみれ：普通
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="doki_1"]
 「いやっ、私は寝てにゃどぉりゃんっ！」[pf]
 #翔和
 「････････････」[pf]
@@ -119,7 +126,10 @@
 ･････････････････････[pf]
 ;すみれ：困り
 #すみれ
-「す、すまん･･････こんなみっともないところを見せてしまって」[pf]
+[chara_mods name="sumire" cross=false time="100" face="sad_1"]
+「す、すまん･･････こんなみっともないところを見せてしまって」
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 #翔和
 「お、俺こそすいませんっ、あんなところで黙ってしまって！」[pf]
 #翔和
@@ -127,28 +137,34 @@
 #翔和
 いや、ホントにどう反応していいか分からなかった[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="hate"]
 「謝らないでくれ、私が悪い」[pf]
 #翔和
 「そうですか･･････」[pf]
 #翔和
 「つい気を抜いちゃうことってたまにありますよね」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="hate"]
 「あぁ、この文化祭の大事な時に気を抜いてしまった･･････」[pf]
 #翔和
 「いえいえっ！大事な時だからこそ忙しいんだと思います」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="scary"]
 「いや、昨日はちょっと違うことで寝るのが遅くなってな･･････」[pf]
 #翔和
 「･･････何か･･････大変なことがあるんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「うん、まぁ、それほど大変なことではない」[pf]
 #翔和
 「はぁ･･････」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="sad_1"]
 「最近、読書に勤しんでいてな･･････それだけだ」[pf]
 #翔和
 「そうだったんですか、どういうジャンルを読むんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「･･････うん、いろいろ読むかな」[pf]
 #翔和
 いろいろ、か･･････[pf]
@@ -157,33 +173,41 @@
 #翔和
 「いいことですね」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="doki"]
 「なんのことがだ？」[pf]
 #翔和
 「没頭できることがあるってことですよ」[pf]
 ;すみれ：困り
-#翔和
-すみれ「あ、ああ、そうだな･･････」[pf]
+#すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
+「あ、ああ、そうだな･･････」[pf]
 ;すみれ：普通
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「あぁ、そうだ安野クンはなんでここに来たんだ？」[pf]
 #翔和
 「あっ、えーっと、腕章を取りに来ました」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「そうだったのか」[pf]
+#すみれ
+[chara_mods name="sumire" cross=false time="100" face="scary_1"]
 「･･････というか、腕章はここにはないぞ？」[pf]
 #翔和
 「ふぇっ？」[pf]
-#翔和
-すみれ「腕章は、旧生徒会室･･････部室にあるぞ」[pf]
+#すみれ
+[chara_modm name="sumire" cross=false time="100" face="scary_1"]
+「腕章は、旧生徒会室･･････部室にあるぞ」[pf]
 #翔和
 マジ･･････か･･････[pf]
 #翔和
 「今すぐとってきますっ！お疲れ様でしたっ！」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「おぅ、頑張ってな」[pf]
 
 ;背景：部室　昼
-@bg_eye storage="clubroom.jpg"
+@bg_eye hide="true" storage="clubroom.jpg"
 #
 @playse storage="room_door_O.ogg"
 「ガチャ」[pf]
@@ -541,11 +565,14 @@
 #翔和
 「よう」[pf]
 #良治
+[chara_modm name="ryoji" face="normal"]
 「なんだカメラなんか持って」[pf]
 #翔和
 「写真部だからさ」[pf]
 #良治
+[chara_modm name="ryoji" face="normal"]
 「おう、そういうことか」[pf]
+[chara_modm name="ryoji" face="normal"]
 「かっこよく撮ってくれよな」[pf]
 ;良治：笑顔
 #翔和
@@ -576,6 +603,7 @@
 #翔和
 「え～～」[pf]
 #良治
+[chara_modm name="ryoji" face="normal_2"]
 「ほら、早くカメラ構えろよっ」[pf]
 #翔和
 マジかよ･･････[pf]
@@ -659,9 +687,7 @@
 ････････････けど心配だ、とりあえず付いていって様子だけは見とこう[pf]
 #翔和
 二人のあとを付ける････････････[pf]
-@fadeoutbgm time="3000"
 ;　※　　※
-
 @bg_eye storage="storehouse.jpg"
 ;背景：体育館裏　昼
 
@@ -674,16 +700,21 @@
 #他校生C
 「まぁ、いい、お前らも手伝ってくれ　この女一筋縄ではいかなくてよぉ」[pf]
 ;来未：表示；いらだち
-@chara_shows name="kurumi" width=420 top=-30 face="angry"
+[voconfig setbuf="0" name="kurumi_f" vostorage="kurumi/kurumi_{number}.ogg" number="18"]
+[vostart]
+#
+@chara_show name="kurumi" width=420 top=-30 face="angry"
 #翔和
 やっぱり白咲さんか[pf]
 #来未
+[chara_modm name="kurumi" face="angry"]
 「ふんっ、その辺の女と一緒にされたら困るわ」[pf]
 #他校生C
 「すまんすまん、俺が悪かった、だからよ、一緒に遊ぼうぜ」[pf]
 #他校生B
 「そうそう、こんな学園祭なんかやるよりきっと楽しいからさあ」[pf]
 #来未
+[chara_modm name="kurumi" face="angry"]
 「嫌」[pf]
 #他校生C
 「っ！」[pf]
@@ -706,11 +737,14 @@
 @chara_mods name="kurumi" cross=false time="100" face="hate_2"
 「じゃ、私、ミスコンあるから」[pf]
 #他校生C
-「･･････待てよ」[pf]
+「･･････待てよ」
+[fadeinbgm time="3000" storage="crisis_1.ogg"]
+[pf]
 #来未
+[chara_modm name="kurumi" face="hate_2"]
 「･･････」[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="hate"
+@chara_mod name="kurumi" cross=false time="100" face="hate"
 白咲さんは無視して去っていく[pf]
 #他校生C
 「知ってんだぜ、お前がかの米国大使の娘さんだってことをよ」[pf]
@@ -757,7 +791,7 @@
 #他校生B
 「お、財布見っけ～」[pf]
 #他校生A
-@chara_mods name="kurumi" cross=false time="100" face="hate"
+@chara_mod name="kurumi" cross=false time="100" face="hate"
 「お、なんだペンダントなんかつけてんじゃん」[pf]
 #翔和
 くそっ、考えろ俺、このままじゃっ[pf]
@@ -769,21 +803,21 @@
 #他校生A
 「なんだ、大切なものかなんかか？」[pf]
 ;BGM：「」開始
-@playbgm storage="crisis.ogg"
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="doki"
-「やめるんだ」[pf]
+@chara_mod name="kurumi" cross=false time="100" face="doki"
+「やめるんだ」
+[pf]
 #他校生C
 「ああん？なんだお前」[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_3"
+@chara_mod name="kurumi" cross=false time="100" face="sad_3"
 「その子から手を放せ」[pf]
 #他校生C
 「くっ、見られてたか、黙らせるしかないな」[pf]
 #翔和
 や、やべっ、でも！[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_2"
+@chara_mod name="kurumi" cross=false time="100" face="sad_2"
 「君たちにはこれが見えないのか！」[pf]
 #翔和
 俺は左腕の腕章を見せつける[pf]
@@ -792,14 +826,14 @@
 #翔和
 実行委委員の腕章は裏返すことで生徒会の腕章になる･･････[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_3"
+@chara_mod name="kurumi" cross=false time="100" face="sad_3"
 「それに、今の君たちの行動はこのカメラに全部収めた！」[pf]
 #翔和
 これで完璧だ[pf]
 #他校生A
 「その、カメラ、ぶっ壊すしかないな」[pf]
 #他校生B
-@chara_mods name="kurumi" cross=false time="100" face="scary"
+@chara_mod name="kurumi" cross=false time="100" face="scary"
 「ついでに、このこともしゃべれないようにするか」[pf]
 #翔和
 え？やばい、全然効いてない･･････[pf]
@@ -810,12 +844,12 @@
 #他校生C
 「待て」[pf]
 #他校生A
-@chara_mods name="kurumi" cross=false time="100" face="doki"
+@chara_mod name="kurumi" cross=false time="100" face="doki"
 「え？」[pf]
 #他校生B
 「なんでですか！？」[pf]
 #他校生C
-@chara_mods name="kurumi" cross=false time="100" face="sad"
+@chara_mod name="kurumi" cross=false time="100" face="sad"
 「生徒会に見つかった以上もう、やめだ」[pf]
 #他校生A
 「なにビビってるんすか」[pf]
@@ -838,7 +872,7 @@
 俺は財布を拾って渡す[pf]
 #翔和
 @chara_move name="kurumi" width=650 top=-170 left=350 time=400
-@chara_mods name="kurumi" cross=false time="100" face="sad"
+@chara_mod name="kurumi" cross=false time="100" face="sad"
 白咲さんは黙って受け取った[pf]
 #翔和
 「ケガとか大丈夫？」
@@ -849,7 +883,7 @@
 #翔和
 「じゃあ、もどろうか」[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="sad_3"
+@chara_mod name="kurumi" cross=false time="100" face="sad_3"
 白咲さんがうなずく[pf]
 
 ;CG：来未と並んで歩く
@@ -949,13 +983,12 @@
 #翔和
 ･･･[pf]
 #翔和
-@chara_mods name="kurumi" cross=false time="100" face="normal_1"
+@chara_mod name="kurumi" cross=false time="100" face="normal_1"
 ･･････[pf]
 #翔和
 そんなたわいない話をしながら白咲さんをミスコン会場まで送った[pf]
 #翔和
 俺の袖をちょこんと握ったその手は離されないまま･････[pf]
-@fadeoutbgm time="3000"
 #
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="223"]
@@ -967,11 +1000,11 @@
 #司会
 「いや～、やっぱバンドマンはかっこいいよね～」[pf]
 #美紅
+[chara_modm name="miku" face="normal"]
 カメラにさっきのバンドの人たちの画像データがあることを確認する[pf]
 #美紅
-体育館は薄暗かったけどなかなか上出来だ
-@fadeinbgm storage="everyday.ogg" time="3000"
-[pf]
+[chara_modm name="miku" face="normal"]
+体育館は薄暗かったけどなかなか上出来だ[pf]
 #美紅
 [chara_modm name="miku" face="sad_1"]
 次の発表は誰なのかな？　バンドとか定番のものがありふれていてもう飽きてきた[pf]
@@ -1400,11 +1433,11 @@
 ･････････[pf]
 #翔和
 ･･････[pf]
-#？？
+#hatena_aimi
 「ママ･･････」[pf]
 #翔和
 かすかに聞こえる声[pf]
-#？？
+#hatena_aimi
 「･･････なんで･･････」[pf]
 #
 @bg storage="audioroom_1.jpg"
@@ -1412,7 +1445,7 @@
 真っ暗だった視界にうっすらと淡いオレンジ色の日差しが広がっていく[pf]
 #翔和
 そして、不意に左肩に違和感を感じるようになった[pf]
-#？？
+#hatena_aimi
 「･･････なんで･･････だめ、なの？」[pf]
 #翔和
 「こ、これは･･････っ」[pf]
@@ -1423,7 +1456,7 @@
 #翔和
 「は、春奈さっ･･････って･･････[pf]
 「藍美ちゃん？」
-@fadeinbgm storage="everyday.ogg" time="3000"
+@fadeinbgm storage="serious_2.ogg" time="3000"
 [pf]
 #翔和
 じゃあさっきの寝言も藍美ちゃんなのか[pf]
@@ -1520,7 +1553,9 @@
 むだに意地を張ったり強がったりする癖のせいで今まで何度も後悔してきた[pf]
 #藍美
 [chara_modm name="aimi" face="sad_p_3"]
-そんな不器用な自分に嫌気すらも感じていた[pf]
+そんな不器用な自分に嫌気すらも感じていた
+[fadeoutbgm time="3000"]
+[pf]
 
 ;※　　※　　※
 
@@ -1528,7 +1563,9 @@
 ;背景：廊下　夕
 @angle name="towa" bg="corridor_4.jpg"
 #翔和
-走りながら時計を確認する[pf]
+走りながら時計を確認する
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 #翔和
 うわ、これ1時間弱遅れてるわ･･････[pf]
 #翔和
@@ -1554,12 +1591,12 @@
 「･･････」[pf]
 #翔和
 「春奈、さん･･････？」[pf]
-;#翔和
-;こちらには気にも留めずに黙々と紙きれを数えている[pf]
-;#美紅
-;[chara_modm name="miku" face="normal"]
-;「･･････どうしたの？」[pf]
-;#翔和
+#翔和
+こちらには気にも留めずに黙々と紙きれを数えている[pf]
+#美紅
+[chara_modm name="miku" face="normal"]
+「･･････どうしたの？」[pf]
+#翔和
 顔色ひとつ変えない春奈さん･･････気にしてないのかな･･････[pf]
 #美紅
 @chara_mods name="miku" cross=false time=200  face="hate_2"
@@ -1605,7 +1642,7 @@
 「･･････っ･･････あ、あれだよねっ･･････白咲さんの票が圧倒的に多いよねっ！」[pf]
 #美紅
 [chara_modm name="miku" face="angry"]
-「･･････[l][r]･････････[l][r]････････････で？」[pf]
+「･･････[l]･････････[l]････････････で？」[pf]
 #翔和
 「ひえっ！　･･････そ、それだけですが･･････」[pf]
 #美紅
@@ -1704,7 +1741,7 @@
 「いや、だってさ文字だけだったら勘違いされる雰囲気だったじゃん[r]
 　主に外の世界の人達にさ！」[pf]
 #美紅
-@chara_mods name="miku" cross=false time=200  face="normal"
+@chara_mods name="miku" cross=false time=200  face="angry"
 「安野くん、それはタブーだよ」[pf]
 #翔和
 「あ、はい」[pf]
@@ -1906,6 +1943,9 @@
 「私は彼女の大ファンなんだよっ」[pf]
 [mask]
 @fadeoutbgm time="3000"
+
+[debug_return]
+
 @jump storage="2_05.ks"
 つづく[pf]
 タイトルへ戻ります[pf]

@@ -2,7 +2,7 @@
 ;; 5/7 tue
 ;;背景：食堂 昼
 
-@mask time="700"
+@mask time="2000"
 @fadeoutbgm time="3000"
 @free_filter
 @free_layermode time="0"
@@ -35,6 +35,7 @@
 仕方ないか～[pf]
 #翔和
 「あの～隣いいですか････････････って春奈さんじゃないですか」[pf]
+#
 @chara_shows name="miku" width=650 top=-170
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="91" setbuf="0"]
 [vostart]
@@ -186,6 +187,7 @@
 #美紅
 [chara_mods name="miku" face="normal_2"]
 「ううん、気づいてないだけだよ、安野くんは天然っぽいところあるから」[pf]
+#
 @chara_hide_all
 #翔和
 そう言って春奈さんはすたすたその場を去っていった[pf]
@@ -195,7 +197,6 @@
 いや、電車で見知らぬ人の肩で寝てしまうほど天然な人には言われたくないわ[pf]
 #翔和
 よし、行こう[pf]
-@fadeoutbgm time="3000"
 [vostop]
 ;※　　※　　※
 ;「angle：美紅」
@@ -221,7 +222,6 @@
 @angle name="towa" bg="classroom.jpg"
 #クラス委員
 「この時間のHRについてなんだけど、もうすぐ開催される文化祭について決め事がありま～す」
-@fadeinbgm storage="everyday.ogg" time="3000"
 [pf]
 #翔和
 クラス委員にしては気だるげというか、軽めの口調でHRが始まった[pf]
@@ -244,7 +244,9 @@
 「白咲さん、出場できる？」[pf]
 #来未
 @chara_modm name="kurumi"
-「異存はないかしら」[pf]
+「･･････」[pf]
+#翔和
+答えるまでもない、といったような態度の白咲さん[pf]
 #クラス委員
 「では、そういうことで、次に実行委委員を決めま～す」[pf]
 #クラス
@@ -372,22 +374,12 @@
 
 
 @angle name="towa" bg="audioroom_1.jpg"
-@chara_shows name="aimi" width=650 top=-170 face="normal_3"
-#藍美
-「交わるあなたとわたしの髪の香り～♪」[pf]
-#翔和
-「･･････」
-@fadeinbgm time="3000" storage="everyday.ogg"
-[pf]
-#藍美
-「肩越しのわたしにあなたは言う「おはよう」って～♪」[pf]
-#翔和
-「･･････はぁ」[pf]
+@chara_shows name="aimi" width=650 top=-170 face="normal_1"
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="1" number="113"]
 [vostart]
 #藍美
-@chara_mods name="aimi" cross=false time="100" face="normal_1"
-「ん～「おはよう」ってなんで言ってるんだろ。ここは状況が分かりづらいから･･････」[pf]
+「ん～「おはよう」ってなんで言ってるんだろ。ここは状況が分かりづらいから･･････」
+[fadeinbgm time="3000" storage="everyday_2.ogg"][pf]
 #翔和
 「･･････あぁ～」[pf]
 #藍美
@@ -544,9 +536,9 @@
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_1"
 「じゃ、頑張ってくださいね。先輩」[pf]
+#
 @chara_hide_all
 @playse storage="room_door_O.ogg"
-#
 「ガチャン！」[pf]
 #翔和
 「なんで、そんなに急に追い出すんだよ」[pf]
@@ -585,6 +577,8 @@
 ;「angle:翔和」
 ;;背景：部室　夕
 [angle name="towa" bg="clubroom.jpg"]
+[voconfig setbuf="0" name="yuna_f" vostorage="yuna/yuna_{number}.ogg" number="26"]
+[vostart]
 #翔和
 「こんにちは～」[pf]
 ;由奈：表示　笑顔
@@ -674,24 +668,32 @@
 @chara_mods name="yuna" cross=false time="100" face="normal_3"
 「あと、そのシミ、クリーニング出さなくても中性洗剤でも落ちそうですよ」[pf]
 #翔和
-翔和
 「そう、ですか」[pf]
 #翔和
 あれ？なんでクリーニング出そうと思ってたこと知ってるんだ？[pf]
 
-;%%%
 #
+[playse storage="room_door_O.ogg"]
+[chara_move name="yuna" anim="true" left="40"]
+[chara_show name="sumire" width=500 top=-70 face="normal" left="670" zindex="-1"]
 「ガチャ」[pf]
+[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="2" number="121"]
+[voconfig name="sumire_f" vostorage="sumire/sumire_{number}.ogg" setbuf="1" number="54"]
+[vostart]
 ;効果音：「ガチャ」
 ;すみれ：表示；普通
 ;由奈：左　すみれ：右
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
 「すみれ先輩こんにちは」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="normal"]
 「お、二人とも来てたのか」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="sad_4"]
 「すまんな、生徒会の業務があって」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「いや、でも私たちもさっき来たばかりですよ」[pf]
 #翔和
 春奈さんは、まだ来ないみたいだな[pf]
@@ -700,133 +702,203 @@
 #翔和
 春奈さんもきっと悩んだりしてるんじゃないか[pf]
 #すみれ
+[chara_mod name="yuna" cross=false time="100" face="normal"]
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「ああ、それならよかった」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「今日の活動は何をするんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「文化祭のことについての打ち合わせだ」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_1"]
 「もう、あと一週間ですしね」[pf]
 #翔和
-「はやいな」[pf]
+「はやいな」
+[fadeoutbgm time="3000"]
+[pf]
+#
 ;美紅：表示；普通
 ;由奈　左　すみれ　中　美紅　右
+[chara_move name="yuna" anim="true" left="15"]
+[chara_move name="sumire" anim="true" left="390"]
+[chara_mod name="sumire" cross=false time="100" face="normal"]
+[chara_shows name="miku" width=600 top=-100 face="normal" left="660"]
 #美紅
 「確かにまだ実感ないですね」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
 「私もです」[pf]
 #翔和
 「みんなそんなものか～････････････えぇ！？」[pf]
 ;すみれ、由奈：驚き
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="doki_1"]
 「えぇ！？」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="doki"]
 「えぇ！？」[pf]
 ;美紅：疑問
 #美紅
+[chara_mods name="miku" cross=false time="100" face="doki"]
 「え？」[pf]
 #翔和
-「いつの間にっ！？」[pf]
+「いつの間にっ！？」
+[fadeinbgm time="3000" storage="comedy.ogg"]
+[pf]
 ;美紅：動揺
 #美紅
+[chara_mod name="sumire" cross=false time="100" face="hate"]
+[chara_modm name="miku" cross=false time="100" face="doki"]
 「私ですか！？」[pf]
 ;由奈：普通
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="yan_3"]
 「まさか･･････私より先に来て･･････････････････」[pf]
 #翔和
 由奈さんがブツブツ言ってるがよく聞こえない[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="doki_1"]
 「いやいや！ほんのついさっき来たばかりですよ！」[pf]
 ;すみれ：普通
 #すみれ
+[chara_mod name="yuna" cross=false time="100" face="hate_1"]
+[chara_mods name="sumire" cross=false time="100" face="scary_1"]
 「そ、そうか」[pf]
+#すみれ
+[chara_mods name="sumire" cross=false time="100" face="scary"]
 「すまない、少しばかり驚いてしまった」[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="sad_1"]
 「朝比奈先輩は謝ることないですよぅ」[pf]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="sad_2"]
 「それに、私も入るときはノックとかじゃなくて、ちゃんとあいさつすればよかったわけだし」[pf]
 ;由奈：困る
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="hate"]
 「あいさつは、しましょうね･･････」[pf]
 #翔和
 たしかに、いつもの春奈さんなら挨拶はするのに[pf]
 ;美紅：落ち込み
 #美紅
-「はい、すみません。」[pf]
+[chara_mods name="miku" cross=false time="100" face="sad_1"]
+「はい、すみません」[pf]
 #すみれ
-「よし、これで全員そろったわけだし･･････」[pf]
+「よし、これで全員そろったわけだし･･････」
+[chara_mods name="sumire" cross=false time="100" face="normal"]
+[fadeoutbgm time="3000"]
+[pf]
 ;すみれ：ほほ笑み
 #すみれ
+[chara_mod name="miku" cross=false time="100" face="normal"]
+[chara_mod name="yuna" cross=false time="100" face="normal"]
+[chara_mods name="sumire" cross=false time="100" face="normal_1"]
 「打ち合わせしよう！」[pf]
 
-※　　※　　　※
+[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
+[chara_hide_all time=0]
+[bg storage="clubroom_1.jpg" time=0]
+[chara_show name="sumire" width=500 top=-70 face="normal" left="390" time=0]
+[chara_show name="miku" width=600 top=-100 face="normal" left="665" time=0]
+[chara_show name="yuna" width=600 top=-100 face="normal" left="15" time=0]
+[mask_off time="800"]
+
+
+
+;※　　※　　　※
 
 ;背景：部室　夕
 
 ;すみれ：表示；普通
 #すみれ
-「･･････そして、由奈はステージ裏、美紅はステージの有志、安野クンには模擬店、がそれぞれの担当だ」[pf]
+「･･････そして、由奈はステージ裏、美紅はステージの有志、安野クンには模擬店、がそれぞれの担当だ」
+[chara_mods name="sumire" cross=false time="100" face="normal"]
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 ;美紅：表示；すみれの右
 #美紅
+[chara_modm name="miku" cross=false time="100" face="normal"]
 「担当のところで写真を撮ればいいんですよね？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「そうだ、あと、注意するところがある」[pf]
 #翔和
 「なんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「この腕章をつけることだ」[pf]
 ;由奈：表示；すみれの左
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="doki"]
 「『写真同好会』」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「これをつけてないと単なる盗撮と疑われてしまうからな」[pf]
 #美紅
+[chara_mod name="yuna" cross=false time="100" face="normal"]
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
 「そうですね」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「これであらかたの説明は終わったが何か質問はないか？」[pf]
 #由奈
+[chara_mod name="miku" cross=false time="100" face="normal"]
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「あの、朝比奈先輩は写真、撮らないんですか？」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_1"]
 「私は生徒会の方の仕事が忙しくてな、悪いがみんなに頼むことになる」[pf]
 ;由奈：笑顔
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_1"]
 「任せて下さい！」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal_3"]
 「おう、頼んだぞ」[pf]
 #由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_3"]
 「はいっ」[pf]
 #すみれ
+[chara_mods name="sumire" cross=false time="100" face="normal"]
 「よし、これで打ち合わせは終わりだ」[pf]
+#すみれ
+[chara_modm name="sumire" cross=false time="100" face="normal"]
 「各自、解散してくれ」[pf]
 #由奈
-
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
 「はーい」[pf]
+#
+[chara_hide name="yuna"]
 #美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
 「さようなら～」[pf]
+#
+[chara_hide name="miku"]
 #翔和
 「あの、朝比奈先輩」[pf]
 #すみれ
+[chara_modm name="sumire" cross=false time="100" face="normal"]
 「なんだ？」[pf]
 #翔和
+[chara_mods name="sumire" cross=false time="100" face="normal_2"]
 「今年も文化祭はずっと生徒会の仕事があるんでしょうか？」[pf]
 #すみれ
 「ああ、さっき言ったとおりだ」[pf]
 #翔和
 「そう、ですか」[pf]
 #翔和
+[chara_mod name="sumire" cross=false time="100" face="doki"]
 朝比奈先輩は今年も無理か[pf]
 #翔和
 先輩のミスコン見てみたかったなぁ[pf]
 
-	
 
 ;※　　※　　※
 ;;背景：駅のホーム　夕
 ;効果音「電車」
-@bg_eye storage="train_1.jpg"
-
-
-[fadeinbgm time="3000" storage="everyday.ogg"]
+@bg_eye storage="train_1.jpg" hide="true"
 
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" setbuf="1" number="131"]
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" setbuf="2" number="141"]
@@ -960,7 +1032,7 @@
 「そん時の俺はさ、なんも出来なくて、ごめん」[pf]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="sad_1"
-「そんな･･････なんで翔和くんが謝ってるのかな･･････」[pf]
+「そんな･･････なんで安野くんが謝ってるのかな･･････」[pf]
 #翔和
 「だからさ･･･････俺がもう一人になるよ」[pf]
 #翔和
@@ -977,19 +1049,19 @@
 #翔和
 めっちゃ恥ずかしいじゃねぇか！[pf]
 #美紅
-@chara_mods name="miku" cross=false time="100" face="normal"
+@chara_mods name="miku" cross=false time="100" face="normal_2"
 「･･････クスッ･･････ふふっ」[pf]
 #翔和
 「なに笑ってるんだよ、割と勇気出して言ったんだぞ」[pf]
 #美紅
-[chara_modm name="miku" face="normal"]
+[chara_modm name="miku" face="normal_2"]
 「ふっ･･････ごめんね、だって、ちょっと･･････っ」[pf]
 #翔和
 「そんなにおかしいっ？？」[pf]
 #翔和
 すげー恥ずかしくなってきたんだけど[pf]
 #美紅
-[chara_modm name="miku" face="normal"]
+[chara_mods name="miku" face="normal"]
 「ふぅ～」[pf]
 #翔和
 どうせ、春奈さんは実はそんなに気にしてなかったんだ[pf]
@@ -1081,12 +1153,14 @@
 「ま、隣の家の安野くんだから、大丈夫だよ」[pf]
 #母
 「･･････っ」[pf]
-#
+[vostop]
+#美紅
 お母さんが一瞬ひきつったような顔を見せた[pf]
 #母
 「そ、そうなのね、なら･･････分かったわ」[pf]
 #母
 「じゃ、洗い物残ってるから･･････」[pf]
+[vostart]
 #美紅
 [chara_modm name="miku" face="normal_px_1"]
 「あ、ちょっと待って」[pf]
@@ -1117,7 +1191,6 @@
 #美紅
 [chara_modm name="miku" face="normal_px"]
 そういえば、安野くんに明日のこと連絡しなくちゃ[pf]
-[fadeoutbgm time="3000"]
 ;※　　※　　※
 ;「angle：翔和」
 ;;背景：スマホ画面
@@ -1126,40 +1199,30 @@
 @angle name="towa" bg="myroom_2.jpg"
 [l]
 @playse storage="line.ogg"
+
 @chat_start name="miku"
 
 [chat_talk pos="l" text="こんばんは"][pf]
-
 [chat_talk pos="l" text="連絡があるんだけど、少し遅くなっちゃてすみません"][pf]
-
 [chat_talk pos="l" text="実はもう明日の放課後から実行委員会があります"][pf]
-
 [chat_talk pos="l" text="急だけどごめんね"][pf]
-
 [chat_talk pos="r" text="連絡ありがとう"][pf]
-
 [chat_talk pos="r" text="別に、春奈さんが委員会の日程決めたわけじゃないし、謝らなくていいよ"][pf]
-
 [chat_talk pos="l" text="安野くんはまじめすぎだよ～　私、明日が憂鬱なんだけどなぁ"][pf]
-
-
 [chat_talk pos="r" text="いや、俺もぶっちゃけめんどくさいし"][pf]
-
 [chat_talk pos="l" text="やっぱ･･････そうだよね･･････大変だよね"][pf]
-
 [chat_talk pos="r" text="い、いやでも俺、頑張るから"][pf]
-
 [chat_talk pos="r" text="あんま、大変だとか思ってないから"][pf]
-
 [chat_talk pos="l" text="フォローありがと笑"][pf]
-
 [chat_talk pos="r" text="さっそく、もう春奈さんの役に立てるかどうか不安になって来たよ･･････"][pf]
-
 [chat_talk pos="l" text="ううん、私は安野くんに感謝してるから"][pf]
-
 [chat_talk pos="l" text="だからこそ、これから先、わがまま言っちゃうときもあるよ？"][pf]
 
-@chat_end
+[resetfont]
+[chat_clear]
+[freeimage layer=2 time="500"]
+
+[debug_return]
 
 @jump storage="2_03.ks"
 つづく[pf]

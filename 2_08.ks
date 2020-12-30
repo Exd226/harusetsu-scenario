@@ -1,7 +1,6 @@
 ;2章-08
 ;７月１日
 ;背景：翔和の部屋　夜
-*debug
 [vostop]
 #
 [mask]
@@ -25,7 +24,7 @@
 #
 ;背景：星野村　夕
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
-[bg storage="mura.jpg" time="0"]
+[bg storage="mura_1.jpg" time="0"]
 @chara_show name="aimi" width=650 top=-170 time="0" face="normal_p"
 
 [mask_off time="800" wait="true"]
@@ -82,7 +81,7 @@
 ;背景：星野村　夕
 
 
-[angle name="aimi" bg="mura.jpg"]
+[angle name="aimi" bg="mura_1.jpg"]
 
 #藍美
 [chara_modm name="aimi" face="sad_p_3"]
@@ -204,7 +203,7 @@
 ;「angle：翔和」
 ;背景：星野村　夜
 
-[angle name="towa" bg="mura_1.jpg"]
+[angle name="towa" bg="mura_2.jpg"]
 #翔和
 思い出せない･･････[pf]
 #翔和
@@ -257,7 +256,7 @@
 ;「angle：美紅」
 ;河川敷　夜
 
-@angle name="miku" bg="mura_1.jpg"
+@angle name="miku" bg="mura_2.jpg"
 #美紅
 [chara_modm name="miku" face="sad_px_2"]
 「はぁ、はぁ」[pf]
@@ -343,8 +342,7 @@
 ;星野村　夜
 ;SE　花火
 
-[angle name="towa" bg="mura_1.jpg"]
-
+[angle name="towa" bg="mura_2.jpg"]
 #翔和
 ずっと目を閉じていた[pf]
 #翔和
@@ -376,7 +374,7 @@
 #
 ;星野村　夜
 [mask time="600"]
-		[bg storage="mura_1.jpg" time=0]
+		[bg storage="mura_2.jpg" time=0]
 		[free_layermode time="0"]
 		[free_filter  ]
 [mask_off time="600"][playbgm storage="fireworks.ogg"]
@@ -396,16 +394,19 @@
 目を開けるが、そこに花火はない･･････その代わり[pf]
 
 ;CG05：翔和に覆いかぶさる藍美（主観）
-[bg_mask storage="black.jpg"]
+[bg_mask storage="cg_2/sad.jpg"]
 
 #翔和
 視界は藍美ちゃんでいっぱいだった[pf]
 #翔和
 「って！　うおっ！」[pf]
-
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
-「予想通りの反応ですね」[pf]
+「予想通りの反応ですね」
+[bg time="2000" cross="false" storage="cg_2/smile_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/smile.jpg"]
+[pf]
 #翔和
 「いやいや、藍美ちゃん何してるの？」[pf]
 #藍美
@@ -416,32 +417,44 @@
 #翔和
 事実、藍美ちゃんは息がかかるようなゼロ距離で顔を近づけていた[pf]
 #藍美
-[chara_modm name="aimi" face="scary_p_1"]
+[bg time="500" cross="false" storage="cg_2/hate.jpg"]
+[chara_modm name="aimi" face="hate_p_1"]
 「はぁ･･････理解できないとは･･････さすが先輩」[pf]
 #翔和
 「だからもっとせつめ･･････」[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
-「分からないんですか？」[pf]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
+「分からないんですか？」
+[bg time="2000" cross="false" storage="cg_2/sad_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/sad.jpg"]
+[pf]
 #翔和
 「あぁ、まったく」[pf]
 #藍美
-[chara_modm name="aimi" face="scary_p"]
+[bg time="500" cross="false" storage="cg_2/hate.jpg"]
+[chara_modm name="aimi" face="hate_p_1"]
 「意気地なし」[pf]
 #藍美
-[chara_modm name="aimi" face="scary_p_1"]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
 「まぁ、何回もシュミレーションしてきたから問題ないんですけど」[pf]
 #翔和
 「何のことだ？」[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p"]
+[chara_modm name="aimi" face="sad_p"]
 「翔和先輩、わたし、なんで歌ってると思いますか？」[pf]
 #翔和
 「･･････好きだから？」[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
-「違うんです、そんなきれいな動機じゃないんですよ私は」[pf]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
+「違うんです、そんなきれいな動機じゃないんですよ私は」
+[bg time="2000" cross="false" storage="cg_2/sad_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/sad.jpg"]
+[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「最初は私のアイデンティティを探して歌い始めました。ずっとそれが否定されてきた環境で育ってしまったから、なんですけどね」[pf]
 #藍美
@@ -452,12 +465,14 @@
 #翔和
 なにを言おうとしてるんだ？　何を伝えたいんだ？　そんなの分かるわけ･･････[pf]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
 「でも、すごい残念です。そんな楽しい時間も今日で終わっちゃうんです。全部私のワガママのせいで」[pf]
 #藍美
-[chara_modm name="aimi" face="sad_p_3"]
+[chara_modm name="aimi" face="sad_p"]
 「先輩が悪いんですよ？　私を見つけてくれた先輩が悪いんです」[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「おかげで気づいたんです。本当は歌うことで見つけてもらおうとしてたんだ、って」[pf]
 #翔和
@@ -465,62 +480,86 @@
 #翔和
 「どうしたんだよ、藍美ちゃんおかしいよ。何を言ってるか全然分かんない」[pf]
 #翔和
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
 俺は藍美ちゃんを振りほどいて立ち上がろうとする[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/serious.jpg"]
 [chara_modm name="aimi" face="sad_p_2"]
-「先輩！　逃げないでっ！」[pf]
+「先輩！　逃げないでっ！」
+[bg time="2000" cross="false" storage="cg_2/serious_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/serious.jpg"]
+[pf]
 #翔和
 唐突な藍美ちゃんの叫びに俺は再び地面と背中を合わせた[pf]
 #翔和
 なにかを訴えようとする藍美ちゃんの目[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
 [chara_modm name="aimi" face="sad_p"]
 「･･････ねぇ･･････きづいてよ、なにもかも････････････せんぱぁい」[pf]
 #翔和
 「･･････」[pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
 「ふふっ、なにに？　ってととぼけた顔してますね」[pf]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
-「仕方ないから教えてあげます」[pf]
+「仕方ないから教えてあげます」
+[fadeoutbgm time="3000"]
+[pf]
+
 #藍美
-[chara_modm name="aimi" face="blush_p"]
-「私が男を見る目がないってことですよ･･････だって･･････」[pf]
-;BGM
-[stopse]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_1"]
+「私が男を見る目がないってことですよ･･････だって･･････」[fadeoutbgm time="2000"][pf]
 #藍美
+[bg time="500" cross="false" storage="cg_2/love.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
-「･･････好き･･････なんですよ･･････先輩のことが」[fadeinbgm storage="serious_2.ogg" time="3000"][pf]
+「･･････好き･･････なんですよ･･････先輩のことが」
+[playbgm storage="koinohousoku.ogg" loop="false"]
+[bg time="2000" cross="false" storage="cg_2/love_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/love.jpg"]
+[wsef]
 #藍美
-[chara_modm name="aimi" face="sad_p_3"]
-「私だって今まで通り楽しくやっていきたかった･･････でももう無理なんです」[pf]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
+「私だって今まで通り楽しくやっていきたかった･･････でももう無理なんです」[wsef]
 #藍美
-[chara_modm name="aimi" face="sad_p_3"]
-「悔しいほどに･･････好きです」[pf]
+[bg time="500" cross="false" storage="cg_2/smile.jpg"]
+[chara_modm name="aimi" face="normal_p_1"]
+「悔しいほどに･･････好きです」[wsef]
 #翔和
-泣いているのか笑っているのか、いろんな感情が混ざったその告白に俺は何も出来ないでいた[pf]
+泣いているのか笑っているのか、いろんな感情が混ざったその告白に俺は何も出来ないでいた[wait time="3000"][cm]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
-「･･････キス･･････しませんか？」[pf]
+「･･････キス･･････しませんか？」[wsef]
 #藍美
 [chara_modm name="aimi" face="normal_p_1"]
-「もうなにもかも、終わらせちゃいましょう」[pf]
+「もうなにもかも、終わらせちゃいましょう」
+[bg time="2000" cross="false" storage="cg_2/smile_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/smile.jpg"]
+[wsef]
 #藍美
-[chara_modm name="aimi" face="normal_p_1"]
-「･･････責任･･････とってください」[pf]
+[bg time="500" cross="false" storage="cg_2/sad.jpg"]
+[chara_modm name="aimi" face="sad_p"]
+「･･････責任･･････とってください」[wsef]
 #藍美
+[bg time="500" cross="false" storage="cg_2/kiss.jpg"]
 [chara_modm name="aimi" face="normal_p_1"]
-「だから･･････よけないで」[pf]
+「だから･･････よけないで」
+[bg time="2000" cross="false" storage="cg_2/kiss_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
+[wsef]
 
 ;背景：星空（天の川）
-[bg_mask storage="milkyway.jpg"]
+; [bg_mask storage="milkyway.jpg"]
 #翔和
-･･････藍美ちゃんのバックには満天の星と、天の川･･････[pf]
+･･････藍美ちゃんのバックには満天の星と、天の川･･････[wait time="3000"][cm]
 #翔和
-織姫と彦星は、どうしているんだろう？[pf]
+織姫と彦星は、どうしているんだろう？[wait time="3000"][cm]
 #翔和
-俺は･･････どうしたらいいんですか･･････？[pf]
+俺は･･････どうしたらいいんですか･･････？[wait time="3000"][cm]
 
 
 ;モノクロ（回想）
@@ -536,69 +575,69 @@
 		[voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="384" setbuf="2"]
 		[vostart]
 #美紅
-「そうだっ･･････それじゃあ私たちが手伝ってあげようよ！」[pf]
+「そうだっ･･････それじゃあ私たちが手伝ってあげようよ！」[wsef]
 #翔和
-「え、俺もっ！？　俺らトーシロだぞ、まして作曲なんて･･････」[pf]
+「え、俺もっ！？　俺らトーシロだぞ、まして作曲なんて･･････」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_2"
-「でも･･････作りたいよ！　“わたしたちだけ”の曲！　だって素敵じゃない！？　私たちがこうやって毎日頑張った三人の証が残せるんだよっ！」[pf]
+「でも･･････作りたいよ！　“わたしたちだけ"の曲！　だって素敵じゃない！？　私たちがこうやって毎日頑張った三人の証が残せるんだよっ！」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_3"
-「とてもいいと思いますっ！　私もそんな歌がうたいたいです！」[pf]
+「とてもいいと思いますっ！　私もそんな歌がうたいたいです！」[wsef]
 #翔和
-「そんなこと言ったって具体的にどうするんだよ」[pf]
+「そんなこと言ったって具体的にどうするんだよ」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="sad_1"
-「もぅ･･････安野くんは情緒が足りない」[pf]
+「もぅ･･････安野くんは情緒が足りない」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="hate_1"
-「感情より理の方が先走るモテない男の典型的なタイプね」[pf]
+「感情より理の方が先走るモテない男の典型的なタイプね」[wsef]
 #翔和
-「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[pf]
+「なんで俺がそんな評価されなきゃいけないんだよ！　モテないのは既成事実でしょう！？」[wait time="3000"][cm]
 #
 [mask time="800"]
 [bg storage="road_2.jpg" time="0"]
 @chara_mod name="aimi" cross=false time="0" face="normal_2"
-@chara_mods name="miku" cross=false time="100" face="normal"
+@chara_mods name="miku" cross=false time="0" face="normal"
 [mask_off time="800" wait="true"]
 ;※　　※　　※
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="305" setbuf="1"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="398" setbuf="2"]
 #美紅
-「ふふっ･･････なんかいーですね」[pf]
+「ふふっ･･････なんかいーですね」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal"
-「･･････？」[pf]
+「･･････？」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_1"
-「三人で居るのが楽しいんですっ」[pf]
+「三人で居るのが楽しいんですっ」[wsef]
 #美紅
 [chara_modm name="miku" face="normal_1"]
-「藍美ちゃんが安野くんをいじって、みんなでパプコ食べて･･････」[pf]
+「藍美ちゃんが安野くんをいじって、みんなでパプコ食べて･･････」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
 @chara_mod name="aimi" cross=false time="100" face="normal_1"
-「私、転校か続いてたから、あんまり友達出来なくて、作るつもりもあまりなくてさ」[pf]
+「私、転校か続いてたから、あんまり友達出来なくて、作るつもりもあまりなくて」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_2"
-「でもいつの間にか三人で居るようになって、この三人がいいな、って思うようになって･･････」[pf]
+「でもいつの間にか三人で居るようになって、この三人がいいな、って思うようになって･･････」[wsef]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
-「わたし、友達少ないからこの三人の中はけっこー大事にするよ？　時には重たくなるよ？」[pf]
+「わたし、友達少ないからこの三人の仲はけっこー大事にするよ？　時には重たくなるよ？」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal"
-「春奈さんが重たくなるのはなかなか想像つきません」[pf]
+「春奈さんが重たくなるのはなかなか想像つきません」[wsef]
 #翔和
-「なんでもすぐ許してくれそうだよな」[pf]
+「なんでもすぐ許してくれそうだよな」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="angry"
-「ん～わたしだって怒るときはこわいんですからね～っ！」[pf]
+「ん～わたしだって怒るときはこわいんですからね～っ！」[wsef]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="normal_2"
-「その怒り方可愛いです先輩！」[pf]
+「その怒り方可愛いです先輩！」[wsef]
 #美紅
 [chara_modm name="miku" face="angry"]
-「んもぅ藍美ちゃんやめてってば～」[pf]
+「んもぅ藍美ちゃんやめてってば～」[wsef]
 #
 ;※　　※　　※
 [mask time="800"]
@@ -609,25 +648,25 @@
 [voconfig name="aimi" vostorage="aimi/aimi_{number}.ogg" number="333" setbuf="1"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="398" setbuf="2"]
 #翔和
-「大丈夫、絶対それはさせない。だって、三人で頑張った証は台無しなんかできない」[pf]
+「大丈夫、絶対それはさせない。だって、三人で頑張った証は台無しなんかできない」[wait time="3000"][cm]
 #翔和
-「藍美ちゃんに頼りっぱなしになるけど、この曲は絶対に完成させたいと思ってる」[pf]
+「藍美ちゃんに頼りっぱなしになるけど、この曲は絶対に完成させたいと思ってる」[wait time="3000"][cm]
 #藍美
 [chara_mods name="aimi" face="normal_p_1" cross="false" time="100"]
-「･･････先輩」[pf]
+「･･････先輩」[wsef]
 #翔和
-「ん？」[pf]
+「ん？」[wait time="3000"][cm]
 #藍美
 [chara_mods name="aimi" face="normal_p" cross="false" time="100"]
-「たまには男らしいこと言うんですね！」[pf]
+「たまには男らしいこと言うんですね！」[wsef]
 #翔和
-「どんだけ藍美ちゃんの中の俺は男らしくないんだよ･･････」[pf]
+「どんだけ藍美ちゃんの中の俺は男らしくないんだよ･･････」[wait time="3000"][cm]
 #藍美
 [chara_mods name="aimi" face="normal_p" cross="false" time="100"]
-「ま、仕方ないですから先輩のその男らしさのプライドのために、楽曲制作頑張ります！」[pf]
+「ま、仕方ないですから先輩のその男らしさのプライドのために、楽曲制作頑張ります！」[wsef]
 #藍美
 [chara_mods name="aimi" face="normal_p_3" cross="false" time="100" cross="false" time="100"]
-「私も三人の想いを歌にのせたいです！　そして、この曲を多くの人の前で歌いたいです！」[pf]
+「私も三人の想いを歌にのせたいです！　そして、この曲を多くの人の前で歌いたいです！」[wsef]
 #
 ;※　　※　　※
 [mask time="800"]
@@ -639,85 +678,145 @@
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="442" setbuf="398"]
 
 #美紅
-「だから、これからも『翔和くん』でいいかな？」[pf]
+「だから、これからも『翔和くん』でいいかな？」[wsef]
 #翔和
-自信がなさそうな春奈さん･･････たしか、今まで転校を繰り返してたんだっけ[pf]
+自信がなさそうな春奈さん･･････たしか、今まで転校を繰り返してたんだっけ[wait time="3000"][cm]
 #翔和
-「うん、それでよろしく頼むよ･･････美紅」[pf]
+「うん、それでよろしく頼むよ･･････美紅」[wait time="3000"][cm]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_p_2"
-「･･････うんっ」[pf]
-[fadeoutbgm time="3000"]
+「･･････うんっ」[wsef]
 ;※　　※　　※
 ;CG05　キスしようとする
 ;※　　※　　※
+
 [mask time="800"]
 [free_layermode time="0"]
 [free_filter  ]
-[bg storage="black.jpg" time="0"]
+[bg storage="cg_2/kiss.jpg" time="0"]
 [chara_hide_all time="0"]
 [layopt layer="message0" visible="false"]
-[mask_off time="800" wait="true"]
-
+[mask_off time="1600" wait="true"]
+[bg time="2000" cross="false" storage="cg_2/kiss_1.jpg"]
+[bg time="3000" cross="false" storage="cg_2/kiss.jpg"]
 [wait time="3000"]
+
 ;ブラック
-[bg storage="black.jpg"]
+[bg time="6000" storage="black.jpg"]
+[playbgm storage="serious.ogg"]
 [layopt layer="message1" visible="true"]
 [voconfig name="miku_f" vostorage="miku/miku_{number}.ogg" number="506"]
 [vostart]
 ;文字
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="わたし、何やってんだろう"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="わたし、何やってんだろう"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="ずっと三人の時間が過ぎていくって、それがいいって思ってたのに"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="けっこーバカだな･･････わたし･･････"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="けっこーバカだな･･････わたし･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="なんで･･････なんで･･････今になって気づいちゃうかなぁ･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="ずっと･･････ずっと･･････好きだったんだ･･････"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="ずっと･･････ずっと･･････好きだったんだ･･････"][wse]
 #miku_f
-[mtext layer="message1" x="0" y="340" width="1280" align="center" size="40" out_delay="0" time="1000" text="なのに、なのに、どうして･･････？"][l]
+[mtext layer="message1" x="0" y="340" width="1280" align="center" width="1280" size="40" out_delay="0" time="1000" text="なのに、なのに、どうして･･････？"][wse]
 
-[mask time="800"]
-[position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame_pink.png" opacity=225]
-[position layer=message0 page=fore margint="140" marginr="100" marginl="150"]
-[bg storage="mura_1.jpg" time=0]
 [layopt layer="message1" visible="false"]
-[mask_off time="800"]
-
+[layopt layer="message0" visible="false"]
+[wait time="5000"]
 #美紅
-[chara_modm name="miku" face="sad_px"]
-「もぅ･･････嫌ぁっ･･････」[pf]
+「もぅ･･････嫌ぁっ･･････」
+[wse]
+[fadeoutbgm time="3000"]
 #
-挿入歌　開始[pf]
-#
-挿入歌　終了[pf]
 [mask time="800"]
-[position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true frame="frame_blue.png" opacity=225]
-[position layer=message0 page=fore margint="140" marginr="100" marginl="150"]
-[bg storage="black.jpg" time="0"]
-[chat_start name="miku"]
+[wait time="5000"]
 [playse storage="line.ogg"]
-[wait time="3000"]
 [mask_off time="800"]
 ;CG06  スマホ
 ;以下スマホ文面（LINE）
 ;BGMなし　無音でお願いします
 ;スマホの着信音
-[chat_talk pos="l" text="急にお母さんが体調崩して熱出しちゃったみたい"][p]
-[chat_talk pos="l" text="ごめんなさい、だから今日は行けなくなっちゃった"][p]
-[chat_talk pos="l" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][p]
-[chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][p]
-[chat_end]
 
 
+@chat_start name="miku"
 
+[chat_talk pos="l" text="急にお母さんが体調崩して熱出しちゃったみたい"][pf]
+[chat_talk pos="l" text="ごめんなさい、だから今日は行けなくなっちゃった"][pf]
+[chat_talk pos="l" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][pf]
+[chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][pf]
 
+[mask time="800"]
+[resetfont]
+[freeimage layer=2 time="500"]
+[clearfix]
+[layopt layer=0 visible=true]
+[mask_off time="800"]
 
+[fadeinbgm time="3000" storage="koinohousoku_short.ogg" loop="false"]
 
-つづく[pf]
-タイトルへ戻ります[pf]
+[ptext layer=0 y=800 text="原案" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=850 text="racamyy" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1050 text="シナリオ" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1100 text="racamyy" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1300 text="イラスト" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1350 text="竹中たけし" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1400 text="柳　うらば" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1600 text="スクリプト" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1650 text="儀助" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1700 text="WK" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1900 text="キャラクターボイス" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=1950 text="春奈美紅　寺島。" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2000 text="沢井藍美　小日向らむね / 歌-陽向舞桜" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2050 text="白咲来未　葉月ゆう" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2100 text="桐島由奈　城ノ内　悠香" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2150 text="朝日奈すみれ　蜜月杏" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2350 text="挿入歌" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2400 text="「恋の法則」" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2450 text="詞：沢井藍美　春奈美紅　安野翔和" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2500 text="作編曲：沢井藍美（陽向舞桜）" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2550 text="歌：沢井藍美（陽向舞桜）" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2750 text="イラスト協力（ティザービジュアル）" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2800 text="輝石" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=2850 text="かい" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3050 text="背景協力" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3100 text="輝石" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3300 text="素材提供元" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3350 text="KNT graphics：矢神ニーソ" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3400 text="きまぐれアフター" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3450 text="Creative Freaks" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3500 text="消失点　(c)安野譲" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3550 text="神楽" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3650 text="とくだや" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3750 text="Otologic" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3800 text="効果音ラボ" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3850 text="ノタの森" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=3950 text="魔王魂" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=4050 text="空想曲線" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=4500 text="制作" bold="bold" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+[ptext layer=0 y=4550 text="GALEX　SOFT" bold="" size=20 x=-320 color=snow name="text" align="center" width="1280"]
+
+[wait time=1]
+
+[keyframe name="animation1"]
+[frame p=100% y="-4170"]
+[endkeyframe]
+
+[kanim name="text" keyframe="animation1" time="110000" ]
+
+[wait time="1000"]
+[image layer=1 visible="true" folder="bgimage" time=10000 x=640 y=180 width=640 storage="classroom.jpg"]
+[freeimage layer=1 time=10000]
+[image layer=1 visible="true" folder="bgimage" time=10000 x=640 y=180 width=640 storage="clubroom.jpg"]
+[freeimage layer=1 time=10000]
+[image layer=1 visible="true" folder="bgimage" time=10000 x=640 y=180 width=640 storage="park_3.jpg"]
+[freeimage layer=1 time=10000]
+[image layer=1 visible="true" folder="bgimage" time=10000 x=640 y=180 width=640 storage="cg_2/kiss.jpg"]
+[wait time=10000]
+[image layer=1 zindex=1 visible="true" folder="bgimage" time=10000 x=640 y=180 width=640 storage="cg_2/kiss_1.jpg"]
+[wa]
+[mask time="1000"]
+
 [iscript]
 	location.href="./index.html";
 [endscript]

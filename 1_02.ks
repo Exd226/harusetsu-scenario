@@ -60,7 +60,7 @@
 ;アニメーション:cg02を下からスクロール
 [mask time=1000]
 [clearfix]
-@bg storage="cg_2.jpg" time=0
+@bg storage="cg_1/sleep.jpg" time=0
 @layopt layer=message visible=false
 [camera x=320 y=-180 zoom=2 time=0]
 [mask_off time=1000]
@@ -225,11 +225,15 @@
 @stopse
 @cm
 #翔和
-「ここは、まだ、あなたの夢の中です」[pf]
+「ここは、まだ、あなたの夢の中です」
+[fadeoutbgm time="3000"]
+[pf]
 [voconfig setbuf="0" name="joshikousei" vostorage="miku/miku_{number}.ogg" number="14"]
 #女子高生
 @chara_mods name="miku" cross="false" time="100" face="doki_1"
-「夢のなか･･････？」[pf]
+「夢のなか･･････？」
+[fadeinbgm time="3000" storage="comedy.ogg"]
+[pf]
 #翔和
 よし、乗ってくれたみたいだ[pf]
 #翔和
@@ -258,7 +262,7 @@
 「ということは、『夢の支配人』なんて、子供っぽいセンスなのは私のほう！？」[pf]
 #女子高生
 @chara_mods name="miku" cross="false" time="100" face="sad_1"
-「やだなぁ～、こんなセンスみんなに知られちゃったらバカにされちゃうよぅ～～」[pf]
+「やだなぁ～、こんなのみんなに知られちゃったらバカにされちゃうよぅ～～」[pf]
 #翔和
 うなだれてる･･････[pf]
 #翔和
@@ -298,7 +302,7 @@
 「そ、そうなんですか！？　不幸中の幸いです･･････」[pf]
 #女子高生
 @chara_mods name="miku" cross="false" time="100" face="sad_1"
-「･･････それで、私はどうしたらいいんですか？　支配人さん」[pf]
+「･･････それで、私はどうしたらいいんですか？　夢の支配人さん」[pf]
 #翔和
 「そ、そですね、まずは夢から覚めましょう」[pf]
 #女子高生
@@ -340,7 +344,7 @@
 @playse storage="puni.ogg"
 #
 「ふにふに」
-@fadeinbgm storage="comedy.ogg" time=3000 [pf]
+[fadeinbgm storage="comedy.ogg" time=3000] [pf]
 #翔和
 「って！　何やってるんですか！？」[pf]
 #翔和
@@ -457,7 +461,7 @@
 これはこの女の子との我慢比べ[pf]
 #翔和
 どちらが恥を捨て、我慢し続けるかの勝負だ[pf]
-@playse storage="puni.ogg" loop="true"
+@playse storage="puni.ogg"
 @chara_mod name="miku" cross="false" time="100" face="blush_1"
 #
 「ふにふにふにふに」[pf]
@@ -469,7 +473,7 @@
 「……ひゃっ//」[pf]
 #翔和
 さっきより反応がいい、よし畳み掛けるぞ[pf]
-@playse storage="puni.ogg" loop="true"
+@playse storage="puni.ogg"
 @chara_mod name="miku" cross="false" time="100" face="doki_1"
 #
 「ふにふにふにふに」[pf]
@@ -479,7 +483,7 @@
 「……っ……あっ//」[pf]
 #翔和
 もっと、もっとだ！[pf]
-@playse storage="puni.ogg" loop="true"
+@playse storage="puni.ogg"
 @chara_mod name="miku" cross="false" time="100" face="blush"
 #
 「ふにふにふにふにふにふに」[pf]
@@ -487,7 +491,9 @@
 #車掌
 「虹櫻～虹櫻～降り口は左側です～」[pf]
 #翔和
-「だああぁぁっっ！　やってられるかぁぁぁああ！」[pf]
+「だああぁぁっっ！　やってられるかぁぁぁああ！」
+[fadeinout time="3000"]
+[pf]
 
 ;※	　※　　※
 
@@ -496,6 +502,7 @@
 @bg storage="road.jpg" time="0"
 @chara_mod name="miku" cross="false" time="0" face="doki_1"
 @wait time="500"
+[fadeinbgm time="3000" storage="everyday.ogg"]
 @mask_off time=" 500"
 
 
@@ -542,7 +549,6 @@
 いかんいかん、またフラグ立ててどうするんだよ。会ったって気まずいだけだろ[pf]
 
 ;//以上小分岐01(b)「ここは、まだ、あなたの夢の中です」
-*debug
 *select1_0
 @stopse
 @fadeoutbgm time=3000 
@@ -561,8 +567,9 @@
 
 #女子高生
 [chara_modm name="miku" face="sad_1"]
-「すごい汗かいちゃった･･････」[pf]
-@fadeinbgm storage="everyday.ogg" time=3000 loop=true[pf]
+「すごい汗かいちゃった･･････」
+[fadeinbgm storage="everyday.ogg" time=3000 loop=true]
+[pf]
 [vostop]
 #女子高生
 [chara_modm name="miku" face="sad_1"]
@@ -604,6 +611,10 @@
 ;//背景：教室　朝
 
 @angle name="towa" bg="classroom.jpg"
+[voconfig setbuf="0" name="hatena_kurumi" vostorage="kurumi/kurumi_{number}.ogg" number="1"]
+[voconfig setbuf="0" name="kinpatu" vostorage="kurumi/kurumi_{number}.ogg" number="4"]
+
+[vostart]
 #
 ガヤガヤ････[pf]
 #翔和
@@ -614,15 +625,15 @@
 ･･････なんだけど、[pf]
 #翔和
 昼休みというのに教室はなんとなく浮かない雰囲気だ[pf]
-#？？
+#hatena_kurumi
 「ねぇ、ちょっと」[pf]
 #翔和
 無理もないよなぁ[pf]
-#？？
+#hatena_kurumi
 「ねぇ･･････ねぇ！！」[pf]
 #翔和
 ついさっきの始業式であんなことがあったんだし･････････････[pf]
-#？？
+#hatena_kurumi
 「ちょっといい加減に･･････」[pf]
 #
 ;//SE：机をたたく
@@ -738,7 +749,7 @@
 「あ、写し終わったら返さなくていいからそのまま提出しといてくれ」[pf]
 #金髪美少女
 @chara_mods name="kurumi" cross="false" time="100" face="hate"
-「なんで私がそんなこと･･････って思ったけどまぁいいわ。席も前と後ろの関係だからこれからもお世話になるしね」[pf]
+「なんで私がそんなこと･･････って思ったけどまぁいいわ。席も前と後ろの関係だからこれからもお世話になるから」[pf]
 #翔和
 う、なんかめんどくさそうだな･･････[pf]
 #
@@ -1019,8 +1030,7 @@
 
 ;美紅：表示
 ;//美紅：基本
-@chara_shows name="miku" width=450 top=-50 
-
+[chara_modm name="miku" face="normal"] 
 #美紅
 「････････････」[pf]
 #翔和
@@ -1029,10 +1039,6 @@
 や、やべっ[pf]
 #翔和
 すぐ、分かった、フラグが回収されやすいのは分かっていたから[pf]
-
-;美紅:フェードアウト
-@chara_hide_all
-
 #翔和
 すぐ目をそらしたけど、[pf]
 #翔和
@@ -1040,8 +1046,7 @@
 
 ;//美紅:表示
 ;//美紅：基本
-@chara_shows name="miku" width=450 top=-50
-
+[chara_modm name="miku" face="normal"]
 #美紅
 「･･････」[pf]
 #翔和
@@ -1052,11 +1057,8 @@
 あっちもすごい気にしてるみたい、かな？[pf]
 #翔和
 それに･･････春奈さんが見てる紙って俺と同じ部活の･･････[pf]
-
-;美紅：困り
-
 #美紅
-@chara_mods name="miku" cross="false" time="100" face="hate_2"
+@chara_modm name="miku" cross="false" time="100" face="hate_2"
 「････････････」[pf]
 #美紅 
 [chara_modm name="miku" face="hate_2"]
@@ -1073,7 +1075,6 @@
 「チラッ」[pf]
 #翔和
 っ！　やべ、また目があっちゃたよ[pf]
-@chara_hide_all
 #翔和
 ･･････俺のせいで機嫌を損ねちゃったかな･･････[pf]
 
@@ -1095,7 +1096,7 @@
 ;アニメーション：美紅が横切る
 @chara_show name="miku" width=450 top=-50 time=0 left=1300
 @filter name="miku" brightness=50
-@chara_move name="miku" left="-=2000" anim="true" time=1700
+@chara_move name="miku" left="-=2000" anim="true" time=1500
 @chara_hide name="miku" time="100"
 
 #翔和
@@ -1152,14 +1153,14 @@
 #翔和
 春奈さんに無駄に迷惑かけたくないし、ここは黙っておこう[pf]
 #翔和
-「でも、春奈さんが転校してきたのはびっくりっした」[pf]
+「でも、春奈さんが転校してきたのはびっくりした」[pf]
 #美紅
 @chara_mods name="miku" cross="false" time="100" face="normal_1"
 「それは、私もだよ。それに、あんなあからさまなリアクションとられたしなぁ」[pf]
 #翔和
 「ごめん、あの時は本当にびっくりして･･････」[pf]
 #美紅
-@chara_modm name="miku" cross="false" time="100" face="sad_1"
+@chara_mods name="miku" cross="false" time="100" face="sad_1"
 「変なうわさとか立てられたら困るんだけどなぁ」[pf]
 #翔和
 「ごめんなさい･･････」[pf]
@@ -1185,7 +1186,7 @@
 #翔和
 「そうなんだけど･････って、え？」[pf]
 #美紅
-[chara_modm name="miku" face="normal_1"]
+[chara_mods name="miku" face="normal_1"]
 「私も、もうすぐなんだ」[pf]
 #翔和
 「なんで･･････知ってるの？」[pf]
@@ -1223,7 +1224,7 @@
 #翔和
 今日はいろんなことありすぎだった[pf]
 #翔和
-それででだろう、今日はもう眠い[pf]
+それでだろう、今日はもう眠い[pf]
 
 ;//背景:ブラック
 @bg storage="black.jpg"
@@ -1265,7 +1266,6 @@
 [chara_modm name="miku" face="sad_px_1"]
 この際、人気があまりない部活に入るしかないかなぁ[pf]
 
-
-
+[debug_return]
 
 @jump storage="1_03.ks"
