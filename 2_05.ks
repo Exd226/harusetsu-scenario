@@ -1398,7 +1398,7 @@
 「だから、『奇跡』は『偶然』と区別されて使われているんだと思うんです」[pf]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
-「そんな『奇跡』を追い求めたい、誰かの『願い』を手助けしたい、そう思ってるんです」[pf]
+「そんな『奇跡』を追い求めたい、誰かの『願い』を叶える手助けしたい、そう思ってるんです」[pf]
 ;背景：いつもの帰り道　夕
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_2"

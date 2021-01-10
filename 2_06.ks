@@ -103,7 +103,7 @@
 「なんだその微妙な自信は」[pf]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="sad_1"
-「藍美ちゃんが弱音行ってるの初めてかも」[pf]
+「藍美ちゃんが弱音言ってるの初めてかも」[pf]
 #藍美
 @chara_mods name="aimi" cross=false time="100" face="sad_3"
 「だって、何千もの人が応募するんですよ！　一次審査通って最終審査まで残れるのはほんの数人なんですよ！」[pf]
@@ -348,7 +348,7 @@
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal"
 @chara_mod name="aimi" cross=false time="100" face="normal_1"
-「私、転校か続いてたから、あんまり友達出来なくて、作るつもりもあまりなくてさ」[pf]
+「私、転校が続いてたから、あんまり友達出来なくて、作るつもりもあまりなくてさ」[pf]
 #美紅
 @chara_mods name="miku" cross=false time="100" face="normal_2"
 「でもいつの間にか三人で居るようになって、この三人がいいな、って思うようになって･･････」[pf]

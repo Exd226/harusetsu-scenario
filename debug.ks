@@ -7,5 +7,5 @@
 
 ; [layopt layer="message0" visible="false"]
 
-; [jump storage="2_08.ks" target="*debug"]
-[jump storage="2_01.ks"]
+; [jump storage="2_06.ks" target="*debug"]
+[jump storage="2_07.ks"]
