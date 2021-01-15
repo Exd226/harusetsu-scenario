@@ -642,7 +642,7 @@
 	[chara_new name="kinpatu" storage="chara/ryoji/normal.png" jname="金髪美少女" color="0xff8c00"]
 
 	;キャラクターの名前が表示される文字領域
-	[ptext name="chara_name_area" layer="message0" size=24 x=150 y=540]
+	[ptext name="chara_name_area" layer="message0" size=24 x=200 y=540]
 
 [iscript]
 
@@ -672,6 +672,9 @@
 
 [endscript]
 
+[deffont edge="0x808080"]
+[resetfont]
+
 	
 	;上記で定義した領域がキャラクターの名前表示であることを宣言
 	[chara_config ptext="chara_name_area"]
@@ -690,7 +693,7 @@
 		;メッセージウィンドウの設定
 		[position layer="message0" left=0 top=420 height=300 width=1280 page=fore visible=true]
 		;文字が表示される領域を調整
-		[position layer=message0 page=fore margint="140" marginr="100" marginl="150"]
+		[position layer=message0 page=fore margint="140" marginr="190" marginl="200"]
 		;ロールボタン表示
 		[button name="role_button" role="skip" graphic="button/skip.png" enterimg="button/skip2.png" x=230 y=680 clickse="decision.ogg"]
 		[button name="role_button" role="auto" graphic="button/auto.png" enterimg="button/auto2.png" x=305 y=680 clickse="decision.ogg"]
@@ -785,6 +788,10 @@
 			[chara_hide_all time="0"]
 			[chara_hide_all layer="message0" time="0" layer="message0"]
 		[endif]
+		[if exp="mp.clear_effect=='true'"]
+			[free_layermode]
+			[free_filter]
+		[endif]
 		[mask_off time="800" wait="true"]
 	[endmacro]
 	
@@ -799,6 +806,20 @@
 		[endif]
 		[filter layer="base" grayscale="50"]
 		[mask_off time="1000"]
+	[endmacro]
+
+	;回想モード
+	[macro name="bg_flash"]
+#
+		[mask time="800"]
+		[bg * time="0"]
+		[if exp="mp.hide=='true'"]
+			[chara_hide_all time="0"]
+			[chara_hide_all layer="message0" time="0" layer="message0"]
+		[endif]
+		[filter grayscale="50"]
+		[layermode graphic="fog.jpg" mode="screen" ]
+		[mask_off time="800"]
 	[endmacro]
 	
 	;チャット開始
@@ -835,7 +856,7 @@
 	[macro name="chara_shows"]
 		[eval exp="mp.name_f=mp.name+'_f'"]
 		[chara_hide_all layer="message0" time="10" layer="message0"]
-		[chara_show name=&mp.name_f layer="message0" left="20" top="550" width="130" zindex="101" time="10" face="%face"]
+		[chara_show name=&mp.name_f layer="message0" left="50" top="550" width="130" zindex="101" time="10" face="%face"]
 		[chara_show *]
 		[eval exp="f.face=mp.name"]
 	[endmacro]
@@ -855,7 +876,7 @@
 	[macro name="chara_mods"]
 		[eval exp="mp.name_f=mp.name+'_f'"]
 		[chara_hide_all layer="message0" time="10" layer="message0"]
-		[chara_show name=&mp.name_f layer="message0" left="20" top="550" width="130" zindex="101" time="10" face="%face"]
+		[chara_show name=&mp.name_f layer="message0" left="50" top="550" width="130" zindex="101" time="10" face="%face"]
 		[chara_mod * time="100" cross="false"]
 		[eval exp="f.face=mp.face"]
 	[endmacro]
@@ -874,7 +895,7 @@
 	[macro name="chara_modm"]
 		[eval exp="mp.name_f=mp.name+'_f'"]
 		[chara_hide_all layer="message0" time="10" layer="message0"]
-		[chara_show name=&mp.name_f layer="message0" left="20" top="550" width="130" zindex="101" time="10" face="%face"]
+		[chara_show name=&mp.name_f layer="message0" left="50" top="550" width="130" zindex="101" time="10" face="%face"]
 		[eval exp="f.face=mp.face"]
 	[endmacro]
 
