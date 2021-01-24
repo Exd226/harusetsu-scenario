@@ -1,8 +1,7 @@
 [iscript]
     debug_flag = 1;
 [endscript]
-[angle name="towa" bg="classroom.jpg"]
-[fadeinbgm time="3000" storage="everyday.ogg"]
+; [angle name="towa" bg="classroom.jpg"]
 ; [call storage="2_02.ks" target="*debug"]
 ; [angle name="towa" bg="black.jpg"]
 

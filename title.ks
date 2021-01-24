@@ -3,7 +3,7 @@
 @clearstack
 
 ; web版のみ必要な記述
-; [bg storage="click.jpg" time="100"][l]
+[bg storage="click.jpg" time="100"][l]
 
 @bg storage ="title.jpg" time=100
 @wait time = 200

@@ -1,3 +1,4 @@
+*debug
 ３章-01
 ;date 7/16 mon
 ;「angle of 翔和」
@@ -276,7 +277,7 @@
 自然と足早になってしまう[pf]
 #美紅
 [chara_modm name="miku" face="sad_2"]
-「変に気を使いすぎちゃったかな･･････」[pf]
+「変に気を使いすぎちゃったかな･･････」[stopse][pf]
 #美紅
 [chara_modm name="miku" face="sad_1"]
 なんだか、今になって振り返ると自分の行動がバカバカしく思えてきた[p]
@@ -467,8 +468,6 @@
 [bg time="3000" cross="false" storage="cg_2/smile.jpg"]
 [fadeoutbgm time="3000"]
 [pf]
-
-*debug
 ;※	　 ※　　※
 ;視聴覚室　夕
 [bg_mask storage="audioroom_1.jpg" clear_effect="true"]
@@ -550,7 +549,7 @@
 ふと、さっきの威勢はどこへやら、沈み込む藍美ちゃん[pf]
 #藍美
 [chara_mods name="aimi" time="100" cross="false" face="angry"]
-「今度はなんですか、そのいかにも自慢げに『ふっふーん』と言いたげな顔は、彼女が悩んでるっていうときに、片腹痛いですね」[pf]
+「今度はなんですか、そのいかにも自慢げに『ふっふーん』と言いたげな顔は、彼女が悩んでるっていうときに、『かたはらいたし』ですね」[pf]
 #翔和
 「それはさっき煮え繰り返したからじゃ･･････」[pf]
 ;藍美ちゃんのこめかみに「怒り」、マーク
@@ -672,7 +671,7 @@
 「ですね！　だから秘密です！」[pf]
 #美紅
 [chara_modm name="miku" face="sad_2"]
-「えっ？」[pf]
+「えっ？」[fadeoutbgm time="3000"][pf]
 #翔和
 「そうだな、二人だけの秘密だな」[pf]
 #美紅
