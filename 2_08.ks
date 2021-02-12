@@ -739,12 +739,12 @@
 ;スマホの着信音
 
 
-@chat_start name="miku"
+@chat_start name="towa"
 
-[chat_talk pos="l" text="急にお母さんが体調崩して熱出しちゃったみたい"][pf]
-[chat_talk pos="l" text="ごめんなさい、だから今日は行けなくなっちゃった"][pf]
-[chat_talk pos="l" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][pf]
-[chat_talk pos="l" text="安野くんと藍美ちゃんは私の分も楽しんでね"][pf]
+[chat_talk pos="r" text="急にお母さんが体調崩して熱出しちゃったみたい"][pf]
+[chat_talk pos="r" text="ごめんなさい、だから今日は行けなくなっちゃった"][pf]
+[chat_talk pos="r" text="本当に楽しみにしてたのに、けっこー残念（誘ったのは私なのにね）"][pf]
+[chat_talk pos="r" text="安野くんと藍美ちゃんは私の分も楽しんでね"][pf]
 
 [mask time="800"]
 [resetfont]

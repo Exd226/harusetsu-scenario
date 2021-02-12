@@ -848,6 +848,7 @@
 		[resetfont]
 		[layopt layer=message0 visible=true]
 		[freeimage layer=2 time="500"]
+		[chat_clear]
 	[endmacro]
 
 	;メッセージ枠表情変更
@@ -905,6 +906,14 @@
 		[endif]
 	[endmacro]
 
+	;キャラクターを左に退場させる
+	;[chara_slide name="miku"]
+	[macro name="chara_slide"]
+		[filter name="mp.name" brightness=50]
+		; [chara_move name="mp.name" left="+=100" anim=true time=200]
+		[chara_move name="mp.name" left="-=1000" anim=true time=1200]
+		[chara_hide name="mp.name" time="0"]
+	[endmacro]
 ;タイトル画面へ移動
 @jump storage="title.ks"
 
