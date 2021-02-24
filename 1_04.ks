@@ -344,6 +344,7 @@
 ;//背景：廊下　昼
 #翔和
 入部届を出す！　･･････と心に決めたのはいいものの、写真部はどこで活動しているんだろう･･････？
+*debug
 @fadeinbgm storage="everyday.ogg" time="3000"
 [pf]
 #翔和
@@ -354,7 +355,6 @@
 早く出さないと。今日が締め切りだし[pf]
 #翔和
 とりあえず校内をうろちょろするか[pf]
-
 ;//背景：教室　昼
 @bg storage="classroom.jpg" method="fadeInLeft" time="800"
 ;//背景：食堂　昼
@@ -367,27 +367,13 @@
 そんなことないか。[pf]
 *select2
 #翔和
-@glink target="*select2_1" color="ts13_a" clickse="decision.ogg" x="300" y="230" width="550" text="「先生に尋ねる」"
-@glink target="*select2_2" color="ts13" clickse="decision.ogg" x="300" y="330" width="550" text="「まだ、校内を探す」"
+@glink storage="2_01.ks" target="*select2_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="「先生に尋ねる」"
+@glink storage="2_01.ks" target="*select2_2" color="ts13" clickse="decision.ogg" x="300" y="330" width="550" text="「まだ、校内を探す」"
 @s
-
-;//選択肢：１「先生に尋ねる」（サブルートへ）
-*select2_1
-#
-; この先サブルート[pf]
-; 選択肢に戻ります[pf]
-@jump target="*select2"
-
-;　　　　　２「まだ、校内を探す」（２章-01 メインルートへ）
-*select2_2
 
 [debug_return]
 
 @jump storage="2_01.ks"
-
-
-
-
 
 つづく[pf]
 タイトルへ戻ります[pf]

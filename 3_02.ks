@@ -6,7 +6,9 @@
 [playse storage="alarm.ogg"]
 「･･････んん」[pf][stopse]
 [bg storage="myroom_3.jpg"]
-そっか、今日はアラームをかけてたっけ[pf]
+そっか、今日はアラームをかけてたっけ
+[fadeinbgm storage="everyday.ogg" time="3000"]
+[pf]
 まだ、外が薄暗い[pf]
 母の朝の支度の物音も聞こえない、そんな早朝[pf]
 #翔和
@@ -36,6 +38,7 @@
 ;※	　※　　※
 ;背景　いつもの道　朝
 [bg_eye storage="house_1.jpg"]
+#翔和
 いつもより30分早い登校[pf]
 夏は朝が少し早いだけで、気温がグッと低い気がする[pf]
 #翔和
@@ -48,9 +51,11 @@
 「･･････っ」[pf]
 アスファルトを眺めていると、ふと、人影が現れる[pf]
 ;美紅　表示
-[chara_shows name="miku" width=600 top=-100 time="0" face="sad_1"]
-美紅
+#
+[chara_shows name="miku" width=600 top=-100 face="sad_1"]
+#美紅
 「･･････っ」[pf]
+#翔和
 春奈さんだ[pf]
 #翔和
 「っ、お、おはようございます」[pf]
@@ -90,14 +95,14 @@
 #美紅
 [chara_mods name="miku" time="100" cross="false" face="normal"]
 「仕方ないなんて、そんなこと思ってないよ･･････？　私は応援してるから」[p]
-「だって友達でしょ？」[pf]
+「だって友達でしょ？」[p]
 「だから･･････ね？　私、先に学校行くね」[pf]
 #翔和
 「お、おう」[pf]
 #美紅
 [chara_modm name="miku" time="100" cross="false" face="normal"]
 「また学校でっ」
-[chara_slide name="miku"]
+[chara_slide name="miku"][fadeoutbgm time="3000"]
 [pf]
 ;アニメーション　美紅がスライドして消える
 #翔和
@@ -134,6 +139,7 @@
 ;背景：教室　昼
 ;「angle：美紅」
 [angle name="miku" bg="classroom.jpg"]
+
 #美紅
 [chara_modm name="miku" time="100" cross="false" face="sad_1"]
 翔和くん･･････なんで今日、朝早かったんだろ･･････？[p]
@@ -145,9 +151,10 @@
 #美紅
 [chara_modm name="miku" time="100" cross="false" face="sad_2"]
 「はぁ～～」[pf]
+#
 @chara_shows name="kurumi" width=650 top=-170
 #来未
-「ため息なんて、美紅らしくないわね」[pf]
+「ため息なんて、美紅らしくないわね」[fadeinbgm storage="everyday.ogg" time=3000][pf]
 #美紅
 [chara_modm name="miku" time="100" cross="false" face="doki_1"]
 「そ、そう？　私ってため息似合わない？」[pf]
@@ -191,7 +198,7 @@
 さすがに、白咲さんは勘がいいな[pf]
 #来未
 [chara_mods name="kurumi" time="100" cross="false" face="hate"]
-「なにすっとぼけてるのよ、私は１番近くで見てたのよ？　後ろの席で･･････[p]
+「なにすっとぼけてるのよ、私は１番近くで見てたのよ？　後ろの席で･･････[l][r]
 あんたたち“２人”を」[pf]
 #美紅
 [chara_modm name="miku" time="100" cross="false" face="normal"]
@@ -250,12 +257,9 @@
 ; [angle name="towa"]
 #
 [mask]
-[eval exp="mp.frame='frame_blue.png'"]
-[eval exp="mp.graphic='angle_towa.jpg'"]
-[eval exp="mp.fontcolor='0x000000'"]
-[mask graphic="&mp.graphic" effect="fadeInRight" time="1000"]
-[position layer="message0" left=100 top=420 height=300 width=1280 page=fore visible=true frame="&mp.frame" opacity=225]
-[font color="&mp.fontcolor"]
+[mask graphic="angle_towa.jpg" effect="fadeInRight" time="1000"]
+[position layer="message0" left=100 top=420 height=300 width=1280 page=fore visible=true frame="frame_blue.png" opacity=225]
+[font color="0x000000"]
 [start]
 [bg storage="gate.jpg" time=0]
 [chara_shows name="aimi" width=600 top=-100 time="0"]
@@ -296,7 +300,9 @@
 「だ～か～ら、問題はあと１つってことです！」[pf]
 #藍美
 [chara_mods name="aimi" time="100" cross="false" face="hate"]
-「美紅先輩に気付かれないように、予定を聞くこと！」[pf]
+「美紅先輩に気付かれないように、予定を聞くこと！」
+[fadeoutbgm time="3000"]
+[pf]
 
 ;※	　※　　※
 ;angle:藍美
@@ -318,13 +324,16 @@
 ;※	　※　　※
 ;背景　教室
 ;SE　チャイム
-#翔和
 [angle name="towa" bg="classroom.jpg"]
-束の間の休憩、昼休みの到来[pf]
+#翔和
+束の間の休憩、昼休みの到来[playse storage="schoolbell.ogg"][pf]
 腹減った～[pf]
+#
 @chara_shows name="ryoji" width="380" top="-20"
 #良治
-「なぁ翔和～」[pf]
+「なぁ翔和～」
+[fadeinbgm storage="comedy.ogg" time="3000"]
+[pf]
 #翔和
 いきなり後ろからのしかかってくる[pf]
 #翔和
@@ -371,7 +380,7 @@
 [chara_mod name="kantaro" time="100" cross="false" face="normal"]
 「で、どこまでいったんだよ？」[pf]
 #翔和
-「期待しているようだが、まだ彼氏になって１週間と少ししか経ってないぞ[pf]
+「期待しているようだが、まだ彼氏になって１週間と少ししか経ってないぞ」[pf]
 #良治
 [chara_mods name="ryoji" time="100" cross="false" face="scary"]
 「翔和にとって１週間はあっという間かもしれんが、女の子もいない退屈な俺たちにとっては違うんだよ」[pf]
@@ -408,8 +417,9 @@
 [chara_mods name="ryoji" time="100" cross="false" face="blush"]
 「責任･･････とってくれよな」[pf]
 #風野
-[chara_modm name="kantaro" time="100" cross="false" face="normal_2"]
+[chara_mods name="kantaro" time="100" cross="false" face="normal_2"]
 「大丈夫、安心するんだ･･････」[pf]
+#翔和
 うう、さっきまでの食欲が･･････[pf]
 #風野
 [chara_modm name="kantaro" time="100" cross="false" face="normal_2"]
@@ -418,22 +428,23 @@
 [chara_mods name="ryoji" time="100" cross="false" face="normal_2"]
 「ったく、お前ってやつは･･････」[pf]
 #翔和
-俺の知ってる良治は･･････そこにはもう居なかった･･････[pf]
+俺の知ってる良治は･･････そこにはもう居なかった･･････
+[fadeoutbgm time="3000"]
+[pf]
 
 ;※	　※　　※
 ;教室　昼
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 [bg storage="classroom.jpg" time="0"]
-[chara_hide name="kantaro"]
-[chara_mods name="ryoji" time="0" cross="false" face="normal_2"]
+[chara_hide_all name="kantaro"]
 [mask_off time="800" wait="true"]
 #良治
-[chara_mods name="ryoji" time="100" cross="false" face="normal_1"]
-「ぐは～っ、やっと放課後だぁ～」
-[chara_slide name="ryoji"]
-[pf]
+[chara_modm name="ryoji" time="100" cross="false" face="normal_1"]
+「ぐは～っ、やっと放課後だぁ～」[pf]
 #翔和
-「さてと･･････」[pf]
+「さてと･･････」
+[fadeinbgm time="3000" storage="everyday.ogg"]
+[pf]
 俺はこのまま視聴覚室に直行するだけなんだが･･････いつも春奈さんとタイミングをずらして、二人で藍美ちゃんのところに行かないようにしている[pf]
 お互い、二人きりはなるべく避けている[pf]
 #翔和
@@ -449,94 +460,123 @@
 ; [angle name="miku" bg="corridor.jpg"]
 #
 [mask]
-[eval exp="mp.frame='frame_blue.png'"]
-[eval exp="mp.graphic='angle_towa.jpg'"]
-[eval exp="mp.fontcolor='0x000000'"]
-[mask graphic="&mp.graphic" effect="fadeInRight" time="1000"]
-[position layer="message0" left=100 top=420 height=300 width=1280 page=fore visible=true frame="&mp.frame" opacity=225]
-[font color="&mp.fontcolor"]
+[mask graphic="angle_miku.jpg" effect="fadeInRight" time="1000"]
+[position layer="message0" left=100 top=420 height=300 width=1280 page=fore visible=true frame="frame_pink.png" opacity=225]
+[font color="0xffffff"]
 [start]
-[bg storage="gate.jpg" time=0]
-[chara_shows name="aimi" width=600 top=-100 time="0"]
+[bg storage="corridor_1.jpg" time=0]
 @chara_shows name="kurumi" width=650 top=-170 face="sad" time="0"
 [mask_off time="1000" wait="true" effect="fadeOutLeft"]
 #来未
 「本当にだいじょうぶなの？　その量は普通じゃないわよ？」[pf]
 #美紅
+[chara_modm name="miku" time="100" cross="false" face="sad_1"]
 「い、いつものことだったから･･････」[pf]
 #来未
+[chara_mods name="kurumi" time="100" cross="false" face="sad_3"]
 「“だった”って、それいつものことじゃないって否定してるわよ」[pf]
 #美紅
+[chara_modm name="miku" time="100" cross="false" face="sad_1"]
 「あはは･･････でも、大丈夫だから、最近なかっただけで慣れてるから」[pf]
 #来未
+[chara_mods name="kurumi" time="100" cross="false" face="hate"]
 「慣れてるとか、そんなことどうでもいいから、保健室行くかしら」[pf]
 #美紅
+[chara_modm name="miku" time="100" cross="false" face="sad_2"]
 「できればそんな大事にしたくないなぁ、鼻血なんて恥ずかしいし」[pf]
 #来未
+[chara_mods name="kurumi" time="100" cross="false" face="sad"]
 「そんなこと言って･･････って、ほらまた顔に血がついてるわよ」[pf]
 #美紅
+[chara_modm name="miku" time="100" cross="false" face="sad_1"]
 「なかなか止まらないね」[pf]
 #来未
+[chara_mods name="kurumi" time="100" cross="false" face="angry"]
 「もう、私もティッシュが底をつきそうなの、美紅に断る権限は無いの」[pf]
 #美紅
+[chara_modm name="miku" time="100" cross="false" face="normal"]
 「白咲さんって、言い方あれだけど、優しいんだね」[pf]
 #来未
+[chara_modm name="kurumi" time="100" cross="false" face="angry"]
 「そんな悠長なことは止血してから言いなさいっ、それとも今すぐ止められるの？」[pf]
 #美紅
+[chara_modm name="miku" time="100" cross="false" face="sad_1"]
 「うん、保健室行こうか･･････ティッシュありがとう、白咲さんは教室に･･････」[pf]
 #来未
+[chara_mods name="kurumi" time="100" cross="false" face="normal_1"]
 「戻って、とでも言うのかしら？」[pf]
 #美紅
-「あ、ありがとう白咲さん･･････」[pf]
-
-
+[chara_modm name="miku" time="100" cross="false" face="normal"]
+「あ、ありがとう白咲さん･･････」
+[fadeoutbgm storage="3000"]
+[pf]
 ;視聴覚室　昼
+; [angle name="towa" bg="audiorrom.jpg"]
+#
+[mask]
+[mask graphic="angle_towa.jpg" effect="fadeInRight" time="1000"]
+[position layer="message0" left=100 top=420 height=300 width=1280 page=fore visible=true frame="frame_blue.png" opacity=225]
+[font color="0x000000"]
+[start]
+[bg storage="audioroom.jpg" time=0]
+[chara_shows name="aimi" width=600 top=-100 time="0" face="angry"]
+[mask_off time="1000" wait="true" effect="fadeOutLeft"]
 
 #藍美
 「･･････」[pf]
 #翔和
 「･･････」[pf]
-
 ･････････[pf]
-
 ･･････[pf]
 #翔和
 「ね、ねえ、もう足の感覚が無いんだけど？」[pf]
 #藍美
-「10分も正座ができないんですか？」[pf]
+[chara_mods name="aimi" time="100" cross="false" face="angry_1"]
+「10分も正座ができないんですか？」
+[fadeinbgm storage="comedy.ogg" time=3000]
+[pf]
 #翔和
 「俺正座できないタイプなんだよっ」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="doki_1"]
 「私なんかお仕置きで押し入れの暗闇の中30分正座してましたけど！？」[pf]
 #翔和
 「藍美ちゃんって昭和生まれだっけ？」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="hate_1"]
 「ったく、最近の若者は･･････」[pf]
 #翔和
 「急に貫禄がでた！？」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="angry_1"]
 「そ～ゆ～ことはどうでもいいんですってば！」[pf]
 #翔和
 「だからさっきから謝ってんじゃん！　許してよ！」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="angry"]
 「ダメです、もっとその足の痛みを噛みしめてもらいます」[pf]
 #翔和
 「だから、もう感覚が無いんだよ！」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="angry_1"]
 「なら私の代わりに恥をかいてください！」[pf]
 #翔和
 「ほんとあれは悪かったって」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="hate_2"]
 「冷やかされるのは私の方なんですからね！？」[pf]
 
 ;以下回想
 ;教室（できれば異なる背景がよし）　昼
-
+#
+[chara_hide name="aimi" time="0"]
+[bg storage="classroom_2.jpg" method=vanishIn time=2000 cross=true]
 #女子生徒
 「ねぇ、この後カラオケ行かない～」[pf]
 #女子生徒
 「え～またカラオケ～？」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="normal"]
 「･･････」[pf]
 #女子生徒
 「いいじゃん、行っても減るもんじゃないじゃん」[pf]
@@ -551,17 +591,20 @@
 #女子生徒
 「あの人だれ？　教室のドアのところに居る･･････あれ２年生の先輩だよね？」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="doki"]
 「（え、ちょ･･････）」[pf]
 #女子生徒
 「うわ～っ･･････絶対彼女待ちじゃん！」[pf]
 #女子生徒
 「ってか、先輩の彼氏持ってる子とかいたっけ？」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="doki_1"]
 「（･･････なんで先輩が私のクラスに来てるの！？）」[pf]
 #女子生徒
 「わたしゴシップネタとかいろいろ知ってるけど、聞いたことないわ」[pf]
 #藍美
-「（うわ、教室見渡してる･･････絶対私探してるよ）」[pf]
+[chara_modm name="aimi" time="100" cross="false" face="scary"]
+「（うわ、教室見渡してる･･････絶対私探してるよ）」[p]
 「（あんなことしたら･･････付き合ってることバレちゃう）」[pf]
 #女子生徒
 「え～だれ～？」[pf]
@@ -570,22 +613,27 @@
 #翔和
 「･･････」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="hate_2"]
 「（ちょ、先輩、まさか！）」[pf]
 #翔和
 「な、なぁ･･････一緒に行かない？」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="scary_2"]
 「･･････っ（バカッ）」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="angry"]
 「（他人のふりを貫こう･･････）」[pf]
 #女子生徒
 「え？　だれだれ？」[pf]
 #女子生徒
 「デートのお誘い！？」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="angry"]
 「･･････」[pf]
 #翔和
 「む、無視されてる！？　･･････ってか藍美ちゃんとしてはいつものことか･･････」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="scary_2"]
 「･･････（ッ！！）」[pf]
 #女子生徒
 「さ、沢井さんだったの！」[pf]
@@ -596,6 +644,7 @@
 #翔和
 「ちょ、待てって！」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="angry"]
 「来ないでください！！」[pf]
 #女子生徒
 「･･････うまくいってない感じ？」[pf]
@@ -603,119 +652,140 @@
 「そんな邪険に扱わないでくれよぅ」[pf]
 
 ;視聴覚室　昼
-
+#
+[bg storage="audioroom.jpg" method=vanishIn time=2000 cross=true]
+[chara_shows name="aimi" width=600 top=-100 face="angry" time=0]
 #藍美
 「な～にが『な、なぁ･･････一緒に行かない？』ですか･･････あ～思い出しただけで腹が立ってきた」[pf]
 #翔和
 「でもさすがにあの態度は俺も傷つくわ」[pf]
-
 勇気だして迎え行ったのにあんなふうに扱われたら、ねえ[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="angry"]
 「私は、先輩と付き合ってること誰にも言ってなかったんですけど」[pf]
 #翔和
 「あ、そうだったんだ」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="angry_1"]
 「まったく、デリカシーのない彼氏ですね、それで彼氏面するところが･･････よいしょっ」[pf]
 #翔和
-「アンプを膝に乗せるのはやめてくれぇぇぇええ！」[pf]
+「アンプを膝に乗せるのはやめてくれぇぇぇええ！」
+[fadeoutbgm time="3000"]
+[pf]
 
 ;※	　※　　※
-
 ;背景：視聴覚室　昼
-
+; [bg_eye storage="audioroom.jpg"]
+#
+[mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
+[bg storage="audioroom.jpg" time="0"]
+[chara_mods name="aimi" time="0" cross="false" face="sad"]
+[mask_off time="800" wait="true"]
 #藍美
-「来ないですね」[pf]
+「来ないですね」[fadeinbgm storage="everyday_2.ogg" time="3000"] [pf]
 #翔和
 「ああ」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="sad"]
 「心配しないんですか？」[pf]
 #翔和
 「そりゃ心配だよ、今にも探しに行きたいよ、電話すらつながらないし」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="sad_3"]
 「どうしたのかな？　美紅先輩居ないと練習する気になれません」[pf]
 #翔和
 「とりあえず、春奈さんの家に行ってみようか、俺の足のしびれが治ったら」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="scary"]
 「まだしびれてるんですか？」[pf]
 #翔和
 「ああやっと･･････」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="normal"]
 「ちょん」[pf]
 #翔和
 「痛ぇぇっ！」[pf]
-
 あろうことかしびれた俺の足をつついてきた[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="normal_1"]
 「私知ってるんですよ～？　こういうの意外とつま先とかがしびれるんですよね～」[pf]
 #翔和
 「ちょ、藍美ちゃっ、ふぁうっ！」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="normal"]
 「つんつん･･････えいっ」[pf]
 #翔和
 「や、やめっ･････ぬぐあっ」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="normal_3"]
 「あははっ･･････そんなだらしない声出さないでくださいよ～」[pf]
 #翔和
 「おまっ･･････いい加減にっ」[pf]
 #藍美
-「うりゃうりゃ～どうだ～？」[pf]
-
+[chara_mods name="aimi" time="100" cross="false" face="normal_2"]
+「うりゃうりゃ～どうだ～？」[fadeoutbgm time="3000"][pf]
 ;SE：着信音
-
-;スマホ
-;「～♪　～♪」[pf]
+[playse storage="ringtone.ogg"]
+#スマホ
+「～♪　～♪」[pf][stopse]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="doki"]
 「先輩、電話来ましたよ」[pf]
 #翔和
 「･･････っ、じゃ、その手を･･････はうっ、止めてくれぃ･･････」[pf]
 #藍美
+[chara_mods name="aimi" time="100" cross="false" face="normal"]
 「あ、ごめんなさい」[pf]
 #翔和
 「はぁ･･････って白咲さん？」[pf]
-
 珍しいひとからの着信だ･･････[pf]
-
 ;背景　スマホの画面
+[chara_hide name="aimi" time=0]
+[bg storage="calling.jpg" cross=true time=1000]
 #翔和
 「もしもし？」[pf]
-#白咲
+#来未
+[chara_modm name="kurumi" time="100" cross="false" face="scary"]
 「ああ安野、美紅のことなんだけど、今日はそっち行けないから、今病院に･･････」[pf]
-
 #翔和
 「･･････うん･･････はあ！？」[pf]
-
-病院？　どういうこと？[pf]
-
+病院？　どういうこと？[fadeinbgm storage="crisis.ogg" time="3000"][pf]
 これってもしかしてHRの時二人が居なかったことと関係してるのか？　[pf]
 #来未
+[chara_modm name="kurumi" time="100" cross="false" face="sad"]
 「それで今、美紅を病院まで運んで･･････」[pf]
-
+#翔和
 美紅を病院まで？？　じゃあ白咲さんは救急車に同行してるのか？[pf]
-
 やっぱり、春奈さんになにかあったに違いない！[pf]
 #翔和
 「どこの病院！？」[pf]
 #来未
+[chara_modm name="kurumi" time="100" cross="false" face="scary_1"]
 「安野、ちょっとあんた勘違いして･･････」[pf]
 #翔和
 「それでどこの病院だ！？」[pf]
 #来未
+[chara_modm name="kurumi" time="100" cross="false" face="hate"]
 「えっと、それは学校の最寄り駅の次の駅にある総合病院だけど」[pf]
 #翔和
 「分かった！　すぐ行くッ！」[pf]
 #来未
+[chara_modm name="kurumi" time="100" cross="false" face="hate_2"]
 「あ、ちょ、別にっ･･････」[pf]
 
 ;背景　視聴覚室　昼
-
+#
+[bg storage="audioroom.jpg" method=vanishIn time=1000 cross=true]
+[chara_show name="aimi" width=600 top=-100 face="doki" time=0]
 #翔和
 「行かなきゃっ！！」[pf]
 #藍美
+[chara_modm name="aimi" time="100" cross="false" face="doki"]
 「えっ、どうしたんですか急に！」[pf]
 #翔和
 「美紅が大変なんだ！」[pf]
 
-
+#
 つづく[p]
 タイトルへ戻ります[p]
 [iscript]
