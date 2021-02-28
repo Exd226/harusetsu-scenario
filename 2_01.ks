@@ -13,6 +13,7 @@
 ･･････[pf]
 ･･･[pf]
 [bg_eye storage="corridor_3.jpg"]
+#towa
 と、そんなことを考えているともう職員室が近づいてきた[pf]
 ;ここのボイスは誰でもいいのでどなたかの声優さんにやってもらう
 #女子生徒
@@ -43,7 +44,17 @@
 #hatena_sumire
 [chara_mods name="sumire" cross="false" time="100" face="doki"]
 「･･････君はもしや･･････？」[pf]
+
+;debug
+#
+[font color="0x000000"]
+会長が写真同好会へ案内するシーンへ続く[p]
+[resetfont]
+[return]
+
 [jump target="*select2_1_reg"]
+
+
 
 *select2_2
 #翔和
@@ -407,24 +418,24 @@
 「すみれ、だ。漢字では書かずにひらがなで書く」[pf]
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal_3"]
-「これを機に覚えてもらたいな」[pf]
+「これを機に覚えてもらいたいな」[pf]
 #翔和
 「すいません」[pf]
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal"]
 「ん、謝ることではない。だったら、どうして私のことが分かった？」[pf]
 #翔和
-「あの時、虹櫻の制服着てらしゃったので」[pf]
+「あの時、虹櫻の制服着てらっしゃったので」[pf]
 ;//すみれ：笑い
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal_1"]
-「あっ、そうか、そうだったな。あの時は入学式で、生徒会長も出席するんだ」[pf]
+「あぁ、そうか、そうだったな。あの時は入学式で、生徒会長も出席したんだ」[pf]
 #翔和
 「あ、そういうことだったんですか」[pf]
 ;//すみれ：心配
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="sad"]
-「で、あの後、視界がぼやけるとかないか？　強く頭を打ってたりすると大変だからな」[pf]
+「ところで、あの後、視界がぼやけるとかないか？　強く頭を打ってたりすると大変だからな」[pf]
 #翔和
 「いえ、全然そういったことはないです」[pf]
 ;//すみれ：通常
@@ -903,7 +914,10 @@
  [vostop]
 
 [debug_return]
-
+@mask time="2000"
+@fadeoutbgm time="3000"
+@free_filter
+@free_layermode time="0"
 @jump storage="2_02.ks"
 つづく[pf]
 タイトルへ戻ります[pf]

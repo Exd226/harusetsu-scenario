@@ -33,7 +33,7 @@
 ;//背景：商店街　昼
 
 
-@bg_eye storage="town.jpg"
+@bg_eye storage="cafe_frt.jpg"
 
 #翔和
 着いた[pf]
@@ -52,7 +52,7 @@
 ドアは俺が手をかける前に開き始める[pf]
 @playse storage="dos.ogg"
 #
-「ドンッ」[pf]
+「ドンッ」[quake time="300"][pf]
 #翔和
 何かに──ぶつかった[pf]
 #翔和
@@ -111,7 +111,7 @@
 ;「angle：hatena_sumire」
 ;//背景：商店街 昼
 ;//すみれ：通常
-@angle name="hatena" bg="town.jpg"
+@angle name="hatena" bg="cafe_frt.jpg"
 #hatena_sumire
 [chara_modm name="sumire" cross="false" time="100" face="sad"]
 「私としたことが･･････。周りが見えて無かったのかもしれない」[pf]

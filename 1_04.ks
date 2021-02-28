@@ -159,7 +159,7 @@
 「うわっ！」[pf]
 @playse storage="dos.ogg"
 #
-「ドン！」[pf]
+「ドン！」[quake time="300"][pf]
 
 ;//効果音：「ドンっ」
 #翔和
@@ -331,6 +331,9 @@
 #翔和
 「･･････おう」[pf]
 @chara_hide_all
+
+*debug
+
 @bg_eye storage="sky.jpg"
 @fadeoutbgm time="3000"
 ;※　　※　　※
@@ -344,7 +347,6 @@
 ;//背景：廊下　昼
 #翔和
 入部届を出す！　･･････と心に決めたのはいいものの、写真部はどこで活動しているんだろう･･････？
-*debug
 @fadeinbgm storage="everyday.ogg" time="3000"
 [pf]
 #翔和
@@ -367,8 +369,8 @@
 そんなことないか。[pf]
 *select2
 #翔和
-@glink storage="2_01.ks" target="*select2_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="「先生に尋ねる」"
-@glink storage="2_01.ks" target="*select2_2" color="ts13" clickse="decision.ogg" x="300" y="330" width="550" text="「まだ、校内を探す」"
+@glink storage="2_01.ks" target="*select2_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="先生に尋ねる"
+@glink storage="2_01.ks" target="*select2_2" color="ts13_a" clickse="decision.ogg" x="300" y="330" width="550" text="まだ、校内を探す"
 @s
 
 [debug_return]
