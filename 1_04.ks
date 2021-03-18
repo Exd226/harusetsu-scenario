@@ -332,7 +332,6 @@
 「･･････おう」[pf]
 @chara_hide_all
 
-*debug
 
 @bg_eye storage="sky.jpg"
 @fadeoutbgm time="3000"

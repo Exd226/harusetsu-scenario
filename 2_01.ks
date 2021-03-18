@@ -44,14 +44,6 @@
 #hatena_sumire
 [chara_mods name="sumire" cross="false" time="100" face="doki"]
 「･･････君はもしや･･････？」[pf]
-
-;debug
-#
-[font color="0x000000"]
-会長が写真同好会へ案内するシーンへ続く[p]
-[resetfont]
-[return]
-
 [jump target="*select2_1_reg"]
 
 

@@ -142,7 +142,7 @@
 ;すみれ 笑い
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal_p_2"]
-「ほんとに、マスターのジョークは適わないな」[pf]
+「ほんとに、マスターのジョークには適わないな」[pf]
 #翔和
 「勘弁してくださいよぉ」[pf]
 #叔父さん
@@ -236,12 +236,11 @@
 [eval exp="f.flag_sumire = 0"]
 #
 @glink target="*select3_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="ゴンちゃんについて聞く"
-@glink target="*select3_2" color="ts13_a" clickse="decision.ogg" x="300" y="330" width="550" text="聞き流す"
+@glink target="*select3_2" color="ts13" clickse="decision.ogg" x="300" y="330" width="550" text="聞き流す"
 @s
 
 *select3_1
 [eval exp="f.flag_sumire = 1"]
-*select3_2
 ; #
 ; [if exp="f.flag_sumire == 1"]
 ; f.flag_sumire = 1[p]
@@ -307,20 +306,110 @@
 「な、なんか申し訳ないです･･････」[pf]
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal_p"]
-「そうかしこまることはない、安野クンの都合で構わないから、今度時間があるときに連絡してくれ」[fadeoutbgm time=3000][pf]
+「そうかしこまることはない、安野クンの都合で構わないから、今度時間があるときに連絡してくれ」[pf]
+[jump target="select_3_1_reg"]
 
-;debug
-#
-[font color="0x000000"]
-ここまで[p]
-[resetfont]
-[iscript]
-	location.href="./index.html";
-[endscript]
-@jump storage="first.ks"
+
+*select3_2
+;２．『聞き流す』
+#towa
+なんかの聞き間違えだろう[pf]
+変に詮索して朝日奈先輩のイメージを壊してしまいたくない[pf]
+#翔和
+「そういえば、朝日奈先輩はなぜ生徒会もしながら写真部に、って、あ写真同好会か」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="doki_p"]
+「たしかに、その話は部員にもまだしたことなかったな」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p"]
+「別に面白い話などはないが、気になるかい？」[pf]
+#翔和
+「ええ、気になります」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p_1"]
+「そうだな･･････端的に言ってしまえば、安野クン」[pf]
+#翔和
+「はい？」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p_1"]
+「君のためだよ」[pf]
+#翔和
+「･･････え？」[pf]
+だめだ、端的すぎてさっぱり意味が分からない[pf]
+#翔和
+「先輩、またおちょくってますね」[pf]
+;すみれ 笑い
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p_3"]
+「ふふっ、今回ばかりは通用しなかったか」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p"]
+「もう少し説明すると、安野クン”たち”のような生徒のために、写真同好会を作ったんだ」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p_2"]
+「もともと、写真同好会は休部の状態でな、私が今年から部員になって活動を再開した運びなんだ」[pf]
+#翔和
+「え？　じゃあ先輩も今年から写真同好会なんですか？」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p"]
+「そうなんだよ、私だってカメラのことなどさっぱりだ」[pf]
+#翔和
+「それでどうして活動を再開させたんですか？」[pf]
+#すみれ
+[chara_modm name="sumire" cross="false" time="100" face="normal_p"]
+「それは、今年の学校方針が絡んでくるんだ」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="sad_p"]
+「安野クンが知っての通り、今年から事実上の部活動強制が学校の方針だ」[pf]
+#すみれ
+[chara_modm name="sumire" cross="false" time="100" face="sad_p"]
+「この決定は新しい校長によるもので、この方針を決める際もかなりの激論になったみたいだが･･････」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="sad_p_1"]
+「･･････私はあまり良く思っていないんだ」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="scary_p"]
+「同じ高校の生徒とはいえ、生徒は多種多様な環境と価値観を持っている」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="sad_p_4"]
+「それを、一つの価値観の箱に閉じ込めるのはよくないと思っているんだ」[pf]
+#towa
+確かに、この方針が生徒に伝えられた時に反発する生徒も少なからず居た[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p"]
+「何らかの理由があって部活に所属していない生徒は強制的に部活を選ばなければならない」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p_2"]
+「そんな生徒の受け皿になろうとしたのがこの写真同好会なのだ」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p"]
+「比較的ゆるい活動で、同好会という名前であればハードルも低い」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p_1"]
+「活動だって部員の事情を最大限尊重して行うつもりだ」[pf]
+#翔和
+「はぁ～そんな魂胆だったんですか～」[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p"]
+「魂胆･･････まぁ学校側からすればその表現が正しいかもしれないな」[pf]
+#翔和
+「たしかに、写真同好会に入ってくる部員はこれといって理由があるわけではないですね」[pf]
+春奈さんみたいな転入生からしたらいきなりの部活動はハードルが高いだろう[pf]
+さすが、朝日奈先輩だ[pf]
+校内で絶大な人気を集めるのは、決してその容姿だけではないと確信できる[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="doki_p"]
+「おっと、話し込んでいたらアイスがいい感じに溶けてきたぞ」[pf]
+#towa
+そんな先輩がいまコーヒーゼリーの溶けかけのアイスに夢中なのが、すこしおかしい[pf]
+#すみれ
+[chara_mods name="sumire" cross="false" time="100" face="normal_p_3"]
+「ん、おいしいなぁ」[pf]
+
+*select_3_1_reg
+[fadeoutbgm time=3000]
+[mask time=800]
 [bg_mask hide=true storage="cafe.jpg"]
-
-
 ;; 5/7 tue
 ;;背景：食堂 昼
 
