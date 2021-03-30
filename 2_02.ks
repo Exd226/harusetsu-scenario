@@ -307,10 +307,19 @@
 #すみれ
 [chara_mods name="sumire" cross="false" time="100" face="normal_p"]
 「そうかしこまることはない、安野クンの都合で構わないから、今度時間があるときに連絡してくれ」[pf]
-[jump target="select_3_1_reg"]
+[jump target="select3_1_reg"]
+
 
 
 *select3_2
+
+;for debug
+	[bg storage="cafe_in_b.jpg"]
+	[chara_shows name="sumire" width=600 top=-100 face="normal_p"]
+	[fadeinbgm storage="cafe.ogg" time=3000]
+#
+select3_2 聞き流す[p]
+
 ;２．『聞き流す』
 #towa
 なんかの聞き間違えだろう[pf]
@@ -406,7 +415,10 @@
 [chara_mods name="sumire" cross="false" time="100" face="normal_p_3"]
 「ん、おいしいなぁ」[pf]
 
-*select_3_1_reg
+;for debug
+	[return]
+
+*select3_1_reg
 [fadeoutbgm time=3000]
 [mask time=800]
 [bg_mask hide=true storage="cafe.jpg"]
@@ -1298,8 +1310,528 @@
 [chara_mod name="sumire" cross=false time="100" face="doki"]
 朝比奈先輩は今年も無理か[pf]
 #翔和
-先輩のミスコン見てみたかったなぁ[pf]
+先輩のミスコン見てみたかったなぁ
+[fadeoutbgm time=3000]
+[pf]
 
+;for debug
+*debug
+	[fadeoutbgm time=3000]
+
+[bg_eye storage="clubroom_1.jpg"]
+;背景：部室；夕
+;美紅：表示；通常
+#
+[chara_shows name="miku" width=600 top=-100 face="normal_1"]
+#美紅
+「はあ～目が疲れた～」[pf]
+#towa
+黙々とした雰囲気を打ち消すかのように春奈さんが伸びをする
+[fadeinbgm storage="everyday_2.ogg" time=3000]
+[pf]
+;由奈：表示；通常
+#
+[chara_shows name="yuna" width=600 top=-100 face="normal"]
+#由奈
+「でも結構長く集中してましたね」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal"]
+「うんうん、時間があっという間に過ぎてった」[pf]
+#towa
+「うん、まあ、そうだね･･････」[pf]
+そうなんだけどさ、なんていうかさ･･････[pf]
+「ここ、写真部の部室だよね？」[pf]
+;由奈：疑問
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="sad"]
+「そうですけど･･････？ あと、正式には写真同好会ですが･･････」[pf]
+#美紅
+[chara_modm name="miku" cross=false time="100" face="normal"]
+「部室なはずです」[pf]
+#towa
+「じゃあさ･･････」[pf]
+「俺ら、なんで勉強しちゃってんだよ」[pf]
+･･････[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「テストが近いからです」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
+「違いないと思います」[pf]
+#towa
+「そ、それは分かってるけどさ～せっかく写真部なのに、っていうのがあるじゃん」[pf]
+ちなみにすみれ先輩は生徒会業務に戻ったみたいだ[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="sad_1"]
+「それはそうなんですけども･･････」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal"]
+「勉強すべきです」[pf]
+#towa
+「え～やろうよ部活～」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="sad"]
+「そうしたいのがやまやまなんですけど･･････」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
+「写真はいつでも撮ることが出来ます」[pf]
+#towa
+「･･････さっきから春奈さん英語の助動詞使ってるよね？そうだよね？」[pf]
+;美紅：赤面
+#美紅
+[chara_mods name="miku" cross=false time="100" face="blush_1"]
+「あ、分かってましたか」[pf]
+#towa
+「分かってるも何も、英語のテキスト見ながら喋ってたじゃん」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal_2"]
+「えへへ、まだ勉強途中だからさ」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
+「Surely, it is too difficult for me to speak English well. 」[pf]
+#towa
+桐島さんの口から英語が流れるように出てきた[pf]
+「確かに、私は難しすぎて英語をうまく使えない」[pf]
+;美紅：通常
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal"]
+「すごく、流暢なんですね」[pf]
+#towa
+「桐島さん英語得意なんだ」[pf]
+#yuna
+[chara_mods name="yuna" cross=false time="100" face="normal_3"]
+「英語だけですけどね」[pf]
+#towa
+「うらやましいな～」[pf]
+#yuna
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「安野君は何が得意なんですか？」[pf]
+#towa
+「あ～俺はね･･････」[pf]
+あれ、なんだろ？･･････やっぱ得意な科目とかないかも[pf]
+[bg_eye hide=true storage="clubroom_1.jpg"]
+;※　　※　　※
+;部室：夕
+#
+･･････カリカリ･･････[pf]
+#towa
+つかの間の休憩から数分後[pf]
+;美紅：表示；通常
+#
+[chara_shows name="miku" width=600 top=-100 face="normal"]
+#美紅
+「あ、ここは力学的エネルギー保存則じゃなくて運動量保存則でないと解けませんよ」[pf]
+#
+;由奈：表示；通常
+[chara_shows name="yuna" width=600 top=-100 face="normal"]
+#由奈
+「うーん･･････なんでこの場合運動量が保存されて･･････」[pf]
+#towa
+なんとなくわかってきた[pf]
+#美紅
+[chara_modm name="miku" cross=false time="100" face="normal"]
+「まず、運動量が保存される条件は･･････」[pf]
+#towa
+由奈さんは文系で春奈さんは理系だ[pf]
+春奈さんが物理得意なのは意外だったな[pf]
+#美紅
+[chara_modm name="miku" cross=false time="100" face="normal"]
+「･･････ということになるの」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="doki"]
+「･･････うん？結局エネルギーと量って何が違うの･･････？」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal"]
+「それは物理において着目してる次元が･･････」[pf]
+#towa
+そして春奈さんは教えるのがあまりうまくないみたいだ[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="hate_2"]
+「うーーーん･･････」[pf]
+#towa
+「そろそろ、休憩したらどうですか？」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="sad_1"]
+「そうですね、お腹空きました」[pf]
+#towa
+桐島さんが鞄から何か取り出す[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
+「あ～、これ、たけのこの山ですね！」[pf]
+#towa
+ん？なんか名前間違ってるような･･････ま、そっちの方が都合いいか[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「やっぱりたけのこ派ですよね～」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
+「よね～」[p]
+#美紅
+「でもね、私のお母さんはいっつも、きのこの里を買ってく･･･る･･････あっ！」[pf]
+#towa
+「どうかした？」[pf]
+;美紅：驚き
+#美紅
+[chara_mods name="miku" cross=false time="100" face="doki_1"]
+「私、帰らなくちゃ」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="doki"]
+「何かあるんですか？」[pf]
+#美紅
+[chara_modm name="miku" cross=false time="100" face="doki_1"]
+「今日、お母さん、帰って来るの遅くて晩ごはん作る当番になってたの！」[pf]
+;由奈：驚き
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「それは大変ですね」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
+「早く帰って作ってあげてください、朝比奈先輩には伝えときますので」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal"]
+「桐島さん、ありとう！」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
+「今度、たけのこの山、あげるねっ」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「わぁ～、･･････でも私、先輩に一言伝えるだけでそんな･･････」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal"]
+「いいの、気にしないで」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="sad"]
+「まあ、はい･･････」[pf]
+#美紅
+[chara_modm name="miku" cross=false time="100" face="normal"]
+「それかさ、気にしてしまうんだったら、一緒に食べよ？」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「はい、それがいいです」[pf]
+#美紅
+[chara_mods name="miku" cross=false time="100" face="normal_1"]
+「うん、じゃあ、さようなら～」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_3"]
+「また、明日～」[pf]
+#towa
+「おう、また」[pf]
+[chara_hide name="miku"]
+春奈さんが小走りで部室を去っていく[pf]
+俺にもたけのこの山くれるのかな？[pf]
+#
+[chara_hide name="yuna"]
+･･････[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="sad_1"]
+「えらいですね、春奈さん･･･････････なおさら悔しいじゃないですか」[pf]
+;※　　※　　※
+;教室：夕
+[bg_eye storage="clubroom_1.jpg"]
+#
+････････････[pf]
+#towa
+･･････さっきみたいにペンを走らせる音はもう聞こえない[pf]
+つまり、もう、集中力が持たなくなってきた[pf]
+「桐島さん？」[pf]
+頭を「こくこく」としている桐島さんに呼びかける[pf]
+;由奈：表示；眠そう
+#
+[chara_shows name="yuna" width=600 top=-100 face="scary_1"]
+#由奈
+「ぁあ、はい･･････？」[pf]
+#towa
+「お手洗い行ってきます」[pf]
+眠気覚しに少し立って歩こう[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="scary_1"]
+「みたらし？ってどこですか？」[pf]
+#towa
+「･･････やっぱなんでもないです、トイレ行ってきます」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="sad_1"]
+「ああ、はい」[pf]
+;※　　※　　※
+;背景：廊下；夕
+[bg_eye storage="corridor_4.jpg" hide=true]
+#
+･･････[pf]
+[mask time=800]
+[playse storage="wash.ogg"]
+[wse]
+;効果音：水が流れる音
+[mask_off time="800"]
+#towa
+さあ、次は英語を勉強しないとな[pf]
+桐島さんに教えてもらえるかな？[pf]
+;※　　※　　※
+;背景：部室；夕
+[bg_eye storage="clubroom_1.jpg"]
+#towa
+あ････････････[pf]
+･･････やっぱり、教えてもらえそうにないかな･･････[pf]
+いや、教えてもらいたくないのかも･･･････[pf]
+だって･･････起こしたくない･･････[pf]
+「髪、きれいだな･･････」[pf]
+夕焼けの色にも染まらない･･････銀色のシルク[pf]
+でも、夕風によってたなびく髪は、一本一本はっきり見えて･･････[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="sad_3"]
+「･･････すぅ･･････んふぅ･･････」[pf]
+#towa
+「べ、勉強しなくちゃ」[pf]
+見惚れるのはしょうがないとして、これくらいにしとかないと[pf]
+そう思って机に視線を移す[pf]
+「ん？」[pf]　
+「･･････ハンカチ･･････？」[pf]
+俺の机の上に置かれてる･･････[pf]
+「桐島さん･･････」[pf]
+俺のため、でいいんだよな？[pf]
+俺が普段、手を拭かないのを知ってて･･････ここまで[pf]
+「どんだけおせっかいなんだよ」[pf]
+どんだけ、優しいんだよ･･････[pf]
+「ありがとうございます」[pf]
+あとで、起きてる時にも言わないとな[pf]
+でも、桐島さんのことだから、ホントは起きてるかもしれない[pf]
+;背景：部室：夕
+#
+･･････[pf]
+#towa
+さ、テスト対策しましょ[pf]
+#
+･･････カリカリ･･････[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="sad_3"]
+「･･････すぅ～･･････」[pf]
+#
+カリカリ･･････[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="sad_3"]
+「･･････すぅ～･･････」[pf]
+#
+カリカリ･･････[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="normal_1"]
+「･･････んすぅっ～･･････」[pf]
+#towa
+気が散るわ！[pf]
+いや、すごい耳は心地いんだけどさ！[pf]
+耳にばっか気が行っちゃうんだよぅ！[pf]
+お、起こそう･･････心惜しいけど･･････[pf]
+「桐島さーん？」[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="angry_1"]
+「･･････んっ～･･････」[pf]
+#towa
+起き、たか･･････？[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="normal_1"]
+「････････････すぅ～～」[pf]
+#towa
+起きてないな[pf]
+もう、めんどくさいな～肩でも揺すらないと起きないパターンじゃないか[pf]
+苦手なんだよな、女の子の体に触れるの･･････慣れてないし[pf]
+
+*select4
+;選択　１．由奈ルート 
+;１．『起こす』
+;２．『起こさない』
+[eval exp="f.flag_yuna = 0"]
+#
+@glink target="*select4_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="起こす"
+@glink target="*select4_2" color="ts13" clickse="decision.ogg" x="300" y="330" width="550" text="起こさない"
+@s
+
+;以下１のルート
+*select4_1
+[eval exp="f.flag_yuna = 1"]
+#towa
+「桐島さん、肩、揺すりますからね～」[pf]
+一応、最初に予告はしておこう、寝てるけど、言った、って事実が重要なんだ[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="normal_1"]
+「･･････いいですよ～･･････」[pf]
+#towa
+「えっ？」[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="normal_1"]
+「揺すってくださ～い」[pf]
+#towa
+「起きてますよね！？」[pf]
+#
+[chara_shows name="yuna" width=600 top=-100 face="angry"]
+#由奈
+「･･････もう、寝てる人に寝言、言わせないでください」[pf]
+#towa
+「起きてるなら目開けてくださいよ･･････それに起こしてしまったんなら謝りますけど」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「おはようございます･･････今起きましたよ？」[pf]
+#towa
+「疑問形なのがすごく違和感ありますけど、信じましょう」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_1"]
+「優しいんですね」[pf]
+#towa
+それを言いますか、桐島さんが･･････[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「風、寒くありませんか？」[pf]
+#towa
+「まあ、そうかも」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「やっぱり、そうなんですね」[p]
+「私が寝起きだから寒いように感じてるのだと思いました」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
+「じゃ、閉めますね」[pf]
+#towa
+桐島さんが窓を閉める[pf]
+さっきまで閉めるわけにはいかなかった事情など知らずに[pf]
+どこまでも気が利く人だ[pf]
+;背景：部室；由奈表示
+;由奈：表示；通常
+「桐島さん･･････これ」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「あ、使ってくれましたか？」[pf]
+#towa
+「はい、もちろん、ありがたく使わせていただきました」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「それはよかったです、安野君はいつも手を拭かないので」[pf]
+#towa
+「めんどくさくてなかなか習慣がつかないんですよ」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="hate"]
+「濡れてるとせっかく洗った手に菌が付いてしまいますよ」[pf]
+#towa
+「こんどから拭くようにします」[pf]
+多分、ね[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="sad"]
+「ホントですか？」[pf]
+#towa
+「本当です」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「じゃ、誓いますか？」[pf]
+#towa
+そ、それは少し言葉が重い[pf]
+#towa
+「誓いま、す」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
+「じゃ、このハンカチ、プレゼントします」[pf]
+#towa
+「えっ？」[pf]
+でもなんか、女子っぽいような･･････[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「女の子っぽいかったら嫌ですか？」[pf]
+#towa
+「そんなことないです受け取ります」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_1"]
+「そうですか･･････どうぞ」[pf]
+#towa
+「ありがとうございます」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「そのかわり･･････」[pf]
+#towa
+「はい？」[pf]
+;由奈：笑顔
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_3"]
+「次･･････濡れていたら････････････許しませんからね？････････････」[pf]
+#towa
+「許さない」それは桐島さんが言うととても重く受け止めてしまう[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
+「････････････ま、私が何度でもハンカチ貸しますけど」[pf]
+[jump target="*select4_reg"]
+*select4_2
+;※　　※　　※
+;由奈イベント選択肢
+;選択肢２『起こさない』
+#towa
+きっと、テスト勉強で疲れているのだろう[pf]
+今は少し休ませてあげた方がいいのかもしれない[pf]
+;寝息
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="hate_2"]
+「････････････」[pf]
+#towa
+それにしても美貌だ[pf]
+寝顔まで整った顔立ちを保っている[pf]
+可愛いというよりもきれいで儚げ･･････まるでガラスの人形のようだ[pf]
+すみれ先輩や白咲さんとはまた違った趣がある[pf]
+もしかして２大スターよりも･･････？[pf]
+その割には学校であまり噂は聞かないな、これだけの容姿であれば良治の口から出てくるはずだ[pf]
+ちょっとまて、こんな美人がこの部に２人もいるのか･･････？[pf]
+そして、始業式の日に白咲さんに絡まれたことも考えれば･･････もしかして俺はラブコメの主人公？[pf]
+しかもギャルゲーの類だぞこれ。今時ラノベでもこんなハーレム設定見ないし[pf]
+うむ･･････おそらく今は共通ルートだな[pf]
+特別急接近するイベントも急にヒロインが不慮の事故に遭うもないし、そんなの縁起でもないお断りだ[pf]
+と言うことは、俺の行動次第でこのあと誰かとキャッキャウフフな展開が･･････[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="hate"]
+「鼻のした伸びてますよ」[pf]
+#翔和
+「ふぁっ、起きてたの！？」[pf]
+#由奈
+[chara_modm name="yuna" cross=false time="100" face="hate_1"]
+「ええ、なかなか起こしてくれなかったので」[pf]
+#翔和
+「ん？　それって･･････」[pf]
+#
+[chara_shows name="yuna" width=600 top=-100 face="normal"]
+#由奈
+「あ、そういえば安野君は模擬店の撮影でしたね」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
+「腕章忘れると盗撮と間違われると思いますので気をつけてくださいね～」[pf]
+#翔和
+「文化祭で、そこまで疑われますかね」[pf]
+#由奈
+「それを言ってしまえば腕章の意味がなくなってしまいます」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="hate"]
+「安野君にもしなにかあったらどうするんですか？」[pf]
+#towa
+もしなにか、と言われてもピンとこないしなぁ[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「安野君は”もしなにか”がありやすいんですよ」[pf]
+#翔和
+「そうなの！？」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_2"]
+「ほら、後輩にカレーぶっかけるとか普通しませんから」[pf]
+#翔和
+「うっ、確かに」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal"]
+「それに、転入してきた女の子が隣の家とか」[p]
+#由奈
+「美人ぞろいのハーレム同好会に所属しているとか」[pf]
+#翔和
+「しれっと自分いれてるよね？ ･････否定はしないんだけど」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="normal_3"]
+「安野君はラブコメの主人公なんですよ。それくらいの自覚はしてください」[pf]
+#翔和
+「いや、そこ断言しちゃダメでしょ！ さっき俺がせっかく地の文で疑問形で語ったって言うのに！」[pf]
+#由奈
+[chara_mods name="yuna" cross=false time="100" face="angry"]
+「『地の文』は、アウトですよ」[pf]
+#翔和
+「あ････････････」[pf]
+*select4_reg
+;for debug
+	[return]
 
 ;※　　※　　※
 ;;背景：駅のホーム　夕
