@@ -429,7 +429,7 @@
 		[chara_face name="aimi_f" storage="chara/aimi_f/scary_p_1.png" face="scary_p_1"]
 		[chara_face name="aimi_f" storage="chara/aimi_f/scary_p_2.png" face="scary_p_2"]
 	;yuna
-	[chara_new name="yuna" storage="chara/yuna/normal.png" jname="由奈" color="0x71cf29"]
+	[chara_new name="yuna" storage="chara/yuna/normal.png" jname="由奈" color="0x15d615"]
 		[chara_face name="yuna" storage="chara/yuna/angry.png" face="angry"]
 		[chara_face name="yuna" storage="chara/yuna/angry_1.png" face="angry_1"]
 		[chara_face name="yuna" storage="chara/yuna/angry_p.png" face="angry_p"]
@@ -477,7 +477,7 @@
 		[chara_face name="yuna" storage="chara/yuna/yan_p_2.png" face="yan_p_2"]
 		[chara_face name="yuna" storage="chara/yuna/yan_p_3.png" face="yan_p_3"]
 	;yuna_f
-	[chara_new name="yuna_f" storage="chara/yuna_f/normal.png" jname="由奈" color="0x71cf29"]
+	[chara_new name="yuna_f" storage="chara/yuna_f/normal.png" jname="由奈" color="0x15d615"]
 		[chara_face name="yuna_f" storage="chara/yuna_f/angry.png" face="angry"]
 		[chara_face name="yuna_f" storage="chara/yuna_f/angry_1.png" face="angry_1"]
 		[chara_face name="yuna_f" storage="chara/yuna_f/angry_p.png" face="angry_p"]
