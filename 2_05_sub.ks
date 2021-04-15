@@ -482,63 +482,82 @@
 白咲さんがいつの間にかドアの前にいた[pf]
 ;すみれ：表示；通常
 #すみれ
-[chara_mods cross=false time=100 name="sumire" face="normal_2"]
+[chara_modm cross=false time=100 name="sumire" face="normal_2"]
 「そうだここが写真部だ。ようこそ白咲君」[pf]
 ;立ち絵：すみれ消して由奈表示
 #
-[chara_shows name="kurumi" width=600 top=-100]
+[chara_shows name="yuna" width=600 top=-100 face="doki"]
 #由奈
 「ってことは･･････」[pf]
 #towa
 「白咲さんが新入部員！？」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="hate"]
 「そんなに大げさなリアクションされると私もどう反応したらいいか分からないんですけど」[pf]
 ;由奈：驚き
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="doki_1"]
 「あの白咲さんが来たらびっくりしますよ～」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="doki"]
 「私は写真部で春奈さんがメイド服を持ってたことにびっくりしたけど」[pf]
 ;由奈消して美紅表示
 ;美紅：赤面
 #美紅
+[chara_modm cross=false time=100 name="miku" face="blush_1"]
+[chara_mod cross=false time=100 name="yuna" face="normal"]
 「こ、これはいろいろあって･･････」[pf]
 #towa
 ミスコン二連覇がうちの部に来るのもびっくりだけど、それより･･････[pf]
 「こ、この前のことがあったからなのか？」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="angry"]
 「なんのことかしら」[pf]
 ;美紅消して由奈表示
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="scary"]
 「この前のこと？」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="hate_1"]
 「いいえ、文化祭のあのこととは関係ありませんわ」[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="scary_1"]
 「文化祭･･････ですか･･････？」[pf]
 #翔和
 「でも、そしたらなんで？」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="hate"]
 「これは私が決めたことよ･･････[r]
 それにこんなことで借りを返せるなんて思ってもないし」[pf]
 #翔和
 「そ、そうなんだ。でもありがとう」[pf]
 ;来未：赤面
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="blush"]
+[chara_mod cross=false time=100 name="yuna" face="hate"]
 「感謝される必要はありませんの」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="scary"]
 「そもそも部活動に所属していない校則違反を続けるわけにもいかなかった、それだけよ」[pf]
 ;立ち絵：由奈消してすみれ表示
 #すみれ
+[chara_modm cross=false time=100 name="sumire" face="normal"]
 「それは生徒会としても助かる」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="sad"]
 「会長色々と困らせてしまう部分があったかと思いますが、申し訳ございませんでした」[pf]
 #すみれ
+[chara_modm cross=false time=100 name="sumire" face="normal_2"]
+[chara_mod cross=false time=100 name="yuna" face="hate_1"]
 「今は会長じゃなくて部長だぞ」[pf]
 ;すみれ消して美紅表示
 #美紅
+[chara_modm cross=false time=100 name="miku" face="normal"]
 「それ前、安野君もまちがってたね～」[pf]
 #翔和
 「朝比奈先輩は会長のイメージが強いんですよぅ」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="normal_1"]
 「部長と会長はいささかややこしいですわね･･････」[pf]
 #towa
 うん、白咲さんもなんかなじめて行けそうだし、部にも昇格したし
@@ -546,6 +565,7 @@
 ;すみれ、来未消して由奈表示
 ;由奈：笑顔
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="normal"]
 「ねえ、白咲さんについて話してくれませんか？」[pf]
 #towa
 え？[pf]
@@ -553,8 +573,10 @@
 「どういうこと？」[pf]
 ;ボイス：由奈の“寸分違わず”を強調して
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="normal_1"]
 「文化祭で何かあったようですので、寸分違わずお話していただけませんか？」[pf]
 #翔和
+[chara_mod cross=false time=100 name="kurumi" face="angry"]
 「え、あ、ああ･･････」[pf]
 う～ん、どうしたことか。この前のことについて話せば、きっと白咲さんのプライドに関わることになるからなぁ[pf]
 ;来未 怒った顔
@@ -563,47 +585,66 @@
 ;選択肢
 ;１．『話す』
 ;２．『話さない』
+[eval exp="f.flag_kurumi = 0"]
+#
+@glink target="*select5_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="話す"
+@glink target="*select5_2" color="ts13" clickse="decision.ogg" x="300" y="330" width="550" text="話さない"
+@s
+
 
 ;以下　選択１（来未ルート）
+*select5_1
+[eval exp="f.flag_yuna = 1"]
 #towa
 いや、ここでありのままを話してこの写真部に白咲さんの事をもっと知ってもらおう[pf]
 #翔和
 「え～っと、文化祭で休憩したときのことなんですけど～･･････」[pf]
 
+[jump target="*select5_reg"]
 ;※　　※　　※
 
 ;¬¬来未イベント選択肢
 ;選択２『話さない』
 
+*select5_2
 #翔和
 「現時点でお応えすることはできません」[pf]
 とりあえず、ジョークっぽくたぶらかせておこう[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="normal_2"]
 「ん～ここで黙秘しても逆に怪しまれるだけですよ？」[pf]
 #翔和
 「ぐぬぬ･･････」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="angry_1"]
 「桐島さん、少々しつこくはありません？」[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="normal"]
 「あら？ そうでしょうか？」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="scary_1"]
 「自覚がないのね･･････」[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="normal_2"]
 「それより、ここで白咲さんが横やりを入れることにも自覚が無いと思うのですけど？」[pf]
 #towa
 完全な煽りだ、まさか温厚な桐島さんがこんなことをするなんて･･････！[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="hate_2"]
 「あなた、大層口が達者ですわね」[pf]
 ;美紅 目が〇
 #美紅
+[chara_modm cross=false time=100 name="miku" face="doki"]
 「あぅ･･････ふ、ふたりともおちついて･･････」[pf]
 #towa
 険悪ムードに耐えられなくなったのか、うろたえながらも仲裁に入ろうとする春奈さん[pf]
 #towa
 だが、この二人を止めることはできないだろう･･････[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="yan_2"]
 「お褒めいただきありがとうございます。･･････ただ、上からなのは癇に障るのですが」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="normal_1"]
 「それは失礼。無意識に出てしまいましたの･･････私の至らぬところでしたわ」[pf]
 #towa
 あっけなく春奈さんはスルーされ「あわあわ」してる[pf]
@@ -613,63 +654,85 @@
 #翔和
 「二人とも、喧嘩はやめてくれ。俺のことで争いが起きてほしくないんだ。」[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="yan_1"]
+[chara_mod cross=false time=100 name="kurumi" face="hate_1"]
 「･･････」[pf]
 #来未
+[chara_modm cross=false time=100 name="kurumi" face="hate_1"]
 「･･････」[pf]
 #翔和
 「･･････あれ？」[pf]
 #美紅
+[chara_modm cross=false time=100 name="miku" face="doki"]
 「（あわあわ）」[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="angry"]
 「お家がよろしいからといって、その態度は是正すべきかと思います」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="angry"]
 「･･････さっきから、私の態度の方に論点をずらしていますが、本題は桐島さんの安野に対する態度だったのではないかしら？」[pf]
 #towa
 スルーされた！！[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="angry_1"]
 「そもそも、今さら私たちの間に入ってこようなんて泥棒同然ですよ」[pf]
 #翔和
 「え？　いや普通の部活仲間ですよね？　それ以上発展しそうなイベントまだだもんね？」[pf]
 ;由奈　ヤンデレ
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="yan"]
 「少し、静かにお願いします」[pf]
 #翔和
 「は、はい･･････」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="hate_1"]
 「あら？ 男を尻に敷いて所有物にしようってことかしら？」[pf]
 #由奈
+[chara_mods cross=false time=100 name="yuna" face="angry"]
 「むむむ･･････」[pf]
 #来未
+[chara_mods cross=false time=100 name="kurumi" face="angry"]
 「･･････ふんっ」[pf]
 #towa
 あ～だめだよ～･･････一向に収束する見込みないよ～[pf]
 #翔和
 「あ、朝日奈先輩どうにかしてください！」[pf]
 #すみれ
+[chara_modm cross=false time=100 name="sumire" face="sad"]
 「ん～どうすることもできないな」[pf]
 #翔和
 「でも、これからの部活がずっとこんな調子になったらどうするんですか！？」[pf]
 ;すみれ 笑顔
 #すみれ
+[chara_modm cross=false time=100 name="sumire" face="normal"]
 「それもそれで、活気があって楽しそうではないか」[pf]
 #towa
 なんですか先輩その余裕！[pf]
 #翔和
 「朝日奈先輩ともなるとこれくらいのいざこざはたいしたことない、と？」[pf]
 #すみれ
+[chara_modm cross=false time=100 name="sumire" face="normal_2"]
 「それは少し違うかな」[pf]
 #すみれ
+[chara_modm cross=false time=100 name="sumire" face="normal"]
 「たとえるなら、熱血教師に憧れた新米教師の気分だ」[pf]
 #翔和
+[chara_mod cross=false time=100 name="yuna" face="doki"]
+[chara_mod cross=false time=100 name="kurumi" face="doki"]
 「とおっしゃいますと？」[pf]
 #すみれ
-「そういう新米教師は、不良生徒を指導することに価値を見出している人または、好奇心を持っている人だと思う。」[pf]
+[chara_modm cross=false time=100 name="sumire" face="noral_2"]
+「そういう新米教師は、不良生徒を指導することに価値を見出している人または、好奇心を持っている人だと思う」[pf]
 #すみれ
+[chara_mods cross=false time=100 name="sumire" face="normal_1"]
 「私の場合は後者で言い方を少し悪くすれば、ただの物好きだ」[pf]
 #すみれ
+[chara_mods cross=false time=100 name="sumire" face="normal_2"]
 「だから私は今、少しわくわくしている」[pf]
 #すみれ
+[chara_mods cross=false time=100 name=sumire"" face="normal_3"]
 「白咲さんが入ってきてくれて本当によかったよ」[pf]
+[jump target="*select5_reg"]
 
 
 
