@@ -1,3 +1,5 @@
+*debug
+
 ;２章-05_side
 ;背景：教室
 [angle name="towa" bg="classroom.jpg"]
@@ -110,8 +112,6 @@
 ;立ち絵：美紅；右　由奈；左
 ;美紅、由奈：通常
 ; [macro name="bg_eye"]
-*debug
-
 #
 [mask time="800" effect="rotateInDownRight" graphic="eye.jpg"]
 [bg storage="corridor.jpg" time="0"]
@@ -398,7 +398,7 @@
 みんなも話すネタがなくなったみたいでしょんぼりした雰囲気が漂ってる[pf]
 ;美紅：表示；困り
 #
-[chara_shows name="miku" width=600 top=-100 face="sad"]
+[chara_shows name="miku" width=600 top=-100 face="sad_1"]
 #美紅
 「あの･･････暑くないですか･･････？」[pf]
 ;由奈：表示；困り
@@ -417,7 +417,7 @@
 ;由奈：通常
 #由奈
 [chara_mods cross=false time=100 name="yuna" face="normal"]
-「あっ、これなんて着たらどうでしょうか～？」
+「あっ、これなんて着たらどうでしょうか～？」[pf]
 #towa
 桐島さんがゴチャゴチャしたものから何か取り出す[pf]
 #towa
@@ -476,7 +476,7 @@
 [chara_hide_all time=100]
 ;美紅、由奈消して来未表示
 #
-[chara_shows name="kurumi" width=600 top=-100]
+[chara_show name="kurumi" width=600 top=-100]
 #towa
 「白咲さん！？」[pf]
 白咲さんがいつの間にかドアの前にいた[pf]
@@ -582,6 +582,9 @@
 ;来未 怒った顔
 うわ、しかもなんか俺にらまれてる･･････！？[pf]
 
+; for debug
+	*select5_reg
+
 ;選択肢
 ;１．『話す』
 ;２．『話さない』
@@ -599,6 +602,10 @@
 いや、ここでありのままを話してこの写真部に白咲さんの事をもっと知ってもらおう[pf]
 #翔和
 「え～っと、文化祭で休憩したときのことなんですけど～･･････」[pf]
+
+;for debug
+	#
+	選択肢に戻ります[pf]
 
 [jump target="*select5_reg"]
 ;※　　※　　※
@@ -721,7 +728,7 @@
 [chara_mod cross=false time=100 name="kurumi" face="doki"]
 「とおっしゃいますと？」[pf]
 #すみれ
-[chara_modm cross=false time=100 name="sumire" face="noral_2"]
+[chara_modm cross=false time=100 name="sumire" face="normal_2"]
 「そういう新米教師は、不良生徒を指導することに価値を見出している人または、好奇心を持っている人だと思う」[pf]
 #すみれ
 [chara_mods cross=false time=100 name="sumire" face="normal_1"]
@@ -730,9 +737,10 @@
 [chara_mods cross=false time=100 name="sumire" face="normal_2"]
 「だから私は今、少しわくわくしている」[pf]
 #すみれ
-[chara_mods cross=false time=100 name=sumire"" face="normal_3"]
+[chara_mods cross=false time=100 name="sumire" face="normal_3"]
 「白咲さんが入ってきてくれて本当によかったよ」[pf]
-[jump target="*select5_reg"]
+; for debug
+	; [jump target="*select5_reg"]
 
 
 
