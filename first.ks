@@ -641,6 +641,7 @@
 	[chara_new name="shoujo" storage="chara/ryoji/normal.png" jname="少女" color="0x000000"]
 	[chara_new name="kinpatu" storage="chara/ryoji/normal.png" jname="金髪美少女" color="0xff8c00"]
 	[chara_new name="oji" storage="chara/ryoji/normal.png" jname="叔父さん" color="0x000000"]
+	[chara_new name="shokuin" storage="chara/ryoji/normal.png" jname="職員" color="0x000000"]
 	;キャラクターの名前が表示される文字領域
 	[ptext name="chara_name_area" layer="message0" size=24 x=200 y=540]
 
@@ -740,6 +741,10 @@
 			[eval exp="mp.graphic='angle_hatena.jpg'"]
 			[eval exp="mp.frame='frame_violet.png'"]
 			[eval exp="mp.fontcolor='0xffffff'"]
+		[elsif exp="mp.name=='kurumi'"]
+			[eval exp="mp.graphic='angle_kurumi.jpg'"]
+			[eval exp="mp.frame='frame_orange.png'"]
+			[eval exp="mp.fontcolor='0xffffff'"]
 		[else]
 			[playse storage="decision.ogg"]
 		[endif]
@@ -830,6 +835,8 @@
 			[eval exp="mp.storage='iphone_miku.png'"]
 		[elsif exp="mp.name=='aimi'"]
 			[eval exp="mp.storage='iphone_aimi.png'"]
+		[elsif exp="mp.name=='none'"]
+			[eval exp="mp.storage='iphone.png'"]
 		[else]
 			[playse storage="decision.ogg"]
 		[endif]

@@ -437,7 +437,7 @@
 [chara_mods cross=false time=100 name="miku" face="normal_1"]
 「わぁ！すごくかわいいと思います」[pf]
 #towa
-「え？」
+「え？」[pf]
 ;美紅：うれしい
 #美紅
 [chara_mods cross=false time=100 name="miku" face="normal_2"]

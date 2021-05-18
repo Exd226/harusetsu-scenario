@@ -1,5 +1,5 @@
 
-
+[debug_return]
 つづく[p]
 タイトルへ戻ります[p]
 [iscript]

@@ -366,6 +366,7 @@
 ん、写真部ってホントは存在しないんじゃね[pf]
 #翔和
 そんなことないか。[pf]
+[eval exp="f.flag_main = 0"]
 *select2
 #翔和
 @glink storage="2_01.ks" target="*select2_1" color="ts13" clickse="decision.ogg" x="300" y="230" width="550" text="先生に尋ねる"

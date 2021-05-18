@@ -4,7 +4,7 @@
 [angle name="towa" bg="black.jpg"]
 ; [call storage="2_02.ks" target="*select3_2"]
 ; [chara_hide_all]
-[call storage="2_05_sub.ks" target="*debug"]
+[call storage="3_03.ks" target="*debug"]
 #
 タイトルへ戻ります[pf]
 [iscript]

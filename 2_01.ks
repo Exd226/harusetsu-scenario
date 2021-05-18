@@ -49,6 +49,7 @@
 
 
 *select2_2
+[eval exp="f.flag_main = 1"]
 #翔和
 もうちょい粘って探してみるか[pf]
 #翔和
@@ -910,7 +911,10 @@
 @fadeoutbgm time="3000"
 @free_filter
 @free_layermode time="0"
-@jump storage="2_02.ks"
+[if exp="f.flag_main == 2_02.ks"]
+	[jump storage="2_02.ks"]
+[else]
+	[jump storage="sub_sumire.ks"]
 つづく[pf]
 タイトルへ戻ります[pf]
 [iscript]
